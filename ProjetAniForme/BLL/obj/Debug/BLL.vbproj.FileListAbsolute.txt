@@ -1,0 +1,16 @@
+D:\AniForme\ProjetAniForme\BLL\bin\Debug\BLL.dll
+D:\AniForme\ProjetAniForme\BLL\bin\Debug\BLL.pdb
+D:\AniForme\ProjetAniForme\BLL\bin\Debug\BLL.xml
+D:\AniForme\ProjetAniForme\BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\AniForme\ProjetAniForme\BLL\obj\Debug\BLL.Resources.resources
+D:\AniForme\ProjetAniForme\BLL\obj\Debug\GenerateResource.read.1.tlog
+D:\AniForme\ProjetAniForme\BLL\obj\Debug\GenerateResource.write.1.tlog
+D:\AniForme\ProjetAniForme\BLL\obj\Debug\BLL.dll
+D:\AniForme\ProjetAniForme\BLL\obj\Debug\BLL.xml
+D:\AniForme\ProjetAniForme\BLL\obj\Debug\BLL.pdb
+D:\aniForme\ProjetAniForme\BLL\bin\Debug\BO.dll
+D:\aniForme\ProjetAniForme\BLL\bin\Debug\DAL.dll
+D:\aniForme\ProjetAniForme\BLL\bin\Debug\BO.pdb
+D:\aniForme\ProjetAniForme\BLL\bin\Debug\BO.xml
+D:\aniForme\ProjetAniForme\BLL\bin\Debug\DAL.pdb
+D:\aniForme\ProjetAniForme\BLL\bin\Debug\DAL.xml
