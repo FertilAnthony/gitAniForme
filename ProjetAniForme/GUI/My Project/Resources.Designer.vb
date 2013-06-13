@@ -214,6 +214,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property korganizer_todo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("korganizer_todo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property kwrite() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("kwrite", resourceCulture)

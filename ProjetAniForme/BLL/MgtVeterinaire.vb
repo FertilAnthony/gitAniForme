@@ -33,11 +33,6 @@ Public Class MgtVeterinaire
 
     End Sub
 
-#Region "Controles"
-
-
-
-#End Region
 
     Public Function ObtenirVeterinaire(ByVal codeVeto As Guid) As Veterinaire
         Dim retourVeterinaire As Veterinaire = Nothing

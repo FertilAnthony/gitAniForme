@@ -42,6 +42,7 @@ Public Class SQLVeterinaire
         Dim reader As IDataReader = cmd.ExecuteReader()
 
         While reader.Read()
+            Dim r As Guid = reader.GetGuid(reader.GetOrdinal("CodeVeto"))
             Dim v As Veterinaire = New Veterinaire(reader.GetGuid(reader.GetOrdinal("CodeVeto")), reader.GetString(reader.GetOrdinal("NomVeto")))
             getListeVeterinaire.Add(v)
         End While

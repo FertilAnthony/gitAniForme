@@ -76,7 +76,7 @@
 
 #Region "Méthodes d'instance"
     Public Overrides Function ToString() As String
-        Return nomVeto
+        Return NomVeto
     End Function
 #End Region
 

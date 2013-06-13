@@ -23,6 +23,7 @@ Public Class EcranPrincipal
         EcranVeterinaire.MdiParent = Me
 
         MgtVeterinaire.getInstance.initialiserDonnees()
+        MgtAnimal.getInstance.initialiserDonnees()
     End Sub
 
     Private Sub btnRdv_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRdv.Click

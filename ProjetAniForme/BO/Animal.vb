@@ -9,7 +9,7 @@
     Private _couleur As String
     Private _race As String
     Private _espece As String
-    Private _codeClient As Integer
+    Private _codeClient As Guid
     Private _tatouage As String
     Private _antecedents As String
     Private _archive As Boolean
@@ -41,7 +41,7 @@
             Return _sexe
         End Get
         Set(ByVal sexe As SexeAnimal)
-            _sexe = sexe
+            _sexe = Sexe
         End Set
     End Property
 
@@ -54,11 +54,11 @@
         End Set
     End Property
 
-    Public Property CodeClient() As Integer
+    Public Property CodeClient() As Guid
         Get
             Return _codeClient
         End Get
-        Set(ByVal codeClient As Integer)
+        Set(ByVal codeClient As Guid)
             _codeClient = codeClient
         End Set
     End Property
@@ -92,6 +92,23 @@
 
 #End Region
 
+#Region "Contrôles"
+
+    Shared Function sexeAnimal(ByVal sexeEnum As SexeAnimal) As String
+        Dim sexe As String = Nothing
+
+        If sexeEnum = 0 Then
+            sexe = "M"
+        ElseIf sexeEnum = 1 Then
+            sexe = "F"
+        Else
+            sexe = "H"
+        End If
+        Return sexe
+    End Function
+
+#End Region
+
 #Region "Constructeur"
 
     Public Sub New(ByVal codeAnimal As Guid,
@@ -100,7 +117,7 @@
                    ByVal couleur As String,
                    ByVal race As String,
                    ByVal espece As String,
-                   ByVal codeClient As Integer,
+                   ByVal codeClient As Guid,
                    ByVal tatouage As String,
                    ByVal archive As Boolean,
                    Optional ByVal antecedents As String = Nothing)
@@ -117,7 +134,24 @@
 
     End Sub
 
+    Public Sub New(ByVal codeAnimal As Guid,
+                   ByVal nomAnimal As String,
+                   ByVal race As String,
+                   ByVal espece As String,
+                   ByVal codeClient As Guid)
 
+        MyBase.New(race, espece)
+        Me.CodeAnimal = codeAnimal
+        Me.NomAnimal = nomAnimal
+        Me.CodeClient = codeClient
+    End Sub
+
+#End Region
+
+#Region "Méthodes d'instance"
+    Public Overrides Function ToString() As String
+        Return NomAnimal & " - " & Race & " - " & Espece
+    End Function
 #End Region
 
 End Class
