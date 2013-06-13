@@ -1,4 +1,6 @@
-﻿Public Class EcranPrincipal
+﻿Imports BLL
+
+Public Class EcranPrincipal
 
 
     Private Sub btnAgendas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgendas.Click
@@ -18,10 +20,13 @@
         EcranAnimaux.MdiParent = Me
         EcranDosMedical.MdiParent = Me
         EcranConsultation.MdiParent = Me
+        EcranVeterinaire.MdiParent = Me
+
+        MgtVeterinaire.getInstance.initialiserDonnees()
     End Sub
 
     Private Sub btnRdv_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRdv.Click
-       
+
 
         EcranRdv.Visible = True
         EcranRdv.BringToFront()
@@ -41,7 +46,7 @@
 
     End Sub
 
-    
+
 
     Private Sub btnDosMedical_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDosMedical.Click
         EcranDosMedical.Visible = True
@@ -52,9 +57,9 @@
 
     End Sub
 
-  
 
-   
+
+
     Private Sub VétérinairesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VétérinairesToolStripMenuItem.Click
         EcranVeterinaire.Visible = True
         EcranVeterinaire.BringToFront()

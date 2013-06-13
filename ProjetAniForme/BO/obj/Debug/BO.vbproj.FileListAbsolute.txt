@@ -8,3 +8,13 @@ D:\AniForme\ProjetAniForme\BO\obj\Debug\GenerateResource.write.1.tlog
 D:\AniForme\ProjetAniForme\BO\obj\Debug\BO.dll
 D:\AniForme\ProjetAniForme\BO\obj\Debug\BO.xml
 D:\AniForme\ProjetAniForme\BO\obj\Debug\BO.pdb
+D:\aniForme\gitAniForme\ProjetAniForme\BO\bin\Debug\BO.dll
+D:\aniForme\gitAniForme\ProjetAniForme\BO\bin\Debug\BO.pdb
+D:\aniForme\gitAniForme\ProjetAniForme\BO\bin\Debug\BO.xml
+D:\aniForme\gitAniForme\ProjetAniForme\BO\obj\Debug\ResolveAssemblyReference.cache
+D:\aniForme\gitAniForme\ProjetAniForme\BO\obj\Debug\BO.Resources.resources
+D:\aniForme\gitAniForme\ProjetAniForme\BO\obj\Debug\GenerateResource.read.1.tlog
+D:\aniForme\gitAniForme\ProjetAniForme\BO\obj\Debug\GenerateResource.write.1.tlog
+D:\aniForme\gitAniForme\ProjetAniForme\BO\obj\Debug\BO.dll
+D:\aniForme\gitAniForme\ProjetAniForme\BO\obj\Debug\BO.xml
+D:\aniForme\gitAniForme\ProjetAniForme\BO\obj\Debug\BO.pdb

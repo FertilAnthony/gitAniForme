@@ -11,3 +11,16 @@ D:\AniForme\ProjetAniForme\DAL\obj\Debug\DAL.pdb
 D:\aniForme\ProjetAniForme\DAL\bin\Debug\BO.dll
 D:\aniForme\ProjetAniForme\DAL\bin\Debug\BO.pdb
 D:\aniForme\ProjetAniForme\DAL\bin\Debug\BO.xml
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\bin\Debug\DAL.dll
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\bin\Debug\DAL.pdb
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\bin\Debug\DAL.xml
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\bin\Debug\BO.dll
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\bin\Debug\BO.pdb
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\bin\Debug\BO.xml
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\obj\Debug\DAL.Resources.resources
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\obj\Debug\GenerateResource.read.1.tlog
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\obj\Debug\GenerateResource.write.1.tlog
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\obj\Debug\DAL.dll
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\obj\Debug\DAL.xml
+D:\aniForme\gitAniForme\ProjetAniForme\DAL\obj\Debug\DAL.pdb
