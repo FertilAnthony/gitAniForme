@@ -10,6 +10,8 @@ Public Class SQLVeterinaire
     Private Const REQUETE_SELECTION_TOUS As String = "select CodeVeto, NomVeto from " & NOM_TABLE
     Private Const REQUETE_CONNEXION As String = "select MotPasse, CodeVeto from " & NOM_TABLE & " where CodeVeto = " & PARAM_CODE
     Private Const REQUETE_AJOUT As String = "INSERT INTO " & NOM_TABLE & " (codeVeto, NomVeto, MotPasse, Archive) VALUES(" & PARAM_CODE & ", " & PARAM_NOM_VETO & ", " & PARAM_MDP & ", 0)"
+    Private Const REQUETE_SUPPR As String = "delete from " & NOM_TABLE & " where codeVeto = " & PARAM_CODE
+    Private Const REQUETE_UPDATE As String = "update " & NOM_TABLE & " set NomVeto = " & PARAM_NOM_VETO & ", MotPasse = " & PARAM_MDP & " where CodeVeto = " & PARAM_CODE
 
     Public Shared Sub TestConnexion(ByVal codeVeto As Guid, ByVal motPasse As String)
         Try
@@ -59,6 +61,42 @@ Public Class SQLVeterinaire
                 Throw New ApplicationException("Aucune ligne n'a été ajoutée")
             ElseIf nbModif > 1 Then
                 Throw New ApplicationException(String.Format("Erreur lors de l'enregistrement des données : {0} lignes ont été ajoutées.", nbModif))
+            End If
+        Catch ex As System.InvalidOperationException
+            Throw New ApplicationException("Une erreur est survenue lors de l'accès à la base")
+        End Try
+    End Sub
+
+    Shared Sub supprimer(ByVal veto As Veterinaire)
+        Try
+            Dim cmd As IDbCommand = SQLAccess.creerCommande(REQUETE_SUPPR)
+            SQLAccess.initialiserParametre(cmd, PARAM_CODE, veto.CodeVeto.ToString)
+
+            Dim nbModif As Integer = cmd.ExecuteNonQuery()
+
+            If nbModif < 1 Then
+                Throw New ApplicationException("Vétérinaire introuvable")
+            ElseIf nbModif > 1 Then
+                Throw New ApplicationException(String.Format("Erreur lors de la suppression des données : {0} lignes ont été supprimées.", nbModif))
+            End If
+        Catch ex As System.InvalidOperationException
+            Throw New ApplicationException("Une erreur est survenue lors de l'accès à la base")
+        End Try
+    End Sub
+
+    Shared Sub modifier(ByVal veto As Veterinaire)
+        Try
+            Dim cmd As IDbCommand = SQLAccess.creerCommande(REQUETE_UPDATE)
+            SQLAccess.initialiserParametre(cmd, PARAM_CODE, veto.CodeVeto.ToString)
+            SQLAccess.initialiserParametre(cmd, PARAM_NOM_VETO, veto.NomVeto)
+            SQLAccess.initialiserParametre(cmd, PARAM_MDP, veto.MotPasse)
+
+            Dim nbModif As Integer = cmd.ExecuteNonQuery()
+
+            If nbModif < 1 Then
+                Throw New ApplicationException("Aucune ligne n'a été modifiée")
+            ElseIf nbModif > 1 Then
+                Throw New ApplicationException(String.Format("Erreur lors de la modification des données : {0} lignes ont été modifiées.", nbModif))
             End If
         Catch ex As System.InvalidOperationException
             Throw New ApplicationException("Une erreur est survenue lors de l'accès à la base")

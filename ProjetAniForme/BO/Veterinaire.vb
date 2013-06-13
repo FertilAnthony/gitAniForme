@@ -16,6 +16,7 @@
             Return _codeVeto
         End Get
         Set(ByVal codeVeto As Guid)
+            verifIdentifiant(codeVeto)
             _codeVeto = codeVeto
         End Set
     End Property
@@ -25,6 +26,7 @@
             Return _nomVeto
         End Get
         Set(ByVal nomVeto As String)
+            verifNom(nomVeto)
             _nomVeto = nomVeto
         End Set
     End Property
@@ -34,6 +36,7 @@
             Return _motPasse
         End Get
         Set(ByVal motPasse As String)
+            verifMdp(motPasse)
             _motPasse = motPasse
         End Set
     End Property
@@ -81,6 +84,14 @@
     Shared Sub verifIdentifiant(ByVal identifiant As Guid)
         If identifiant = Nothing Then
             Throw New Exception("L'identifiant ne doit pas être vide")
+        End If
+    End Sub
+
+    Shared Sub verifNom(ByVal nom As String)
+        If nom = Nothing Then
+            Throw New Exception("Le nom ne doit pas être vide")
+        ElseIf nom.Trim().Length > 30 Then
+            Throw New Exception("Le nom ne doit pas êdépasser 30 caractères")
         End If
     End Sub
 

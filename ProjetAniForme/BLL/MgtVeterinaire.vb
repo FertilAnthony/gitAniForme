@@ -39,6 +39,21 @@ Public Class MgtVeterinaire
 
 #End Region
 
+    Public Function ObtenirVeterinaire(ByVal codeVeto As Guid) As Veterinaire
+        Dim retourVeterinaire As Veterinaire = Nothing
+        '
+        ' Vérifier que le code proposé est un code de Veterinaire valide
+        '
+        Veterinaire.verifIdentifiant(codeVeto)
+        '
+        ' Pas d'erreur, on recherche dans la liste le service possédant 
+        ' ce code. S'il n'est pas trouvé la variable reste Nothing.
+        '
+        retourVeterinaire = _listeVeterinaires.ToList.Find(Function(v As Veterinaire) v.CodeVeto.Equals(codeVeto))
+
+        Return retourVeterinaire
+    End Function
+
     Sub initialiserDonnees()
         Dim listVeterinaire As List(Of Veterinaire) = SQLVeterinaire.getListeVeterinaire()
         For Each v As Veterinaire In listVeterinaire
@@ -53,6 +68,32 @@ Public Class MgtVeterinaire
     Private Sub ajout(ByVal veto As Veterinaire)
         SQLVeterinaire.ajouter(veto)
         veterinaires.Add(veto)
+    End Sub
+
+    Sub supprimer(ByVal veto As Veterinaire)
+        SQLVeterinaire.supprimer(veto)
+        veterinaires.Remove(veto)
+    End Sub
+
+    Sub modif(ByVal codeVeto As Guid, ByVal nomVeto As String, ByVal mdpVeto As String)
+        Dim veto As Veterinaire = ObtenirVeterinaire(codeVeto)
+
+        If _listeVeterinaires.Contains(veto) Then
+            Dim oldNomVeto As String = nomVeto
+            Dim oldMdpVeto As String = mdpVeto
+            Try
+                veto.NomVeto = nomVeto
+                veto.MotPasse = mdpVeto
+                SQLVeterinaire.modifier(veto)
+            Catch ex As Exception
+                With veto
+                    .NomVeto = oldNomVeto
+                    .MotPasse = oldMdpVeto
+                End With
+            End Try
+        Else
+            Throw New ApplicationException("L'instance à modifier n'appartient pas à la liste courante de l'application.")
+        End If
     End Sub
 
 End Class

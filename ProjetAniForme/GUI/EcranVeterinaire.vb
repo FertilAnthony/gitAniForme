@@ -20,9 +20,15 @@ Public Class EcranVeterinaire
         End Try
     End Sub
 
-
-
     Private Sub btnAjouterVeto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAjouterVeto.Click
-        EcranAjoutVeterinaire.Visible = True
+        DialogAjoutVeterinaire.Visible = True
+    End Sub
+
+    Private Sub btnSupprimerVeto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSupprimerVeto.Click
+        DialogSupprVeterinaire.Visible = True
+    End Sub
+
+    Private Sub btnModifierVeto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModifierVeto.Click
+        DialogModifVeterinaire.Visible = True
     End Sub
 End Class

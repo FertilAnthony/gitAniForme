@@ -27,10 +27,10 @@ Partial Class EcranVeterinaire
         Me.gbxVetérinaires = New System.Windows.Forms.GroupBox()
         Me.tbxMdp = New System.Windows.Forms.TextBox()
         Me.lblVetérinaires = New System.Windows.Forms.Label()
-        Me.btnAjouterVeto = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnModifierVeto = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnSupprimerVeto = New System.Windows.Forms.Button()
+        Me.btnAjouterVeto = New System.Windows.Forms.Button()
         Me.gbxVetérinaires.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -81,32 +81,14 @@ Partial Class EcranVeterinaire
         Me.lblVetérinaires.TabIndex = 9
         Me.lblVetérinaires.Text = "Mot de passe :"
         '
-        'btnAjouterVeto
+        'btnModifierVeto
         '
-        Me.btnAjouterVeto.Image = Global.GUI.My.Resources.Resources.add
-        Me.btnAjouterVeto.Location = New System.Drawing.Point(12, 12)
-        Me.btnAjouterVeto.Name = "btnAjouterVeto"
-        Me.btnAjouterVeto.Size = New System.Drawing.Size(62, 46)
-        Me.btnAjouterVeto.TabIndex = 10
-        Me.btnAjouterVeto.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(92, 12)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(62, 46)
-        Me.Button2.TabIndex = 11
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(174, 12)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(62, 46)
-        Me.Button3.TabIndex = 12
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnModifierVeto.Image = Global.GUI.My.Resources.Resources.kontact_journal
+        Me.btnModifierVeto.Location = New System.Drawing.Point(92, 12)
+        Me.btnModifierVeto.Name = "btnModifierVeto"
+        Me.btnModifierVeto.Size = New System.Drawing.Size(62, 46)
+        Me.btnModifierVeto.TabIndex = 11
+        Me.btnModifierVeto.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -117,14 +99,32 @@ Partial Class EcranVeterinaire
         Me.Button4.Text = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'btnSupprimerVeto
+        '
+        Me.btnSupprimerVeto.Image = Global.GUI.My.Resources.Resources._stop
+        Me.btnSupprimerVeto.Location = New System.Drawing.Point(174, 12)
+        Me.btnSupprimerVeto.Name = "btnSupprimerVeto"
+        Me.btnSupprimerVeto.Size = New System.Drawing.Size(62, 46)
+        Me.btnSupprimerVeto.TabIndex = 12
+        Me.btnSupprimerVeto.UseVisualStyleBackColor = True
+        '
+        'btnAjouterVeto
+        '
+        Me.btnAjouterVeto.Image = Global.GUI.My.Resources.Resources.add
+        Me.btnAjouterVeto.Location = New System.Drawing.Point(12, 12)
+        Me.btnAjouterVeto.Name = "btnAjouterVeto"
+        Me.btnAjouterVeto.Size = New System.Drawing.Size(62, 46)
+        Me.btnAjouterVeto.TabIndex = 10
+        Me.btnAjouterVeto.UseVisualStyleBackColor = True
+        '
         'EcranVeterinaire
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(607, 308)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnSupprimerVeto)
+        Me.Controls.Add(Me.btnModifierVeto)
         Me.Controls.Add(Me.btnAjouterVeto)
         Me.Controls.Add(Me.lblVetérinaires)
         Me.Controls.Add(Me.tbxMdp)
@@ -143,7 +143,7 @@ Partial Class EcranVeterinaire
     Friend WithEvents tbxMdp As System.Windows.Forms.TextBox
     Friend WithEvents lblVetérinaires As System.Windows.Forms.Label
     Friend WithEvents btnAjouterVeto As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnModifierVeto As System.Windows.Forms.Button
+    Friend WithEvents btnSupprimerVeto As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class
