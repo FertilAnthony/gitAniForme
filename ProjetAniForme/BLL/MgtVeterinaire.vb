@@ -46,4 +46,13 @@ Public Class MgtVeterinaire
         Next
     End Sub
 
+    Sub ajout(ByVal nomVeto As String, ByVal mdpVeto As String)
+        ajout(New Veterinaire(Guid.NewGuid(), nomVeto, mdpVeto))
+    End Sub
+
+    Private Sub ajout(ByVal veto As Veterinaire)
+        SQLVeterinaire.ajouter(veto)
+        veterinaires.Add(veto)
+    End Sub
+
 End Class

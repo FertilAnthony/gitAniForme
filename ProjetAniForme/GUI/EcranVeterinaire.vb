@@ -1,5 +1,6 @@
 ﻿Imports BLL
 Imports BO
+Imports System.Data.Common
 
 Public Class EcranVeterinaire
 
@@ -21,4 +22,7 @@ Public Class EcranVeterinaire
 
 
 
+    Private Sub btnAjouterVeto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAjouterVeto.Click
+        EcranAjoutVeterinaire.Visible = True
+    End Sub
 End Class

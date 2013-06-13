@@ -9,6 +9,7 @@ Public Class SQLVeterinaire
 
     Private Const REQUETE_SELECTION_TOUS As String = "select CodeVeto, NomVeto from " & NOM_TABLE
     Private Const REQUETE_CONNEXION As String = "select MotPasse, CodeVeto from " & NOM_TABLE & " where CodeVeto = " & PARAM_CODE
+    Private Const REQUETE_AJOUT As String = "INSERT INTO " & NOM_TABLE & " (codeVeto, NomVeto, MotPasse, Archive) VALUES(" & PARAM_CODE & ", " & PARAM_NOM_VETO & ", " & PARAM_MDP & ", 0)"
 
     Public Shared Sub TestConnexion(ByVal codeVeto As Guid, ByVal motPasse As String)
         Try
@@ -44,5 +45,24 @@ Public Class SQLVeterinaire
         End While
         reader.Close()
     End Function
+
+    Shared Sub ajouter(ByVal veto As Veterinaire)
+        Try
+            Dim cmd As IDbCommand = SQLAccess.creerCommande(REQUETE_AJOUT)
+            SQLAccess.initialiserParametre(cmd, PARAM_CODE, veto.CodeVeto.ToString)
+            SQLAccess.initialiserParametre(cmd, PARAM_NOM_VETO, veto.NomVeto)
+            SQLAccess.initialiserParametre(cmd, PARAM_MDP, veto.MotPasse)
+
+            Dim nbModif As Integer = cmd.ExecuteNonQuery()
+
+            If nbModif < 1 Then
+                Throw New ApplicationException("Aucune ligne n'a été ajoutée")
+            ElseIf nbModif > 1 Then
+                Throw New ApplicationException(String.Format("Erreur lors de l'enregistrement des données : {0} lignes ont été ajoutées.", nbModif))
+            End If
+        Catch ex As System.InvalidOperationException
+            Throw New ApplicationException("Une erreur est survenue lors de l'accès à la base")
+        End Try
+    End Sub
 
 End Class

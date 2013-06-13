@@ -27,12 +27,17 @@ Partial Class EcranVeterinaire
         Me.gbxVetérinaires = New System.Windows.Forms.GroupBox()
         Me.tbxMdp = New System.Windows.Forms.TextBox()
         Me.lblVetérinaires = New System.Windows.Forms.Label()
+        Me.btnAjouterVeto = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.gbxVetérinaires.SuspendLayout()
         Me.SuspendLayout()
         '
         'BtnConnexion
         '
-        Me.BtnConnexion.Location = New System.Drawing.Point(569, 235)
+        Me.BtnConnexion.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnConnexion.Location = New System.Drawing.Point(507, 273)
         Me.BtnConnexion.Name = "BtnConnexion"
         Me.BtnConnexion.Size = New System.Drawing.Size(88, 23)
         Me.BtnConnexion.TabIndex = 4
@@ -53,7 +58,7 @@ Partial Class EcranVeterinaire
         'gbxVetérinaires
         '
         Me.gbxVetérinaires.Controls.Add(Me.lbxVeterinaires)
-        Me.gbxVetérinaires.Location = New System.Drawing.Point(12, 51)
+        Me.gbxVetérinaires.Location = New System.Drawing.Point(12, 75)
         Me.gbxVetérinaires.Name = "gbxVetérinaires"
         Me.gbxVetérinaires.Size = New System.Drawing.Size(421, 131)
         Me.gbxVetérinaires.TabIndex = 7
@@ -62,7 +67,7 @@ Partial Class EcranVeterinaire
         '
         'tbxMdp
         '
-        Me.tbxMdp.Location = New System.Drawing.Point(18, 220)
+        Me.tbxMdp.Location = New System.Drawing.Point(18, 248)
         Me.tbxMdp.Name = "tbxMdp"
         Me.tbxMdp.Size = New System.Drawing.Size(146, 20)
         Me.tbxMdp.TabIndex = 8
@@ -70,23 +75,63 @@ Partial Class EcranVeterinaire
         'lblVetérinaires
         '
         Me.lblVetérinaires.AutoSize = True
-        Me.lblVetérinaires.Location = New System.Drawing.Point(15, 204)
+        Me.lblVetérinaires.Location = New System.Drawing.Point(12, 232)
         Me.lblVetérinaires.Name = "lblVetérinaires"
         Me.lblVetérinaires.Size = New System.Drawing.Size(77, 13)
         Me.lblVetérinaires.TabIndex = 9
         Me.lblVetérinaires.Text = "Mot de passe :"
         '
+        'btnAjouterVeto
+        '
+        Me.btnAjouterVeto.Image = Global.GUI.My.Resources.Resources.add
+        Me.btnAjouterVeto.Location = New System.Drawing.Point(12, 12)
+        Me.btnAjouterVeto.Name = "btnAjouterVeto"
+        Me.btnAjouterVeto.Size = New System.Drawing.Size(62, 46)
+        Me.btnAjouterVeto.TabIndex = 10
+        Me.btnAjouterVeto.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(92, 12)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(62, 46)
+        Me.Button2.TabIndex = 11
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(174, 12)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(62, 46)
+        Me.Button3.TabIndex = 12
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(254, 12)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(62, 46)
+        Me.Button4.TabIndex = 13
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'EcranVeterinaire
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(669, 270)
+        Me.ClientSize = New System.Drawing.Size(607, 308)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnAjouterVeto)
         Me.Controls.Add(Me.lblVetérinaires)
         Me.Controls.Add(Me.tbxMdp)
         Me.Controls.Add(Me.gbxVetérinaires)
         Me.Controls.Add(Me.BtnConnexion)
         Me.Name = "EcranVeterinaire"
-        Me.Text = "Connexion"
+        Me.Text = "Vétérinaires"
         Me.gbxVetérinaires.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -97,4 +142,8 @@ Partial Class EcranVeterinaire
     Friend WithEvents gbxVetérinaires As System.Windows.Forms.GroupBox
     Friend WithEvents tbxMdp As System.Windows.Forms.TextBox
     Friend WithEvents lblVetérinaires As System.Windows.Forms.Label
+    Friend WithEvents btnAjouterVeto As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class
