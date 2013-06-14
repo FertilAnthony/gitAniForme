@@ -32,8 +32,4 @@ Public Class MgtClient
         Next
     End Sub
 
-    Sub recherCheAnimauxClient(ByVal codeClient As Guid)
-
-    End Sub
-
 End Class

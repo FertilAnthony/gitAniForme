@@ -33,8 +33,28 @@ Public Class EcranDosMedical
     End Sub
 
     Private Sub cbxClient_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbxClient.SelectedIndexChanged
+        If cbxClient.Enabled = True Then
+            majLbxAnimauxClient()
+        End If
+    End Sub
+
+
+    Private Sub radioBtnClient_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles radioBtnClient.MouseClick
+        majLbxAnimauxClient()
+    End Sub
+
+    Private Sub majLbxAnimauxClient()
         Dim client As Client = CType(cbxClient.SelectedItem, Client)
         Dim codeClient As Guid = client.CodeClient
-        MgtClient.getInstance.recherCheAnimauxClient(codeClient)
+        MgtAnimal.getInstance.rechercheAnimauxClient(codeClient)
+        lbxAnimaux.DataSource = Nothing
+        lbxAnimaux.Items.Clear()
+        lbxAnimaux.DataSource = MgtAnimal.getInstance.animauxClient
+    End Sub
+
+    Private Sub btnRadioTous_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles btnRadioTous.MouseClick
+        lbxAnimaux.DataSource = Nothing
+        lbxAnimaux.Items.Clear()
+        lbxAnimaux.DataSource = MgtAnimal.getInstance().animaux
     End Sub
 End Class
