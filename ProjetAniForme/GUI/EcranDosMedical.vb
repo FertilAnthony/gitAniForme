@@ -21,7 +21,7 @@ Public Class EcranDosMedical
     End Sub
 
     Private Sub btnDossierMed_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDossierMed.Click
-
+        EcranDossierMedical.Visible = True
     End Sub
 
     Private Sub btnRadioTous_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRadioTous.CheckedChanged

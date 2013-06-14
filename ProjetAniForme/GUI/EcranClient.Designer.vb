@@ -39,14 +39,7 @@ Partial Class EcranClient
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Button11 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.num = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nom = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.sexe = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.couleur = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.race = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.espece = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tatouage = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dataGridViewAnimauxClient = New System.Windows.Forms.DataGridView()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Button10 = New System.Windows.Forms.Button()
@@ -59,7 +52,7 @@ Partial Class EcranClient
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dataGridViewAnimauxClient, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -199,49 +192,13 @@ Partial Class EcranClient
         Me.Button11.Text = "Button11"
         Me.Button11.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'dataGridViewAnimauxClient
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.num, Me.nom, Me.sexe, Me.couleur, Me.race, Me.espece, Me.tatouage})
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 371)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(750, 150)
-        Me.DataGridView1.TabIndex = 29
-        '
-        'num
-        '
-        Me.num.HeaderText = "N°"
-        Me.num.Name = "num"
-        '
-        'nom
-        '
-        Me.nom.HeaderText = "Nom"
-        Me.nom.Name = "nom"
-        '
-        'sexe
-        '
-        Me.sexe.HeaderText = "Sexe"
-        Me.sexe.Name = "sexe"
-        '
-        'couleur
-        '
-        Me.couleur.HeaderText = "Couleur"
-        Me.couleur.Name = "couleur"
-        '
-        'race
-        '
-        Me.race.HeaderText = "Race"
-        Me.race.Name = "race"
-        '
-        'espece
-        '
-        Me.espece.HeaderText = "Espece"
-        Me.espece.Name = "espece"
-        '
-        'tatouage
-        '
-        Me.tatouage.HeaderText = "Tatouage"
-        Me.tatouage.Name = "tatouage"
+        Me.dataGridViewAnimauxClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dataGridViewAnimauxClient.Location = New System.Drawing.Point(12, 371)
+        Me.dataGridViewAnimauxClient.Name = "dataGridViewAnimauxClient"
+        Me.dataGridViewAnimauxClient.Size = New System.Drawing.Size(750, 150)
+        Me.dataGridViewAnimauxClient.TabIndex = 29
         '
         'Label9
         '
@@ -410,7 +367,7 @@ Partial Class EcranClient
         Me.ControlBox = False
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dataGridViewAnimauxClient)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.TextBox7)
@@ -442,7 +399,7 @@ Partial Class EcranClient
         Me.Name = "EcranClient"
         Me.Text = "EcranClient"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dataGridViewAnimauxClient, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -474,14 +431,7 @@ Partial Class EcranClient
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents Button11 As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents num As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents nom As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents sexe As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents couleur As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents race As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents espece As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents tatouage As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents dataGridViewAnimauxClient As System.Windows.Forms.DataGridView
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class

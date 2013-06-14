@@ -66,8 +66,13 @@
   <ItemGroup>
     <Compile Include="Agendas.vb" />
     <Compile Include="Animal.vb" />
+    <Compile Include="Bareme.vb" />
     <Compile Include="Client.vb" />
+    <Compile Include="Consultation.vb" />
     <Compile Include="Declaration.vb" />
+    <Compile Include="Facture.vb" />
+    <Compile Include="LigneConsultation.vb" />
+    <Compile Include="LigneFacture.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -84,6 +89,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Race.vb" />
+    <Compile Include="Vaccin.vb" />
     <Compile Include="Veterinaire.vb" />
   </ItemGroup>
   <ItemGroup>

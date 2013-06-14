@@ -5,7 +5,7 @@ Public Class SQLAnimal
     Private Const NOM_TABLE As String = "Animaux"
     Private Const PARAM_CODE_CLIENT As String = "@CodeClient"
 
-    Private Const REQUETE_SELECTION_TOUS As String = "select CodeAnimal, NomAnimal, Race, Espece, CodeClient from " & NOM_TABLE
+    Private Const REQUETE_SELECTION_TOUS As String = "select * from " & NOM_TABLE
     Private Const REQUETE_SELECTION_PAR_CLIENT As String = "select CodeAnimal, NomAnimal, Race, Espece, CodeClient from " & NOM_TABLE & " where CodeClient = " & PARAM_CODE_CLIENT
 
     Public Shared Function getListeAnimaux() As List(Of Animal)
