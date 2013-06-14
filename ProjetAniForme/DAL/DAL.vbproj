@@ -82,6 +82,7 @@
     </Compile>
     <Compile Include="SQLAccess.vb" />
     <Compile Include="SQLAnimal.vb" />
+    <Compile Include="SQLClient.vb" />
     <Compile Include="SQLVeterinaire.vb" />
   </ItemGroup>
   <ItemGroup>

@@ -25,12 +25,12 @@ Partial Class EcranDosMedical
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnRadioTous = New System.Windows.Forms.RadioButton()
         Me.radioBtnClient = New System.Windows.Forms.RadioButton()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.cbxClient = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnDossierMed = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.lbxAnimaux = New System.Windows.Forms.ListBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -47,7 +47,7 @@ Partial Class EcranDosMedical
         '
         Me.btnRadioTous.AutoSize = True
         Me.btnRadioTous.Checked = True
-        Me.btnRadioTous.Location = New System.Drawing.Point(363, 161)
+        Me.btnRadioTous.Location = New System.Drawing.Point(362, 162)
         Me.btnRadioTous.Name = "btnRadioTous"
         Me.btnRadioTous.Size = New System.Drawing.Size(98, 17)
         Me.btnRadioTous.TabIndex = 17
@@ -58,35 +58,27 @@ Partial Class EcranDosMedical
         'radioBtnClient
         '
         Me.radioBtnClient.AutoSize = True
-        Me.radioBtnClient.Location = New System.Drawing.Point(363, 184)
+        Me.radioBtnClient.Location = New System.Drawing.Point(362, 185)
         Me.radioBtnClient.Name = "radioBtnClient"
         Me.radioBtnClient.Size = New System.Drawing.Size(69, 17)
         Me.radioBtnClient.TabIndex = 18
         Me.radioBtnClient.Text = "Par client"
         Me.radioBtnClient.UseVisualStyleBackColor = True
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(372, 213)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(33, 13)
-        Me.Label3.TabIndex = 20
-        Me.Label3.Text = "Client"
-        '
         'cbxClient
         '
         Me.cbxClient.FormattingEnabled = True
-        Me.cbxClient.Location = New System.Drawing.Point(375, 229)
+        Me.cbxClient.Location = New System.Drawing.Point(15, 23)
         Me.cbxClient.Name = "cbxClient"
         Me.cbxClient.Size = New System.Drawing.Size(163, 21)
         Me.cbxClient.TabIndex = 21
         '
         'GroupBox1
         '
-        Me.GroupBox1.Location = New System.Drawing.Point(348, 184)
+        Me.GroupBox1.Controls.Add(Me.cbxClient)
+        Me.GroupBox1.Location = New System.Drawing.Point(348, 188)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(207, 88)
+        Me.GroupBox1.Size = New System.Drawing.Size(207, 66)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
         '
@@ -134,8 +126,6 @@ Partial Class EcranDosMedical
         Me.ControlBox = False
         Me.Controls.Add(Me.lbxAnimaux)
         Me.Controls.Add(Me.btnDossierMed)
-        Me.Controls.Add(Me.cbxClient)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.radioBtnClient)
         Me.Controls.Add(Me.btnRadioTous)
         Me.Controls.Add(Me.Label1)
@@ -144,6 +134,7 @@ Partial Class EcranDosMedical
         Me.Name = "EcranDosMedical"
         Me.Text = "EcranDosMedical"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -152,7 +143,6 @@ Partial Class EcranDosMedical
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnRadioTous As System.Windows.Forms.RadioButton
     Friend WithEvents radioBtnClient As System.Windows.Forms.RadioButton
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents cbxClient As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents btnDossierMed As System.Windows.Forms.Button

@@ -135,6 +135,7 @@
                    ByVal adresse2 As String,
                    ByVal codePostal As String,
                    ByVal ville As String,
+                   ByVal numTel As String,
                    ByVal assurance As String,
                    ByVal email As String,
                    ByVal archive As Boolean,
@@ -147,13 +148,29 @@
         Me.Adresse2 = adresse2
         Me.CodePostal = codePostal
         Me.Ville = ville
-        Me.Assurance = assurance
-        Me.Email = email
-        Me.Archive = archive
-        Me.Remarque = remarque
+        Me.NumTel = numTel
+        Me.Assurance = Assurance
+        Me.Email = Email
+        Me.Archive = Archive
+        Me.Remarque = Remarque
 
     End Sub
 
+    Public Sub New(ByVal codeClient As Guid,
+                   ByVal nomClient As String,
+                   ByVal prenomClient As String)
+
+        Me.CodeClient = codeClient
+        Me.NomClient = nomClient
+        Me.PrenomClient = prenomClient
+    End Sub
+
+#End Region
+
+#Region "Méthodes d'instance"
+    Public Overrides Function ToString() As String
+        Return NomClient & " " & PrenomClient
+    End Function
 #End Region
 
 End Class

@@ -1,11 +1,12 @@
 ﻿Imports BLL
+Imports BO
 
 Public Class EcranDosMedical
 
 #Region "Initialisation"
     Private Sub EcranPrincipal_Shown(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Shown
         lbxAnimaux.DataSource = MgtAnimal.getInstance().animaux
-        cbxClient.DataSource = MgtVeterinaire.getInstance().veterinaires
+        cbxClient.DataSource = MgtClient.getInstance().clients
     End Sub
 #End Region
 
@@ -29,5 +30,11 @@ Public Class EcranDosMedical
         Else
             cbxClient.Enabled = True
         End If
+    End Sub
+
+    Private Sub cbxClient_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbxClient.SelectedIndexChanged
+        Dim client As Client = CType(cbxClient.SelectedItem, Client)
+        Dim codeClient As Guid = client.CodeClient
+        MgtClient.getInstance.recherCheAnimauxClient(codeClient)
     End Sub
 End Class
