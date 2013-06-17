@@ -111,4 +111,25 @@ Public Class EcranAnimaux
 
         End If
     End Sub
+
+    Private Sub btnModif_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModif.Click
+        Dim codeAnimal As Guid = New Guid(tbxCodeAnimal.Text)
+        Dim nomAnimal As String = tbxNomAnimal.Text
+        Dim couleurAnimal As String = tbxCouleurAnimal.Text
+        Dim tatouageAnimal As String = tbxTatouageAnimal.Text
+        Dim raceAnimal As String = cbxRaceAnimal.SelectedItem.ToString()
+        Dim especeAnimal As String = cbxEspeceAnimal.SelectedItem.ToString()
+        Dim sexe As Integer = cbxSexeAnimal.SelectedIndex
+        Dim sexeAnimal As String
+        If sexe = 1 Then
+            sexeAnimal = "M"
+        ElseIf sexe = 1 Then
+            sexeAnimal = "F"
+        Else
+            sexeAnimal = "H"
+        End If
+
+        MgtAnimal.getInstance().modifier(codeAnimal, nomAnimal, couleurAnimal, sexeAnimal, tatouageAnimal, raceAnimal, especeAnimal)
+        DialogAjoutAnimal.majDataGridView()
+    End Sub
 End Class

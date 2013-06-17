@@ -19,6 +19,7 @@ Public Class SQLAnimal
     Private Const REQUETE_SELECTION_RACE As String = "select * from " & TABLE_RACE
     Private Const REQUETE_AJOUT As String = "insert into " & NOM_TABLE & " (CodeAnimal, NomAnimal, Sexe, Couleur, Race, Espece, CodeClient, Tatouage, Archive) VALUES(" & PARAM_CODE_ANIMAL & ", " & PARAM_NOM_ANIMAL & ", " & PARAM_SEXE & ", " & PARAM_COULEUR & ", " & PARAM_RACE & ", " & PARAM_ESPECE & ", " & PARAM_CODE_CLIENT & ", " & PARAM_TATOUAGE & ", " & PARAM_ARCHIVE & ")"
     Private Const REQUETE_SUPPR As String = "delete from " & NOM_TABLE & " where codeAnimal = " & PARAM_CODE_ANIMAL
+    Private Const REQUETE_UPDATE As String = "update " & NOM_TABLE & " set NomAnimal = " & PARAM_NOM_ANIMAL & ", Couleur = " & PARAM_COULEUR & ", Sexe = " & PARAM_SEXE & ", Race = " & PARAM_RACE & ", Espece = " & PARAM_ESPECE & ", Tatouage = " & PARAM_TATOUAGE & " where CodeAnimal = " & PARAM_CODE_ANIMAL
 
     Public Shared Function getListeAnimaux() As List(Of Animal)
         getListeAnimaux = New List(Of Animal)
@@ -131,6 +132,29 @@ Public Class SQLAnimal
                 Throw New ApplicationException("Animal introuvable")
             ElseIf nbModif > 1 Then
                 Throw New ApplicationException(String.Format("Erreur lors de la suppression des données : {0} lignes ont été supprimées.", nbModif))
+            End If
+        Catch ex As System.InvalidOperationException
+            Throw New ApplicationException("Une erreur est survenue lors de l'accès à la base")
+        End Try
+    End Sub
+
+    Shared Sub modifier(ByVal a As Animal)
+        Try
+            Dim cmd As IDbCommand = SQLAccess.creerCommande(REQUETE_UPDATE)
+            SQLAccess.initialiserParametre(cmd, PARAM_CODE_ANIMAL, a.CodeAnimal.ToString)
+            SQLAccess.initialiserParametre(cmd, PARAM_NOM_ANIMAL, a.NomAnimal)
+            SQLAccess.initialiserParametre(cmd, PARAM_SEXE, a.Sexe)
+            SQLAccess.initialiserParametre(cmd, PARAM_COULEUR, a.Couleur)
+            SQLAccess.initialiserParametre(cmd, PARAM_RACE, a.Race)
+            SQLAccess.initialiserParametre(cmd, PARAM_ESPECE, a.Espece)
+            SQLAccess.initialiserParametre(cmd, PARAM_TATOUAGE, a.Tatouage)
+
+            Dim nbModif As Integer = cmd.ExecuteNonQuery()
+
+            If nbModif < 1 Then
+                Throw New ApplicationException("Aucune ligne n'a été modifiée")
+            ElseIf nbModif > 1 Then
+                Throw New ApplicationException(String.Format("Erreur lors de la modification des données : {0} lignes ont été modifiées.", nbModif))
             End If
         Catch ex As System.InvalidOperationException
             Throw New ApplicationException("Une erreur est survenue lors de l'accès à la base")

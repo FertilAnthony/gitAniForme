@@ -23,7 +23,7 @@ Partial Class EcranAnimaux
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnAjouterAnimal = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnModif = New System.Windows.Forms.Button()
         Me.btnSupprimerAnimal = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -76,19 +76,19 @@ Partial Class EcranAnimaux
         Me.btnAjouterAnimal.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnAjouterAnimal.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnModif
         '
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Image = Global.GUI.My.Resources.Resources.filesave
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.Location = New System.Drawing.Point(74, 12)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(67, 51)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Enregistrer"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnModif.FlatAppearance.BorderSize = 0
+        Me.btnModif.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModif.Image = Global.GUI.My.Resources.Resources.filesave
+        Me.btnModif.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnModif.Location = New System.Drawing.Point(74, 12)
+        Me.btnModif.Name = "btnModif"
+        Me.btnModif.Size = New System.Drawing.Size(67, 51)
+        Me.btnModif.TabIndex = 3
+        Me.btnModif.Text = "Enregistrer"
+        Me.btnModif.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnModif.UseVisualStyleBackColor = True
         '
         'btnSupprimerAnimal
         '
@@ -453,7 +453,7 @@ Partial Class EcranAnimaux
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.btnSupprimerAnimal)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnModif)
         Me.Controls.Add(Me.btnAjouterAnimal)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
@@ -471,7 +471,7 @@ Partial Class EcranAnimaux
 
     End Sub
     Friend WithEvents btnAjouterAnimal As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnModif As System.Windows.Forms.Button
     Friend WithEvents btnSupprimerAnimal As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button

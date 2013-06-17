@@ -86,4 +86,38 @@ Public Class MgtAnimal
         animaux.Remove(a)
     End Sub
 
+    Sub modifier(ByVal codeAnimal As Guid, ByVal nomAnimal As String, ByVal couleurAnimal As String, ByVal sexeAnimal As String, ByVal tatouageAnimal As String, ByVal raceAnimal As String, ByVal especeAnimal As String)
+        Dim a As Animal = ObtenirAnimal(codeAnimal)
+
+        If _listAnimaux.Contains(a) Then
+            Dim oldNomAnimal As String = nomAnimal
+            Dim oldCouleur As String = couleurAnimal
+            Dim oldSexe As String = sexeAnimal
+            Dim oldTatouage As String = tatouageAnimal
+            Dim oldRace As String = raceAnimal
+            Dim oldEspece As String = especeAnimal
+            Try
+                a.NomAnimal = nomAnimal
+                a.Couleur = couleurAnimal
+                a.Sexe = CChar(sexeAnimal)
+                a.Tatouage = tatouageAnimal
+                a.Race = raceAnimal
+                a.Espece = especeAnimal
+                SQLAnimal.modifier(a)
+            Catch ex As Exception
+                With a
+                    .NomAnimal = oldNomAnimal
+                    .Couleur = oldCouleur
+                    .Sexe = CChar(oldSexe)
+                    .Tatouage = oldTatouage
+                    .Race = oldRace
+                    .Espece = oldEspece
+                    Throw New ApplicationException(ex.Message)
+                End With
+            End Try
+        Else
+            Throw New ApplicationException("L'instance à modifier n'appartient pas à la liste courante de l'application.")
+        End If
+    End Sub
+
 End Class
