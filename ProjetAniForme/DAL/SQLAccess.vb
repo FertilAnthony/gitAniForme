@@ -20,6 +20,18 @@ Public Class SQLAccess
         End Set
     End Property
 
+    Private Shared Function getConnection() As IDbConnection
+        If (Connection Is Nothing OrElse Connection.State <> ConnectionState.Open) Then
+            'Rechercher les informations du type de base et de la chaîne de connexion dans le fichier de config
+            'Pensez à ajouter en référence l'assembly System.Configuration
+            Dim setting As ConnectionStringSettings = ConfigurationManager.ConnectionStrings("cnxBDD")
+            Connection = DbProviderFactories.GetFactory(setting.ProviderName).CreateConnection()
+            Connection.ConnectionString = setting.ConnectionString
+            Connection.Open()
+        End If
+        Return Connection
+    End Function
+
     Shared Sub seDeconnecter()
         If (_connection Is Nothing OrElse _connection.State <> ConnectionState.Closed) Then
             _connection.Close()
@@ -48,4 +60,22 @@ Public Class SQLAccess
         cmd.Parameters.Add(param)
     End Sub
 
+    Public Shared Sub creerParametre(ByVal cmd As IDbCommand,
+                          ByVal nomParametre As String,
+                          ByVal valeur As Object,
+                          Optional ByVal typeParametre As DbType = DbType.String)
+        Dim param As IDbDataParameter = cmd.CreateParameter()
+        param.ParameterName = nomParametre
+        If (valeur IsNot Nothing) Then
+            param.Value = valeur
+        Else
+            param.Value = DBNull.Value
+        End If
+        param.DbType = typeParametre
+        cmd.Parameters.Add(param)
+    End Sub
+
+    Public Shared Function creerTransaction() As IDbTransaction
+        Return SQLAccess.getConnection().BeginTransaction()
+    End Function
 End Class

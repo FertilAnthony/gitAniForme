@@ -24,11 +24,11 @@ Public Class SQLAnimal
             Dim CodeClient As Guid = reader.GetGuid(reader.GetOrdinal("CodeClient"))
             Dim Tatouage As String = Nothing
             If (Not reader.IsDBNull(reader.GetOrdinal("Tatouage"))) Then
-                Tatouage = reader.GetString(reader.GetOrdinal("Sexe"))
+                Tatouage = reader.GetString(reader.GetOrdinal("Tatouage"))
             End If
             Dim Antecedent As String = Nothing
             If (Not reader.IsDBNull(reader.GetOrdinal("Antecedents"))) Then
-                Antecedent = reader.GetString(reader.GetOrdinal("Tatouage"))
+                Antecedent = reader.GetString(reader.GetOrdinal("Antecedents"))
             End If
             Dim Archive As Boolean = reader.GetBoolean(reader.GetOrdinal("Archive"))
             Dim a As New Animal(CodeAnimal, NomAnimal, CChar(SexeAnimal), Couleur, Race, Espece, CodeClient, Tatouage, Archive, Antecedent)
