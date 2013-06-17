@@ -70,10 +70,10 @@ Partial Class DialogSupprVeterinaire
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(123, 42)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(230, 26)
+        Me.Label1.Size = New System.Drawing.Size(232, 26)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Voulez-vous vraiment supprimer cet utilisateur ?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Cette action est irréversible ." & _
-            ".."
+        Me.Label1.Text = "Voulez-vous vraiment supprimer ce vétérinaire ?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Cette action est irréversible .." & _
+            "."
         '
         'PictureBox1
         '

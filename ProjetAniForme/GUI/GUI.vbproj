@@ -73,6 +73,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DialogAjoutAnimal.Designer.vb">
+      <DependentUpon>DialogAjoutAnimal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogAjoutAnimal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DialogAjoutVeterinaire.Designer.vb">
       <DependentUpon>DialogAjoutVeterinaire.vb</DependentUpon>
     </Compile>
@@ -83,6 +89,12 @@
       <DependentUpon>DialogModifVeterinaire.vb</DependentUpon>
     </Compile>
     <Compile Include="DialogModifVeterinaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogSupprAnimal.Designer.vb">
+      <DependentUpon>DialogSupprAnimal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogSupprAnimal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DialogSupprVeterinaire.Designer.vb">
@@ -163,11 +175,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DialogAjoutAnimal.resx">
+      <DependentUpon>DialogAjoutAnimal.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogAjoutVeterinaire.resx">
       <DependentUpon>DialogAjoutVeterinaire.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogModifVeterinaire.resx">
       <DependentUpon>DialogModifVeterinaire.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogSupprAnimal.resx">
+      <DependentUpon>DialogSupprAnimal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogSupprVeterinaire.resx">
       <DependentUpon>DialogSupprVeterinaire.vb</DependentUpon>

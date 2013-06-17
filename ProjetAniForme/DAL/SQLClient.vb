@@ -14,7 +14,7 @@ Public Class SQLClient
         While reader.Read()
             Dim remarque As String = Nothing
             If (Not reader.IsDBNull(reader.GetOrdinal("Remarque"))) Then
-                remarque = reader.GetString(reader.GetOrdinal("Tatouage"))
+                remarque = reader.GetString(reader.GetOrdinal("Remarque"))
             End If
             Dim c As Client = New Client(reader.GetGuid(reader.GetOrdinal("CodeClient")),
                                          reader.GetString(reader.GetOrdinal("NomClient")),

@@ -157,4 +157,13 @@
     End Function
 #End Region
 
+#Region "Méthodes de classe"
+    Shared Sub verifCode(ByVal codeAnimal As Guid)
+        If codeAnimal = Nothing Then
+            Throw New Exception("L'identifiant ne doit pas être vide")
+        End If
+    End Sub
+
+#End Region
+
 End Class

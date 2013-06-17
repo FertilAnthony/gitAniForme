@@ -6,6 +6,7 @@ Public Class MgtAnimal
 
     Private _listAnimaux As New BindingList(Of Animal)
     Private _listAnimauxClient As New BindingList(Of Animal)
+    Private _race As New BindingList(Of Race)
 
 #Region "Pattern de singleton"
     Private Shared _instance As New MgtAnimal()
@@ -30,6 +31,12 @@ Public Class MgtAnimal
             Return _listAnimauxClient
         End Get
     End Property
+
+    ReadOnly Property raceAnimaux As BindingList(Of Race)
+        Get
+            Return _race
+        End Get
+    End Property
 #End Region
 
     Sub initialiserDonnees()
@@ -45,6 +52,38 @@ Public Class MgtAnimal
         For Each a As Animal In listAnimauxClient
             _listAnimauxClient.Add(a)
         Next
+    End Sub
+
+    Sub getAllraceAnimaux()
+        Dim raceAnimaux As List(Of Race) = SQLAnimal.getRaceAnimal()
+        For Each r As Race In raceAnimaux
+            _race.Add(r)
+        Next
+    End Sub
+
+    Public Function ObtenirAnimal(ByVal codeAnimal As Guid) As Animal
+        Dim retourAnimal As Animal = Nothing
+        '
+        ' Vérifier que le code proposé est un code d'animal valide
+        '
+        Animal.verifCode(codeAnimal)
+        '
+        ' Pas d'erreur, on recherche dans la liste l'animal possédant 
+        ' ce code. S'il n'est pas trouvé la variable reste Nothing.
+        '
+        retourAnimal = _listAnimaux.ToList.Find(Function(a As Animal) a.CodeAnimal.Equals(codeAnimal))
+
+        Return retourAnimal
+    End Function
+
+    Sub ajout(ByVal a As Animal)
+        SQLAnimal.ajouterAnimal(a)
+        animaux.Add(a)
+    End Sub
+
+    Sub supprimer(ByVal a As Animal)
+        SQLAnimal.supprimer(a)
+        animaux.Remove(a)
     End Sub
 
 End Class

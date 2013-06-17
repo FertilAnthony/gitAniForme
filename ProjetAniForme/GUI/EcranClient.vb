@@ -7,10 +7,6 @@ Public Class EcranClient
         Me.Visible = True
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dataGridViewAnimauxClient.CellContentClick
-
-    End Sub
-
     Private Sub Button9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button9.Click
 
         Me.Visible = False

@@ -22,9 +22,9 @@ Partial Class EcranAnimaux
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnAjouterAnimal = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnSupprimerAnimal = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -34,24 +34,17 @@ Partial Class EcranAnimaux
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.tbxCodeClient = New System.Windows.Forms.TextBox()
+        Me.tbxNomClient = New System.Windows.Forms.TextBox()
+        Me.tbxPrenomClient = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.num = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nom = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.sexe = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.couleur = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.race = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.espece = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tatouage = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.tbxTatouageAnimal = New System.Windows.Forms.TextBox()
+        Me.tbxCouleurAnimal = New System.Windows.Forms.TextBox()
+        Me.tbxNomAnimal = New System.Windows.Forms.TextBox()
+        Me.tbxCodeAnimal = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -59,9 +52,9 @@ Partial Class EcranAnimaux
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.cbxEspeceAnimal = New System.Windows.Forms.ComboBox()
+        Me.cbxRaceAnimal = New System.Windows.Forms.ComboBox()
+        Me.cbxSexeAnimal = New System.Windows.Forms.ComboBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button10 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,19 +62,19 @@ Partial Class EcranAnimaux
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnAjouterAnimal
         '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = Global.GUI.My.Resources.Resources.add
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(67, 51)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Ajouter"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAjouterAnimal.FlatAppearance.BorderSize = 0
+        Me.btnAjouterAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAjouterAnimal.Image = Global.GUI.My.Resources.Resources.add
+        Me.btnAjouterAnimal.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnAjouterAnimal.Location = New System.Drawing.Point(12, 12)
+        Me.btnAjouterAnimal.Name = "btnAjouterAnimal"
+        Me.btnAjouterAnimal.Size = New System.Drawing.Size(67, 51)
+        Me.btnAjouterAnimal.TabIndex = 2
+        Me.btnAjouterAnimal.Text = "Ajouter"
+        Me.btnAjouterAnimal.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnAjouterAnimal.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -97,19 +90,19 @@ Partial Class EcranAnimaux
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnSupprimerAnimal
         '
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Image = Global.GUI.My.Resources.Resources.edittrash
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.Location = New System.Drawing.Point(136, 12)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(67, 51)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Supprimer"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnSupprimerAnimal.FlatAppearance.BorderSize = 0
+        Me.btnSupprimerAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSupprimerAnimal.Image = Global.GUI.My.Resources.Resources.edittrash
+        Me.btnSupprimerAnimal.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnSupprimerAnimal.Location = New System.Drawing.Point(136, 12)
+        Me.btnSupprimerAnimal.Name = "btnSupprimerAnimal"
+        Me.btnSupprimerAnimal.Size = New System.Drawing.Size(67, 51)
+        Me.btnSupprimerAnimal.TabIndex = 4
+        Me.btnSupprimerAnimal.Text = "Supprimer"
+        Me.btnSupprimerAnimal.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnSupprimerAnimal.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -222,70 +215,37 @@ Partial Class EcranAnimaux
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Prénom :"
         '
-        'TextBox1
+        'tbxCodeClient
         '
-        Me.TextBox1.Location = New System.Drawing.Point(78, 40)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox1.TabIndex = 20
+        Me.tbxCodeClient.Location = New System.Drawing.Point(78, 40)
+        Me.tbxCodeClient.Name = "tbxCodeClient"
+        Me.tbxCodeClient.ReadOnly = True
+        Me.tbxCodeClient.Size = New System.Drawing.Size(204, 20)
+        Me.tbxCodeClient.TabIndex = 20
         '
-        'TextBox2
+        'tbxNomClient
         '
-        Me.TextBox2.Location = New System.Drawing.Point(345, 26)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox2.TabIndex = 21
+        Me.tbxNomClient.Location = New System.Drawing.Point(345, 26)
+        Me.tbxNomClient.Name = "tbxNomClient"
+        Me.tbxNomClient.ReadOnly = True
+        Me.tbxNomClient.Size = New System.Drawing.Size(204, 20)
+        Me.tbxNomClient.TabIndex = 21
         '
-        'TextBox3
+        'tbxPrenomClient
         '
-        Me.TextBox3.Location = New System.Drawing.Point(345, 69)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox3.TabIndex = 22
+        Me.tbxPrenomClient.Location = New System.Drawing.Point(345, 69)
+        Me.tbxPrenomClient.Name = "tbxPrenomClient"
+        Me.tbxPrenomClient.ReadOnly = True
+        Me.tbxPrenomClient.Size = New System.Drawing.Size(204, 20)
+        Me.tbxPrenomClient.TabIndex = 22
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.num, Me.nom, Me.sexe, Me.couleur, Me.race, Me.espece, Me.tatouage})
         Me.DataGridView1.Location = New System.Drawing.Point(12, 400)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(750, 150)
         Me.DataGridView1.TabIndex = 29
-        '
-        'num
-        '
-        Me.num.HeaderText = "N°"
-        Me.num.Name = "num"
-        '
-        'nom
-        '
-        Me.nom.HeaderText = "Nom"
-        Me.nom.Name = "nom"
-        '
-        'sexe
-        '
-        Me.sexe.HeaderText = "Sexe"
-        Me.sexe.Name = "sexe"
-        '
-        'couleur
-        '
-        Me.couleur.HeaderText = "Couleur"
-        Me.couleur.Name = "couleur"
-        '
-        'race
-        '
-        Me.race.HeaderText = "Race"
-        Me.race.Name = "race"
-        '
-        'espece
-        '
-        Me.espece.HeaderText = "Espece"
-        Me.espece.Name = "espece"
-        '
-        'tatouage
-        '
-        Me.tatouage.HeaderText = "Tatouage"
-        Me.tatouage.Name = "tatouage"
         '
         'Label9
         '
@@ -309,11 +269,11 @@ Partial Class EcranAnimaux
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.tbxCodeClient)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.tbxNomClient)
+        Me.GroupBox1.Controls.Add(Me.tbxPrenomClient)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 106)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(661, 100)
@@ -321,33 +281,34 @@ Partial Class EcranAnimaux
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Client"
         '
-        'TextBox4
+        'tbxTatouageAnimal
         '
-        Me.TextBox4.Location = New System.Drawing.Point(78, 124)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox4.TabIndex = 33
+        Me.tbxTatouageAnimal.Location = New System.Drawing.Point(80, 124)
+        Me.tbxTatouageAnimal.Name = "tbxTatouageAnimal"
+        Me.tbxTatouageAnimal.Size = New System.Drawing.Size(204, 20)
+        Me.tbxTatouageAnimal.TabIndex = 33
         '
-        'TextBox5
+        'tbxCouleurAnimal
         '
-        Me.TextBox5.Location = New System.Drawing.Point(78, 72)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox5.TabIndex = 34
+        Me.tbxCouleurAnimal.Location = New System.Drawing.Point(80, 72)
+        Me.tbxCouleurAnimal.Name = "tbxCouleurAnimal"
+        Me.tbxCouleurAnimal.Size = New System.Drawing.Size(204, 20)
+        Me.tbxCouleurAnimal.TabIndex = 34
         '
-        'TextBox6
+        'tbxNomAnimal
         '
-        Me.TextBox6.Location = New System.Drawing.Point(78, 47)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox6.TabIndex = 35
+        Me.tbxNomAnimal.Location = New System.Drawing.Point(80, 47)
+        Me.tbxNomAnimal.Name = "tbxNomAnimal"
+        Me.tbxNomAnimal.Size = New System.Drawing.Size(204, 20)
+        Me.tbxNomAnimal.TabIndex = 35
         '
-        'TextBox7
+        'tbxCodeAnimal
         '
-        Me.TextBox7.Location = New System.Drawing.Point(78, 19)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox7.TabIndex = 36
+        Me.tbxCodeAnimal.Location = New System.Drawing.Point(78, 19)
+        Me.tbxCodeAnimal.Name = "tbxCodeAnimal"
+        Me.tbxCodeAnimal.ReadOnly = True
+        Me.tbxCodeAnimal.Size = New System.Drawing.Size(204, 20)
+        Me.tbxCodeAnimal.TabIndex = 36
         '
         'Label4
         '
@@ -412,40 +373,41 @@ Partial Class EcranAnimaux
         Me.Label12.TabIndex = 43
         Me.Label12.Text = "Code :"
         '
-        'ComboBox1
+        'cbxEspeceAnimal
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(78, 97)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(204, 21)
-        Me.ComboBox1.TabIndex = 44
+        Me.cbxEspeceAnimal.FormattingEnabled = True
+        Me.cbxEspeceAnimal.Location = New System.Drawing.Point(80, 97)
+        Me.cbxEspeceAnimal.Name = "cbxEspeceAnimal"
+        Me.cbxEspeceAnimal.Size = New System.Drawing.Size(204, 21)
+        Me.cbxEspeceAnimal.TabIndex = 44
         '
-        'ComboBox2
+        'cbxRaceAnimal
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(345, 91)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 45
+        Me.cbxRaceAnimal.FormattingEnabled = True
+        Me.cbxRaceAnimal.Location = New System.Drawing.Point(347, 91)
+        Me.cbxRaceAnimal.Name = "cbxRaceAnimal"
+        Me.cbxRaceAnimal.Size = New System.Drawing.Size(121, 21)
+        Me.cbxRaceAnimal.TabIndex = 45
         '
-        'ComboBox3
+        'cbxSexeAnimal
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(345, 44)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox3.TabIndex = 46
+        Me.cbxSexeAnimal.FormattingEnabled = True
+        Me.cbxSexeAnimal.Items.AddRange(New Object() {"Sélectionnez ...", "Mâle - (M)", "Femelle - (F)", "Hemaphrodite - (H)"})
+        Me.cbxSexeAnimal.Location = New System.Drawing.Point(347, 44)
+        Me.cbxSexeAnimal.Name = "cbxSexeAnimal"
+        Me.cbxSexeAnimal.Size = New System.Drawing.Size(121, 21)
+        Me.cbxSexeAnimal.TabIndex = 46
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.ComboBox2)
-        Me.GroupBox2.Controls.Add(Me.ComboBox3)
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
-        Me.GroupBox2.Controls.Add(Me.TextBox6)
-        Me.GroupBox2.Controls.Add(Me.ComboBox1)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 212)
+        Me.GroupBox2.Controls.Add(Me.cbxRaceAnimal)
+        Me.GroupBox2.Controls.Add(Me.cbxSexeAnimal)
+        Me.GroupBox2.Controls.Add(Me.tbxCodeAnimal)
+        Me.GroupBox2.Controls.Add(Me.tbxNomAnimal)
+        Me.GroupBox2.Controls.Add(Me.cbxEspeceAnimal)
+        Me.GroupBox2.Controls.Add(Me.tbxCouleurAnimal)
+        Me.GroupBox2.Controls.Add(Me.tbxTatouageAnimal)
+        Me.GroupBox2.Location = New System.Drawing.Point(11, 212)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(661, 169)
         Me.GroupBox2.TabIndex = 47
@@ -490,9 +452,9 @@ Partial Class EcranAnimaux
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnSupprimerAnimal)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnAjouterAnimal)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -508,9 +470,9 @@ Partial Class EcranAnimaux
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnAjouterAnimal As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnSupprimerAnimal As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
@@ -520,24 +482,17 @@ Partial Class EcranAnimaux
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents tbxCodeClient As System.Windows.Forms.TextBox
+    Friend WithEvents tbxNomClient As System.Windows.Forms.TextBox
+    Friend WithEvents tbxPrenomClient As System.Windows.Forms.TextBox
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents num As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents nom As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents sexe As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents couleur As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents race As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents espece As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents tatouage As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents tbxTatouageAnimal As System.Windows.Forms.TextBox
+    Friend WithEvents tbxCouleurAnimal As System.Windows.Forms.TextBox
+    Friend WithEvents tbxNomAnimal As System.Windows.Forms.TextBox
+    Friend WithEvents tbxCodeAnimal As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -545,9 +500,9 @@ Partial Class EcranAnimaux
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxEspeceAnimal As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxRaceAnimal As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxSexeAnimal As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Button10 As System.Windows.Forms.Button
 End Class

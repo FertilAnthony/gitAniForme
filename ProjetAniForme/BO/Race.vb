@@ -1,4 +1,4 @@
-﻿Public MustInherit Class Race
+﻿Public Class Race
 
 #Region "Attributs"
 
