@@ -132,4 +132,25 @@ Public Class EcranAnimaux
         MgtAnimal.getInstance().modifier(codeAnimal, nomAnimal, couleurAnimal, sexeAnimal, tatouageAnimal, raceAnimal, especeAnimal)
         DialogAjoutAnimal.majDataGridView()
     End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        Dim codeAnimal As Guid = New Guid(tbxCodeAnimal.Text)
+        Dim a As Animal = MgtAnimal.getInstance().ObtenirAnimal(codeAnimal)
+        tbxNomAnimal.Text = a.NomAnimal
+        tbxCouleurAnimal.Text = a.Couleur
+        tbxTatouageAnimal.Text = a.Tatouage
+        cbxEspeceAnimal.SelectedItem = a.Espece
+        cbxRaceAnimal.SelectedItem = a.Race
+
+        Select Case a.Sexe
+            Case "M".ToCharArray
+                cbxSexeAnimal.SelectedIndex = 1
+            Case "F".ToCharArray
+                cbxSexeAnimal.SelectedIndex = 2
+            Case "H".ToCharArray
+                cbxSexeAnimal.SelectedIndex = 3
+            Case Else
+                cbxSexeAnimal.SelectedIndex = 0
+        End Select
+    End Sub
 End Class
