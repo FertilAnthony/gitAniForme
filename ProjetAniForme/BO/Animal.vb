@@ -5,9 +5,9 @@
 
     Private _codeAnimal As Guid
     Private _nomAnimal As String
-    Private _sexe As SexeAnimal
+    Private _sexe As Char
     Private _couleur As String
-    Private _race As String
+    Private _race As Race
     Private _espece As String
     Private _codeClient As Guid
     Private _tatouage As String
@@ -36,12 +36,13 @@
         End Set
     End Property
 
-    Public Property Sexe() As SexeAnimal
+    Public Property Sexe() As Char
         Get
             Return _sexe
         End Get
-        Set(ByVal sexe As SexeAnimal)
-            _sexe = Sexe
+        Set(ByVal sexe As Char)
+            'verifSexe(sexe)
+            _sexe = sexe
         End Set
     End Property
 
@@ -68,7 +69,11 @@
             Return _tatouage
         End Get
         Set(ByVal tatouage As String)
-            _tatouage = tatouage
+            If String.IsNullOrEmpty(tatouage) Then
+                _tatouage = ""
+            Else
+                _tatouage = tatouage
+            End If
         End Set
     End Property
 
@@ -77,7 +82,11 @@
             Return _antecedents
         End Get
         Set(ByVal antecedents As String)
-            _antecedents = antecedents
+            If String.IsNullOrEmpty(antecedents) Then
+                _antecedents = ""
+            Else
+                _antecedents = antecedents
+            End If
         End Set
     End Property
 
@@ -94,18 +103,12 @@
 
 #Region "Contrôles"
 
-    Shared Function sexeAnimal(ByVal sexeEnum As SexeAnimal) As String
-        Dim sexe As String = Nothing
+    Shared Sub verifSexe(ByVal sexe As Char)
 
-        If sexeEnum = 0 Then
-            sexe = "M"
-        ElseIf sexeEnum = 1 Then
-            sexe = "F"
-        Else
-            sexe = "H"
+        If sexe <> "M" Or sexe <> "F" Or sexe <> "H" Then
+            Throw New ApplicationException("Il y a une erreur pour le sexe de votre animal : M, F ou H")
         End If
-        Return sexe
-    End Function
+    End Sub
 
 #End Region
 
@@ -113,7 +116,7 @@
 
     Public Sub New(ByVal codeAnimal As Guid,
                    ByVal nomAnimal As String,
-                   ByVal sexe As SexeAnimal,
+                   ByVal sexe As Char,
                    ByVal couleur As String,
                    ByVal race As String,
                    ByVal espece As String,

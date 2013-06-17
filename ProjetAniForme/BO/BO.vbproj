@@ -69,7 +69,6 @@
     <Compile Include="Bareme.vb" />
     <Compile Include="Client.vb" />
     <Compile Include="Consultation.vb" />
-    <Compile Include="Declaration.vb" />
     <Compile Include="Facture.vb" />
     <Compile Include="LigneConsultation.vb" />
     <Compile Include="LigneFacture.vb" />

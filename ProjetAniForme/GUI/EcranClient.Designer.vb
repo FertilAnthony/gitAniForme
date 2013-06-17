@@ -30,14 +30,14 @@ Partial Class EcranClient
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.tbxCodeClient = New System.Windows.Forms.TextBox()
+        Me.tbxNomClient = New System.Windows.Forms.TextBox()
+        Me.tbxPrenomClient = New System.Windows.Forms.TextBox()
+        Me.tbxAdresseClient = New System.Windows.Forms.TextBox()
+        Me.tbxCpClient = New System.Windows.Forms.TextBox()
+        Me.tbxVilleClient = New System.Windows.Forms.TextBox()
+        Me.tbxAssuranceClient = New System.Windows.Forms.TextBox()
+        Me.tbxEmailClient = New System.Windows.Forms.TextBox()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.dataGridViewAnimauxClient = New System.Windows.Forms.DataGridView()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -127,61 +127,62 @@ Partial Class EcranClient
         Me.Label8.TabIndex = 19
         Me.Label8.Text = "Email :"
         '
-        'TextBox1
+        'tbxCodeClient
         '
-        Me.TextBox1.Location = New System.Drawing.Point(108, 129)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(166, 20)
-        Me.TextBox1.TabIndex = 20
+        Me.tbxCodeClient.Location = New System.Drawing.Point(108, 129)
+        Me.tbxCodeClient.Name = "tbxCodeClient"
+        Me.tbxCodeClient.ReadOnly = True
+        Me.tbxCodeClient.Size = New System.Drawing.Size(166, 20)
+        Me.tbxCodeClient.TabIndex = 20
         '
-        'TextBox2
+        'tbxNomClient
         '
-        Me.TextBox2.Location = New System.Drawing.Point(108, 151)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox2.TabIndex = 21
+        Me.tbxNomClient.Location = New System.Drawing.Point(108, 151)
+        Me.tbxNomClient.Name = "tbxNomClient"
+        Me.tbxNomClient.Size = New System.Drawing.Size(204, 20)
+        Me.tbxNomClient.TabIndex = 21
         '
-        'TextBox3
+        'tbxPrenomClient
         '
-        Me.TextBox3.Location = New System.Drawing.Point(108, 175)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox3.TabIndex = 22
+        Me.tbxPrenomClient.Location = New System.Drawing.Point(108, 175)
+        Me.tbxPrenomClient.Name = "tbxPrenomClient"
+        Me.tbxPrenomClient.Size = New System.Drawing.Size(204, 20)
+        Me.tbxPrenomClient.TabIndex = 22
         '
-        'TextBox4
+        'tbxAdresseClient
         '
-        Me.TextBox4.Location = New System.Drawing.Point(108, 217)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox4.TabIndex = 23
+        Me.tbxAdresseClient.Location = New System.Drawing.Point(108, 217)
+        Me.tbxAdresseClient.Name = "tbxAdresseClient"
+        Me.tbxAdresseClient.Size = New System.Drawing.Size(204, 20)
+        Me.tbxAdresseClient.TabIndex = 23
         '
-        'TextBox5
+        'tbxCpClient
         '
-        Me.TextBox5.Location = New System.Drawing.Point(108, 247)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 24
+        Me.tbxCpClient.Location = New System.Drawing.Point(108, 247)
+        Me.tbxCpClient.Name = "tbxCpClient"
+        Me.tbxCpClient.Size = New System.Drawing.Size(100, 20)
+        Me.tbxCpClient.TabIndex = 24
         '
-        'TextBox6
+        'tbxVilleClient
         '
-        Me.TextBox6.Location = New System.Drawing.Point(280, 247)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 25
+        Me.tbxVilleClient.Location = New System.Drawing.Point(280, 247)
+        Me.tbxVilleClient.Name = "tbxVilleClient"
+        Me.tbxVilleClient.Size = New System.Drawing.Size(100, 20)
+        Me.tbxVilleClient.TabIndex = 25
         '
-        'TextBox7
+        'tbxAssuranceClient
         '
-        Me.TextBox7.Location = New System.Drawing.Point(108, 274)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox7.TabIndex = 26
+        Me.tbxAssuranceClient.Location = New System.Drawing.Point(108, 274)
+        Me.tbxAssuranceClient.Name = "tbxAssuranceClient"
+        Me.tbxAssuranceClient.Size = New System.Drawing.Size(204, 20)
+        Me.tbxAssuranceClient.TabIndex = 26
         '
-        'TextBox8
+        'tbxEmailClient
         '
-        Me.TextBox8.Location = New System.Drawing.Point(108, 300)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox8.TabIndex = 27
+        Me.tbxEmailClient.Location = New System.Drawing.Point(108, 300)
+        Me.tbxEmailClient.Name = "tbxEmailClient"
+        Me.tbxEmailClient.Size = New System.Drawing.Size(204, 20)
+        Me.tbxEmailClient.TabIndex = 27
         '
         'Button11
         '
@@ -369,14 +370,14 @@ Partial Class EcranClient
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.dataGridViewAnimauxClient)
         Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.tbxEmailClient)
+        Me.Controls.Add(Me.tbxAssuranceClient)
+        Me.Controls.Add(Me.tbxVilleClient)
+        Me.Controls.Add(Me.tbxCpClient)
+        Me.Controls.Add(Me.tbxAdresseClient)
+        Me.Controls.Add(Me.tbxPrenomClient)
+        Me.Controls.Add(Me.tbxNomClient)
+        Me.Controls.Add(Me.tbxCodeClient)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -422,14 +423,14 @@ Partial Class EcranClient
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents tbxCodeClient As System.Windows.Forms.TextBox
+    Friend WithEvents tbxNomClient As System.Windows.Forms.TextBox
+    Friend WithEvents tbxPrenomClient As System.Windows.Forms.TextBox
+    Friend WithEvents tbxAdresseClient As System.Windows.Forms.TextBox
+    Friend WithEvents tbxCpClient As System.Windows.Forms.TextBox
+    Friend WithEvents tbxVilleClient As System.Windows.Forms.TextBox
+    Friend WithEvents tbxAssuranceClient As System.Windows.Forms.TextBox
+    Friend WithEvents tbxEmailClient As System.Windows.Forms.TextBox
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents dataGridViewAnimauxClient As System.Windows.Forms.DataGridView
     Friend WithEvents Label9 As System.Windows.Forms.Label

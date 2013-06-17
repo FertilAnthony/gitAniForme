@@ -192,6 +192,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EcranConsultation.resx">
       <DependentUpon>EcranConsultation.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="EcranVeterinaire.resx">
       <DependentUpon>EcranVeterinaire.vb</DependentUpon>

@@ -32,4 +32,14 @@ Public Class MgtClient
         Next
     End Sub
 
+    Public Function ObtenirClient(ByVal nomClient As String) As Client
+        Dim retourClient As Client = Nothing
+
+        Client.verifNom(nomClient)
+
+        retourClient = _listeClients.ToList.Find(Function(c As Client) c.NomClient.ToUpper().Equals(nomClient.ToUpper()))
+
+        Return retourClient
+    End Function
+
 End Class

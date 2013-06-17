@@ -173,4 +173,12 @@
     End Function
 #End Region
 
+    Shared Sub verifNom(ByVal nom As String)
+        If nom = Nothing Then
+            Throw New Exception("Le nom ne doit pas être vide")
+        ElseIf nom.Trim().Length > 30 Then
+            Throw New Exception("Le nom ne doit pas êdépasser 30 caractères")
+        End If
+    End Sub
+
 End Class
