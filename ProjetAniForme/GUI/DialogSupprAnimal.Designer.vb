@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class DialogSupprVeterinaire
+Partial Class DialogSupprAnimal
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -39,7 +39,7 @@ Partial Class DialogSupprVeterinaire
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(219, 98)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(232, 95)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -53,7 +53,7 @@ Partial Class DialogSupprVeterinaire
         Me.OK_Button.Name = "OK_Button"
         Me.OK_Button.Size = New System.Drawing.Size(67, 23)
         Me.OK_Button.TabIndex = 0
-        Me.OK_Button.Text = "Supprimer"
+        Me.OK_Button.Text = "OK"
         '
         'Cancel_Button
         '
@@ -68,39 +68,38 @@ Partial Class DialogSupprVeterinaire
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(123, 42)
+        Me.Label1.Location = New System.Drawing.Point(120, 40)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(232, 26)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Voulez-vous vraiment supprimer ce vétérinaire ?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Cette action est irréversible .." & _
-            "."
+        Me.Label1.Size = New System.Drawing.Size(216, 26)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Voulez-vous vraiment supprimer cet animal ?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Cette action est irréversible ..."
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.GUI.My.Resources.Resources.exclamation
-        Me.PictureBox1.Location = New System.Drawing.Point(31, 28)
+        Me.PictureBox1.Location = New System.Drawing.Point(28, 31)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(57, 70)
-        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
-        'DialogSupprVeterinaire
+        'DialogSupprAnimal
         '
         Me.AcceptButton = Me.OK_Button
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(377, 139)
+        Me.ClientSize = New System.Drawing.Size(390, 136)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "DialogSupprVeterinaire"
+        Me.Name = "DialogSupprAnimal"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Suppression d'un vétérinaire"
+        Me.Text = "Suppression d'un animal"
         Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -110,7 +109,7 @@ Partial Class DialogSupprVeterinaire
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents OK_Button As System.Windows.Forms.Button
     Friend WithEvents Cancel_Button As System.Windows.Forms.Button
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class

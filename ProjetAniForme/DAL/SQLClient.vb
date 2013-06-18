@@ -17,6 +17,7 @@ Public Class SQLClient
             Dim remarque As String = Nothing
             If (Not reader.IsDBNull(reader.GetOrdinal("Remarque"))) Then
                 remarque = reader.GetString(reader.GetOrdinal("Remarque"))
+
             End If
             Dim adresse2 As String = Nothing
             If (Not reader.IsDBNull(reader.GetOrdinal("Adresse2"))) Then
