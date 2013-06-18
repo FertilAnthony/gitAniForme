@@ -50,7 +50,7 @@ Partial Class EcranRdv
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnAjouterRdv = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -314,19 +314,19 @@ Partial Class EcranRdv
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnAjouterRdv
         '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = Global.GUI.My.Resources.Resources.add
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(67, 51)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Ajouter"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAjouterRdv.FlatAppearance.BorderSize = 0
+        Me.btnAjouterRdv.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAjouterRdv.Image = Global.GUI.My.Resources.Resources.add
+        Me.btnAjouterRdv.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnAjouterRdv.Location = New System.Drawing.Point(12, 12)
+        Me.btnAjouterRdv.Name = "btnAjouterRdv"
+        Me.btnAjouterRdv.Size = New System.Drawing.Size(67, 51)
+        Me.btnAjouterRdv.TabIndex = 1
+        Me.btnAjouterRdv.Text = "Ajouter"
+        Me.btnAjouterRdv.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnAjouterRdv.UseVisualStyleBackColor = True
         '
         'EcranRdv
         '
@@ -356,7 +356,7 @@ Partial Class EcranRdv
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnAjouterRdv)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "EcranRdv"
         Me.Text = "EcranRdv"
@@ -366,7 +366,7 @@ Partial Class EcranRdv
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnAjouterRdv As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button

@@ -15,13 +15,14 @@ Public Class EcranRdv
         Dim codeClient As Guid = client.CodeClient
         MgtAnimal.getInstance.rechercheAnimauxClient(codeClient)
         cbxAnimalClient.DataSource = MgtAnimal.getInstance().animauxClient
+
+        'Désactivation du cadre nouveau rdv au chargement de la page
+        Me.cbxClient.Enabled = False
+        Me.cbxAnimalClient.Enabled = False
         Me.Visible = True
         Me.BringToFront()
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-
-    End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
 
@@ -44,5 +45,10 @@ Public Class EcranRdv
         cbxAnimalClient.DataSource = Nothing
         cbxAnimalClient.Items.Clear()
         cbxAnimalClient.DataSource = MgtAnimal.getInstance.animauxClient
+    End Sub
+
+    Private Sub btnAjouterRdv_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAjouterRdv.Click
+        Me.cbxClient.Enabled = True
+        Me.cbxAnimalClient.Enabled = True
     End Sub
 End Class

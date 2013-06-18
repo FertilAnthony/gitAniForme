@@ -22,6 +22,7 @@ Partial Class EcranClient
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EcranClient))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -45,13 +46,15 @@ Partial Class EcranClient
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnSuivant = New System.Windows.Forms.Button()
+        Me.btnPrecedent = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtboxTel = New System.Windows.Forms.TextBox()
+        Me.lblTel = New System.Windows.Forms.Label()
         CType(Me.dataGridViewAnimauxClient, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -121,7 +124,7 @@ Partial Class EcranClient
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(12, 298)
+        Me.Label8.Location = New System.Drawing.Point(12, 303)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(38, 13)
         Me.Label8.TabIndex = 19
@@ -186,11 +189,13 @@ Partial Class EcranClient
         '
         'Button11
         '
+        Me.Button11.FlatAppearance.BorderSize = 0
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Image = CType(resources.GetObject("Button11.Image"), System.Drawing.Image)
         Me.Button11.Location = New System.Drawing.Point(320, 151)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(34, 20)
+        Me.Button11.Size = New System.Drawing.Size(20, 20)
         Me.Button11.TabIndex = 28
-        Me.Button11.Text = "Button11"
         Me.Button11.UseVisualStyleBackColor = True
         '
         'dataGridViewAnimauxClient
@@ -262,33 +267,33 @@ Partial Class EcranClient
         Me.Button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button8.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btnSuivant
         '
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Image = Global.GUI.My.Resources.Resources._1rightarrow
-        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button7.Location = New System.Drawing.Point(397, 12)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(67, 51)
-        Me.Button7.TabIndex = 8
-        Me.Button7.Text = "Suivant"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnSuivant.FlatAppearance.BorderSize = 0
+        Me.btnSuivant.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSuivant.Image = Global.GUI.My.Resources.Resources._1rightarrow
+        Me.btnSuivant.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnSuivant.Location = New System.Drawing.Point(397, 12)
+        Me.btnSuivant.Name = "btnSuivant"
+        Me.btnSuivant.Size = New System.Drawing.Size(67, 51)
+        Me.btnSuivant.TabIndex = 8
+        Me.btnSuivant.Text = "Suivant"
+        Me.btnSuivant.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnSuivant.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnPrecedent
         '
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Image = Global.GUI.My.Resources.Resources._1leftarrow
-        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button6.Location = New System.Drawing.Point(335, 12)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(67, 51)
-        Me.Button6.TabIndex = 7
-        Me.Button6.Text = "Précédent"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnPrecedent.FlatAppearance.BorderSize = 0
+        Me.btnPrecedent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPrecedent.Image = Global.GUI.My.Resources.Resources._1leftarrow
+        Me.btnPrecedent.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnPrecedent.Location = New System.Drawing.Point(335, 12)
+        Me.btnPrecedent.Name = "btnPrecedent"
+        Me.btnPrecedent.Size = New System.Drawing.Size(67, 51)
+        Me.btnPrecedent.TabIndex = 7
+        Me.btnPrecedent.Text = "Précédent"
+        Me.btnPrecedent.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPrecedent.UseVisualStyleBackColor = True
         '
         'Button5
         '
@@ -360,12 +365,30 @@ Partial Class EcranClient
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'txtboxTel
+        '
+        Me.txtboxTel.Location = New System.Drawing.Point(108, 326)
+        Me.txtboxTel.Name = "txtboxTel"
+        Me.txtboxTel.Size = New System.Drawing.Size(204, 20)
+        Me.txtboxTel.TabIndex = 33
+        '
+        'lblTel
+        '
+        Me.lblTel.AutoSize = True
+        Me.lblTel.Location = New System.Drawing.Point(12, 329)
+        Me.lblTel.Name = "lblTel"
+        Me.lblTel.Size = New System.Drawing.Size(28, 13)
+        Me.lblTel.TabIndex = 32
+        Me.lblTel.Text = "Tél :"
+        '
         'EcranClient
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(778, 564)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtboxTel)
+        Me.Controls.Add(Me.lblTel)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.dataGridViewAnimauxClient)
@@ -389,8 +412,8 @@ Partial Class EcranClient
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.btnSuivant)
+        Me.Controls.Add(Me.btnPrecedent)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -410,8 +433,8 @@ Partial Class EcranClient
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents btnPrecedent As System.Windows.Forms.Button
+    Friend WithEvents btnSuivant As System.Windows.Forms.Button
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button10 As System.Windows.Forms.Button
@@ -435,4 +458,6 @@ Partial Class EcranClient
     Friend WithEvents dataGridViewAnimauxClient As System.Windows.Forms.DataGridView
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents txtboxTel As System.Windows.Forms.TextBox
+    Friend WithEvents lblTel As System.Windows.Forms.Label
 End Class
