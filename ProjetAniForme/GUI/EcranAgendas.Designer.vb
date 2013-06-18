@@ -23,12 +23,8 @@ Partial Class EcranAgendas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.heure = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nomDuClient = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.animal = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.race = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.DataGridViewAgendas = New System.Windows.Forms.DataGridView()
+        Me.cbVeterinaires = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -38,7 +34,7 @@ Partial Class EcranAgendas
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridViewAgendas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -54,42 +50,21 @@ Partial Class EcranAgendas
         Me.Button6.Text = "Consultation"
         Me.Button6.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'DataGridViewAgendas
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.heure, Me.nomDuClient, Me.animal, Me.race})
-        Me.DataGridView1.Location = New System.Drawing.Point(11, 19)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(443, 400)
-        Me.DataGridView1.TabIndex = 8
+        Me.DataGridViewAgendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridViewAgendas.Location = New System.Drawing.Point(11, 19)
+        Me.DataGridViewAgendas.Name = "DataGridViewAgendas"
+        Me.DataGridViewAgendas.Size = New System.Drawing.Size(443, 400)
+        Me.DataGridViewAgendas.TabIndex = 8
         '
-        'heure
+        'cbVeterinaires
         '
-        Me.heure.HeaderText = "Heure"
-        Me.heure.Name = "heure"
-        '
-        'nomDuClient
-        '
-        Me.nomDuClient.HeaderText = "Nom du client"
-        Me.nomDuClient.Name = "nomDuClient"
-        '
-        'animal
-        '
-        Me.animal.HeaderText = "Animal"
-        Me.animal.Name = "animal"
-        '
-        'race
-        '
-        Me.race.HeaderText = "Race"
-        Me.race.Name = "race"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(11, 19)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 9
+        Me.cbVeterinaires.FormattingEnabled = True
+        Me.cbVeterinaires.Location = New System.Drawing.Point(11, 19)
+        Me.cbVeterinaires.Name = "cbVeterinaires"
+        Me.cbVeterinaires.Size = New System.Drawing.Size(121, 21)
+        Me.cbVeterinaires.TabIndex = 9
         '
         'DateTimePicker1
         '
@@ -100,7 +75,7 @@ Partial Class EcranAgendas
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.DataGridView1)
+        Me.GroupBox1.Controls.Add(Me.DataGridViewAgendas)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 171)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(473, 428)
@@ -111,7 +86,7 @@ Partial Class EcranAgendas
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox2.Controls.Add(Me.ComboBox1)
+        Me.GroupBox2.Controls.Add(Me.cbVeterinaires)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 97)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(383, 52)
@@ -227,7 +202,7 @@ Partial Class EcranAgendas
         Me.ShowInTaskbar = False
         Me.Text = "EcranAgendas"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridViewAgendas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -240,12 +215,8 @@ Partial Class EcranAgendas
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents heure As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents nomDuClient As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents animal As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents race As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents DataGridViewAgendas As System.Windows.Forms.DataGridView
+    Friend WithEvents cbVeterinaires As System.Windows.Forms.ComboBox
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox

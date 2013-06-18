@@ -5,6 +5,8 @@ Imports System.ComponentModel
 Public Class MgtVeterinaire
 
     Private _listeVeterinaires As New BindingList(Of Veterinaire)
+    Private _lstRdv As New BindingList(Of Agendas)
+    Private _lstRdvVeto As New BindingList(Of Agendas)
 
 #Region "Pattern de singleton"
     Private Shared _instance As New MgtVeterinaire()
@@ -33,6 +35,17 @@ Public Class MgtVeterinaire
 
     End Sub
 
+    ReadOnly Property rdv As BindingList(Of Agendas)
+        Get
+            Return _lstRdv
+        End Get
+    End Property
+
+    ReadOnly Property lstRdvVeto As BindingList(Of Agendas)
+        Get
+            Return _lstRdvVeto
+        End Get
+    End Property
 
     Public Function ObtenirVeterinaire(ByVal codeVeto As Guid) As Veterinaire
         Dim retourVeterinaire As Veterinaire = Nothing
@@ -49,6 +62,37 @@ Public Class MgtVeterinaire
         Return retourVeterinaire
     End Function
 
+    Public Function ObtenirVeterinaire(ByVal nomVeto As String) As Veterinaire
+        Dim retourVeterinaire As Veterinaire = Nothing
+        '
+        ' Vérifier que le nom proposé est un nom de Veterinaire valide
+        '
+        Veterinaire.verifNom(nomVeto)
+        '
+        ' Pas d'erreur, on recherche dans la liste le veterinaire possédant 
+        ' ce nom. S'il n'est pas trouvé la variable reste Nothing.
+        '
+        retourVeterinaire = _listeVeterinaires.ToList.Find(Function(v As Veterinaire) v.NomVeto.Equals(nomVeto))
+
+        Return retourVeterinaire
+    End Function
+
+    Sub rechercheRdvVeto(ByVal codeVeto As Guid)
+        Dim lstRdvVeto As List(Of Agendas) = SQLAgendas.getLstRdvVeto(codeVeto)
+        _lstRdvVeto.Clear()
+        For Each a As Agendas In lstRdvVeto
+            _lstRdvVeto.Add(a)
+
+        Next
+    End Sub
+    Sub rechercheRdv()
+        Dim lstRdv As List(Of Agendas) = SQLAgendas.getLstRdv()
+
+        For Each a As Agendas In lstRdv
+            _lstRdv.Add(a)
+
+        Next
+    End Sub
     Sub initialiserDonnees()
         Dim listVeterinaire As List(Of Veterinaire) = SQLVeterinaire.getListeVeterinaire()
         For Each v As Veterinaire In listVeterinaire
