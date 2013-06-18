@@ -151,5 +151,19 @@ Public Class EcranClient
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
 
+        Dim c As Client = MgtClient.getInstance().ObtenirClient(tbxNomClient.Text)
+        tbxCodeClient.Text = c.CodeClient.ToString
+        tbxNomClient.Text = c.NomClient
+        tbxPrenomClient.Text = c.PrenomClient
+        tbxAdresseClient.Text = c.Adresse1
+        tbxCpClient.Text = c.CodePostal
+        tbxVilleClient.Text = c.Ville
+        txtboxTel.Text = c.NumTel
+        tbxEmailClient.Text = c.Email
+        tbxAssuranceClient.Text = c.Assurance
+    End Sub
+
+    Private Sub dataGridViewAnimauxClient_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dataGridViewAnimauxClient.CellContentClick
+
     End Sub
 End Class

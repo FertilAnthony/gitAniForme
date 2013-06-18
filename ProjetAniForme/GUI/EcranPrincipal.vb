@@ -26,6 +26,9 @@ Public Class EcranPrincipal
         MgtAnimal.getInstance.initialiserDonnees()
         MgtClient.getInstance.initialiserDonnees()
         MgtAnimal.getInstance.getAllraceAnimaux()
+        MgtVeterinaire.getInstance.rechercheRdv()
+
+
     End Sub
 
     Private Sub btnRdv_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRdv.Click

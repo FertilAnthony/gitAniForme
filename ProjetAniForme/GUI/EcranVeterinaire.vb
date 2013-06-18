@@ -31,4 +31,12 @@ Public Class EcranVeterinaire
     Private Sub btnModifierVeto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModifierVeto.Click
         DialogModifVeterinaire.Visible = True
     End Sub
+
+    Private Sub lbxVeterinaires_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbxVeterinaires.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub EcranVeterinaire_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
