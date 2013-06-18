@@ -25,7 +25,7 @@ Partial Class EcranAgendas
         Me.Button6 = New System.Windows.Forms.Button()
         Me.DataGridViewAgendas = New System.Windows.Forms.DataGridView()
         Me.cbVeterinaires = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dtAgendas = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -52,9 +52,16 @@ Partial Class EcranAgendas
         '
         'DataGridViewAgendas
         '
+        Me.DataGridViewAgendas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridViewAgendas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
+        Me.DataGridViewAgendas.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridViewAgendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridViewAgendas.Location = New System.Drawing.Point(11, 19)
         Me.DataGridViewAgendas.Name = "DataGridViewAgendas"
+        Me.DataGridViewAgendas.ReadOnly = True
+        Me.DataGridViewAgendas.RowHeadersVisible = False
+        Me.DataGridViewAgendas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
+        Me.DataGridViewAgendas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridViewAgendas.Size = New System.Drawing.Size(443, 400)
         Me.DataGridViewAgendas.TabIndex = 8
         '
@@ -66,12 +73,12 @@ Partial Class EcranAgendas
         Me.cbVeterinaires.Size = New System.Drawing.Size(121, 21)
         Me.cbVeterinaires.TabIndex = 9
         '
-        'DateTimePicker1
+        'dtAgendas
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(163, 19)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 10
+        Me.dtAgendas.Location = New System.Drawing.Point(163, 19)
+        Me.dtAgendas.Name = "dtAgendas"
+        Me.dtAgendas.Size = New System.Drawing.Size(200, 20)
+        Me.dtAgendas.TabIndex = 10
         '
         'GroupBox1
         '
@@ -85,7 +92,7 @@ Partial Class EcranAgendas
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox2.Controls.Add(Me.dtAgendas)
         Me.GroupBox2.Controls.Add(Me.cbVeterinaires)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 97)
         Me.GroupBox2.Name = "GroupBox2"
@@ -217,7 +224,7 @@ Partial Class EcranAgendas
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents DataGridViewAgendas As System.Windows.Forms.DataGridView
     Friend WithEvents cbVeterinaires As System.Windows.Forms.ComboBox
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtAgendas As System.Windows.Forms.DateTimePicker
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
 End Class

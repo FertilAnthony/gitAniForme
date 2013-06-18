@@ -10,8 +10,8 @@ Public Class EcranAgendas
         Dim nomVeto As String = cbVeterinaires.SelectedItem.ToString
         Dim v As Veterinaire = MgtVeterinaire.getInstance().ObtenirVeterinaire(nomVeto)
 
-        MgtVeterinaire.getInstance().rechercheRdvVeto(v.CodeVeto)
-        DataGridViewAgendas.DataSource = MgtVeterinaire.getInstance().lstRdvVeto
+        MgtAgendas.getInstance().rechercheRdvVeto(v.CodeVeto, dtAgendas.Value)
+        DataGridViewAgendas.DataSource = MgtAgendas.getInstance().lstRdvVeto
 
     End Sub
 
@@ -30,5 +30,23 @@ Public Class EcranAgendas
         Me.Visible = False
         EcranDosMedical.Visible = True
         EcranDosMedical.BringToFront()
+    End Sub
+
+    Private Sub cbVeterinaires_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbVeterinaires.SelectedIndexChanged
+     
+
+        Dim nomVeto As String = cbVeterinaires.SelectedItem.ToString
+        Dim v As Veterinaire = MgtVeterinaire.getInstance().ObtenirVeterinaire(nomVeto)
+
+        MgtAgendas.getInstance().rechercheRdvVeto(v.CodeVeto, dtAgendas.Value)
+        DataGridViewAgendas.DataSource = MgtAgendas.getInstance().lstRdvVeto
+    End Sub
+
+    Private Sub dtAgendas_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtAgendas.ValueChanged
+        Dim nomVeto As String = cbVeterinaires.SelectedItem.ToString
+        Dim v As Veterinaire = MgtVeterinaire.getInstance().ObtenirVeterinaire(nomVeto)
+
+        MgtAgendas.getInstance().rechercheRdvVeto(v.CodeVeto, dtAgendas.Value)
+        DataGridViewAgendas.DataSource = MgtAgendas.getInstance().lstRdvVeto
     End Sub
 End Class

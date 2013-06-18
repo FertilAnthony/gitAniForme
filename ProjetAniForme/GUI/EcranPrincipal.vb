@@ -26,7 +26,7 @@ Public Class EcranPrincipal
         MgtAnimal.getInstance.initialiserDonnees()
         MgtClient.getInstance.initialiserDonnees()
         MgtAnimal.getInstance.getAllraceAnimaux()
-        MgtVeterinaire.getInstance.rechercheRdv()
+        MgtAgendas.getInstance.rechercheRdv()
 
 
     End Sub
@@ -69,5 +69,10 @@ Public Class EcranPrincipal
     Private Sub VétérinairesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VétérinairesToolStripMenuItem.Click
         EcranVeterinaire.Visible = True
         EcranVeterinaire.BringToFront()
+    End Sub
+
+    Private Sub MiseÀJourDuStockDeVaccinsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MiseÀJourDuStockDeVaccinsToolStripMenuItem.Click
+        EcranVaccins.Visible = True
+        EcranVaccins.BringToFront()
     End Sub
 End Class

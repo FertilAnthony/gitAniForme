@@ -23,17 +23,18 @@ Partial Class EcranPrincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.BottomToolStripPanel = New System.Windows.Forms.ToolStripPanel()
+        Me.TopToolStripPanel = New System.Windows.Forms.ToolStripPanel()
+        Me.RightToolStripPanel = New System.Windows.Forms.ToolStripPanel()
+        Me.LeftToolStripPanel = New System.Windows.Forms.ToolStripPanel()
+        Me.ContentPanel = New System.Windows.Forms.ToolStripContentPanel()
         Me.btnQuitter = New System.Windows.Forms.Button()
         Me.btnDosMedical = New System.Windows.Forms.Button()
         Me.btnAgendas = New System.Windows.Forms.Button()
         Me.btnRelances = New System.Windows.Forms.Button()
         Me.btnClient = New System.Windows.Forms.Button()
         Me.btnRdv = New System.Windows.Forms.Button()
-        Me.BottomToolStripPanel = New System.Windows.Forms.ToolStripPanel()
-        Me.TopToolStripPanel = New System.Windows.Forms.ToolStripPanel()
-        Me.RightToolStripPanel = New System.Windows.Forms.ToolStripPanel()
-        Me.LeftToolStripPanel = New System.Windows.Forms.ToolStripPanel()
-        Me.ContentPanel = New System.Windows.Forms.ToolStripContentPanel()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.SecrétériatToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PriseDeRendezvousToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DossierClientAnimalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -45,7 +46,6 @@ Partial Class EcranPrincipal
         Me.ParamétrageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VétérinairesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MiseÀJourDuBarèmeDeTarificationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -59,6 +59,42 @@ Partial Class EcranPrincipal
         Me.ListView1.Size = New System.Drawing.Size(121, 643)
         Me.ListView1.TabIndex = 3
         Me.ListView1.UseCompatibleStateImageBehavior = False
+        '
+        'BottomToolStripPanel
+        '
+        Me.BottomToolStripPanel.Location = New System.Drawing.Point(0, 0)
+        Me.BottomToolStripPanel.Name = "BottomToolStripPanel"
+        Me.BottomToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal
+        Me.BottomToolStripPanel.RowMargin = New System.Windows.Forms.Padding(3, 0, 0, 0)
+        Me.BottomToolStripPanel.Size = New System.Drawing.Size(0, 0)
+        '
+        'TopToolStripPanel
+        '
+        Me.TopToolStripPanel.Location = New System.Drawing.Point(0, 0)
+        Me.TopToolStripPanel.Name = "TopToolStripPanel"
+        Me.TopToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal
+        Me.TopToolStripPanel.RowMargin = New System.Windows.Forms.Padding(3, 0, 0, 0)
+        Me.TopToolStripPanel.Size = New System.Drawing.Size(0, 0)
+        '
+        'RightToolStripPanel
+        '
+        Me.RightToolStripPanel.Location = New System.Drawing.Point(0, 0)
+        Me.RightToolStripPanel.Name = "RightToolStripPanel"
+        Me.RightToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal
+        Me.RightToolStripPanel.RowMargin = New System.Windows.Forms.Padding(3, 0, 0, 0)
+        Me.RightToolStripPanel.Size = New System.Drawing.Size(0, 0)
+        '
+        'LeftToolStripPanel
+        '
+        Me.LeftToolStripPanel.Location = New System.Drawing.Point(0, 0)
+        Me.LeftToolStripPanel.Name = "LeftToolStripPanel"
+        Me.LeftToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal
+        Me.LeftToolStripPanel.RowMargin = New System.Windows.Forms.Padding(3, 0, 0, 0)
+        Me.LeftToolStripPanel.Size = New System.Drawing.Size(0, 0)
+        '
+        'ContentPanel
+        '
+        Me.ContentPanel.Size = New System.Drawing.Size(768, 485)
         '
         'btnQuitter
         '
@@ -168,41 +204,17 @@ Partial Class EcranPrincipal
         Me.btnRdv.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnRdv.UseVisualStyleBackColor = False
         '
-        'BottomToolStripPanel
+        'MenuStrip1
         '
-        Me.BottomToolStripPanel.Location = New System.Drawing.Point(0, 0)
-        Me.BottomToolStripPanel.Name = "BottomToolStripPanel"
-        Me.BottomToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal
-        Me.BottomToolStripPanel.RowMargin = New System.Windows.Forms.Padding(3, 0, 0, 0)
-        Me.BottomToolStripPanel.Size = New System.Drawing.Size(0, 0)
-        '
-        'TopToolStripPanel
-        '
-        Me.TopToolStripPanel.Location = New System.Drawing.Point(0, 0)
-        Me.TopToolStripPanel.Name = "TopToolStripPanel"
-        Me.TopToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal
-        Me.TopToolStripPanel.RowMargin = New System.Windows.Forms.Padding(3, 0, 0, 0)
-        Me.TopToolStripPanel.Size = New System.Drawing.Size(0, 0)
-        '
-        'RightToolStripPanel
-        '
-        Me.RightToolStripPanel.Location = New System.Drawing.Point(0, 0)
-        Me.RightToolStripPanel.Name = "RightToolStripPanel"
-        Me.RightToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal
-        Me.RightToolStripPanel.RowMargin = New System.Windows.Forms.Padding(3, 0, 0, 0)
-        Me.RightToolStripPanel.Size = New System.Drawing.Size(0, 0)
-        '
-        'LeftToolStripPanel
-        '
-        Me.LeftToolStripPanel.Location = New System.Drawing.Point(0, 0)
-        Me.LeftToolStripPanel.Name = "LeftToolStripPanel"
-        Me.LeftToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal
-        Me.LeftToolStripPanel.RowMargin = New System.Windows.Forms.Padding(3, 0, 0, 0)
-        Me.LeftToolStripPanel.Size = New System.Drawing.Size(0, 0)
-        '
-        'ContentPanel
-        '
-        Me.ContentPanel.Size = New System.Drawing.Size(768, 485)
+        Me.MenuStrip1.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuItem
+        Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(69, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.MenuStrip1.BackgroundImage = Global.GUI.My.Resources.Resources.strilles
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SecrétériatToolStripMenuItem, Me.VétérinaireToolStripMenuItem, Me.ParamétrageToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(950, 24)
+        Me.MenuStrip1.TabIndex = 1
+        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'SecrétériatToolStripMenuItem
         '
@@ -217,26 +229,26 @@ Partial Class EcranPrincipal
         'PriseDeRendezvousToolStripMenuItem
         '
         Me.PriseDeRendezvousToolStripMenuItem.Name = "PriseDeRendezvousToolStripMenuItem"
-        Me.PriseDeRendezvousToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+        Me.PriseDeRendezvousToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
         Me.PriseDeRendezvousToolStripMenuItem.Text = "Prise de Rendez-vous"
         '
         'DossierClientAnimalToolStripMenuItem
         '
         Me.DossierClientAnimalToolStripMenuItem.Name = "DossierClientAnimalToolStripMenuItem"
-        Me.DossierClientAnimalToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+        Me.DossierClientAnimalToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
         Me.DossierClientAnimalToolStripMenuItem.Text = "Dossiers Client/Animal"
         '
         'RelancesToolStripMenuItem
         '
         Me.RelancesToolStripMenuItem.Name = "RelancesToolStripMenuItem"
-        Me.RelancesToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+        Me.RelancesToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
         Me.RelancesToolStripMenuItem.Text = "Relances"
         '
         'MiseÀJourDuStockDeVaccinsToolStripMenuItem
         '
         Me.MiseÀJourDuStockDeVaccinsToolStripMenuItem.Name = "MiseÀJourDuStockDeVaccinsToolStripMenuItem"
-        Me.MiseÀJourDuStockDeVaccinsToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
-        Me.MiseÀJourDuStockDeVaccinsToolStripMenuItem.Text = "Mise à jour du stock de vaccins"
+        Me.MiseÀJourDuStockDeVaccinsToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
+        Me.MiseÀJourDuStockDeVaccinsToolStripMenuItem.Text = "Gestion des stocks de vaccins"
         '
         'VétérinaireToolStripMenuItem
         '
@@ -281,18 +293,6 @@ Partial Class EcranPrincipal
         Me.MiseÀJourDuBarèmeDeTarificationToolStripMenuItem.Name = "MiseÀJourDuBarèmeDeTarificationToolStripMenuItem"
         Me.MiseÀJourDuBarèmeDeTarificationToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
         Me.MiseÀJourDuBarèmeDeTarificationToolStripMenuItem.Text = "Mise à jour du barème de tarification"
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuItem
-        Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(69, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.MenuStrip1.BackgroundImage = Global.GUI.My.Resources.Resources.strilles
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SecrétériatToolStripMenuItem, Me.VétérinaireToolStripMenuItem, Me.ParamétrageToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(950, 24)
-        Me.MenuStrip1.TabIndex = 1
-        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'EcranPrincipal
         '
