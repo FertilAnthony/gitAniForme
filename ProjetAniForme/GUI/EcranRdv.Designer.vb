@@ -23,9 +23,9 @@ Partial Class EcranRdv
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.cbxVeterinaire = New System.Windows.Forms.ComboBox()
+        Me.cbxAnimalClient = New System.Windows.Forms.ComboBox()
+        Me.cbxClient = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
@@ -64,29 +64,29 @@ Partial Class EcranRdv
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Gestion des rendez-vous "
         '
-        'ComboBox1
+        'cbxVeterinaire
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(36, 151)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 9
+        Me.cbxVeterinaire.FormattingEnabled = True
+        Me.cbxVeterinaire.Location = New System.Drawing.Point(36, 151)
+        Me.cbxVeterinaire.Name = "cbxVeterinaire"
+        Me.cbxVeterinaire.Size = New System.Drawing.Size(121, 21)
+        Me.cbxVeterinaire.TabIndex = 9
         '
-        'ComboBox2
+        'cbxAnimalClient
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(410, 229)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 10
+        Me.cbxAnimalClient.FormattingEnabled = True
+        Me.cbxAnimalClient.Location = New System.Drawing.Point(410, 229)
+        Me.cbxAnimalClient.Name = "cbxAnimalClient"
+        Me.cbxAnimalClient.Size = New System.Drawing.Size(121, 21)
+        Me.cbxAnimalClient.TabIndex = 10
         '
-        'ComboBox3
+        'cbxClient
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(410, 173)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox3.TabIndex = 11
+        Me.cbxClient.FormattingEnabled = True
+        Me.cbxClient.Location = New System.Drawing.Point(410, 173)
+        Me.cbxClient.Name = "cbxClient"
+        Me.cbxClient.Size = New System.Drawing.Size(121, 21)
+        Me.cbxClient.TabIndex = 11
         '
         'DateTimePicker1
         '
@@ -346,9 +346,9 @@ Partial Class EcranRdv
         Me.Controls.Add(Me.ComboBox5)
         Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.ComboBox3)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cbxClient)
+        Me.Controls.Add(Me.cbxAnimalClient)
+        Me.Controls.Add(Me.cbxVeterinaire)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
@@ -374,9 +374,9 @@ Partial Class EcranRdv
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxVeterinaire As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxAnimalClient As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxClient As System.Windows.Forms.ComboBox
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
