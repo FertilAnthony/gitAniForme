@@ -30,7 +30,30 @@ Public Class EcranConsultation
         End If
 
         'Chargement listes déroulantes acte
-        'cbxLibelleActe.DataSource = mgt
+        Dim typeBareme As New List(Of String)
+        For Each bareme As Bareme In MgtBareme.getInstance.bareme
+            Dim typeActe As String = bareme.typeActe
+            Dim unique As String = typeBareme.Find(Function(b As String) b = typeActe)
+            If unique = Nothing Then
+                typeBareme.Add(typeActe)
+            End If
+        Next
+        cbxTypeActe.DataSource = typeBareme
+
+
+        'Dim i As Integer = 0
+        'Dim lBareme(MgtBareme.getInstance().bareme.Count) As String
+        'Dim tBareme(MgtBareme.getInstance().bareme.Count) As String
+        'Dim nbBareme As Integer = MgtBareme.getInstance().bareme.Count()
+        'While i < nbBareme
+        'tBareme(i) = MgtBareme.getInstance().bareme.Item(i).typeActe
+        'lBareme(i) = MgtBareme.getInstance().bareme.Item(i).libelle.ToString
+        'i = i + 1
+        'End While
+        'cbxLibelleActe.DataSource = lBareme
+        'cbxLibelleActe.SelectedIndex = 0
+        'cbxTypeActe.DataSource = tBareme
+        'cbxTypeActe.SelectedIndex = 0
 
         Me.Visible = True
         Me.BringToFront()
@@ -39,5 +62,18 @@ Public Class EcranConsultation
 
     Private Sub Button9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button9.Click
         Me.Visible = False
+    End Sub
+
+    Private Sub cbxTypeActe_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbxTypeActe.SelectedIndexChanged
+        Dim libelleBareme As New List(Of Bareme)
+
+        For Each b As Bareme In MgtBareme.getInstance.bareme
+            Dim typeActe As String = cbxTypeActe.Text
+            If b.typeActe = typeActe Then
+                libelleBareme.Add(b)
+            End If
+        Next
+        cbxLibelleActe.DataSource = libelleBareme
+        cbxLibelleActe.DisplayMember = "Libelle" 'affiche le libelle dans la comboBox
     End Sub
 End Class
