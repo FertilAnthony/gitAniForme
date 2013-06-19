@@ -42,7 +42,13 @@ Public Class MgtClient
         Return retourClient
     End Function
 
-    
+    Public Function ObtenirClient(ByVal codeClient As Guid) As Client
+        Dim retourClient As Client = Nothing
+        'nécessite verif code
+        retourClient = _listeClients.ToList.Find(Function(c As Client) c.CodeClient.Equals(codeClient))
+
+        Return retourClient
+    End Function
 
 
     Public Sub ajouterClient(ByVal nomClient As String, ByVal prenomClient As String, ByVal adresse1 As String, ByVal adresse2 As String, ByVal codePostal As String, ByVal ville As String, ByVal numTel As String, ByVal assurance As String, ByVal email As String, ByVal archive As Boolean)

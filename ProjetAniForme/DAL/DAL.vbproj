@@ -83,6 +83,7 @@
     <Compile Include="SQLAccess.vb" />
     <Compile Include="SQLAgendas.vb" />
     <Compile Include="SQLAnimal.vb" />
+    <Compile Include="SQLBareme.vb" />
     <Compile Include="SQLClient.vb" />
     <Compile Include="SQLVaccin.vb" />
     <Compile Include="SQLVeterinaire.vb" />

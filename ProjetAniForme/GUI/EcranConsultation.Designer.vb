@@ -39,23 +39,23 @@ Partial Class EcranConsultation
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tbxCodeAnimal = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.tbxVeterinaire = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.tbxTatouageAnimal = New System.Windows.Forms.TextBox()
+        Me.tbxSexeAnimal = New System.Windows.Forms.TextBox()
+        Me.tbxCouleurAnimal = New System.Windows.Forms.TextBox()
+        Me.tbxRaceAnimal = New System.Windows.Forms.TextBox()
+        Me.tbxEspeceAnimal = New System.Windows.Forms.TextBox()
+        Me.tbxNomAnimal = New System.Windows.Forms.TextBox()
+        Me.rTbxCommentaire = New System.Windows.Forms.RichTextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cbxTypeActe = New System.Windows.Forms.ComboBox()
+        Me.cbxLibelleActe = New System.Windows.Forms.ComboBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.acteNum = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -231,12 +231,13 @@ Partial Class EcranConsultation
         Me.Label18.TabIndex = 17
         Me.Label18.Text = "Consultation"
         '
-        'TextBox1
+        'tbxCodeAnimal
         '
-        Me.TextBox1.Location = New System.Drawing.Point(69, 126)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 18
+        Me.tbxCodeAnimal.Location = New System.Drawing.Point(69, 126)
+        Me.tbxCodeAnimal.Name = "tbxCodeAnimal"
+        Me.tbxCodeAnimal.ReadOnly = True
+        Me.tbxCodeAnimal.Size = New System.Drawing.Size(100, 20)
+        Me.tbxCodeAnimal.TabIndex = 18
         '
         'TextBox3
         '
@@ -266,69 +267,77 @@ Partial Class EcranConsultation
         Me.TextBox6.Size = New System.Drawing.Size(83, 20)
         Me.TextBox6.TabIndex = 23
         '
-        'TextBox7
+        'tbxVeterinaire
         '
-        Me.TextBox7.Location = New System.Drawing.Point(282, 418)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox7.TabIndex = 24
+        Me.tbxVeterinaire.Location = New System.Drawing.Point(282, 418)
+        Me.tbxVeterinaire.Name = "tbxVeterinaire"
+        Me.tbxVeterinaire.ReadOnly = True
+        Me.tbxVeterinaire.Size = New System.Drawing.Size(100, 20)
+        Me.tbxVeterinaire.TabIndex = 24
         '
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(66, 364)
         Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(27, 20)
         Me.TextBox8.TabIndex = 25
         '
-        'TextBox9
+        'tbxTatouageAnimal
         '
-        Me.TextBox9.Location = New System.Drawing.Point(233, 212)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox9.TabIndex = 26
+        Me.tbxTatouageAnimal.Location = New System.Drawing.Point(233, 212)
+        Me.tbxTatouageAnimal.Name = "tbxTatouageAnimal"
+        Me.tbxTatouageAnimal.ReadOnly = True
+        Me.tbxTatouageAnimal.Size = New System.Drawing.Size(100, 20)
+        Me.tbxTatouageAnimal.TabIndex = 26
         '
-        'TextBox10
+        'tbxSexeAnimal
         '
-        Me.TextBox10.Location = New System.Drawing.Point(394, 173)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox10.TabIndex = 27
+        Me.tbxSexeAnimal.Location = New System.Drawing.Point(394, 173)
+        Me.tbxSexeAnimal.Name = "tbxSexeAnimal"
+        Me.tbxSexeAnimal.ReadOnly = True
+        Me.tbxSexeAnimal.Size = New System.Drawing.Size(100, 20)
+        Me.tbxSexeAnimal.TabIndex = 27
         '
-        'TextBox11
+        'tbxCouleurAnimal
         '
-        Me.TextBox11.Location = New System.Drawing.Point(394, 126)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox11.TabIndex = 28
+        Me.tbxCouleurAnimal.Location = New System.Drawing.Point(394, 126)
+        Me.tbxCouleurAnimal.Name = "tbxCouleurAnimal"
+        Me.tbxCouleurAnimal.ReadOnly = True
+        Me.tbxCouleurAnimal.Size = New System.Drawing.Size(100, 20)
+        Me.tbxCouleurAnimal.TabIndex = 28
         '
-        'TextBox12
+        'tbxRaceAnimal
         '
-        Me.TextBox12.Location = New System.Drawing.Point(233, 173)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox12.TabIndex = 29
+        Me.tbxRaceAnimal.Location = New System.Drawing.Point(233, 173)
+        Me.tbxRaceAnimal.Name = "tbxRaceAnimal"
+        Me.tbxRaceAnimal.ReadOnly = True
+        Me.tbxRaceAnimal.Size = New System.Drawing.Size(100, 20)
+        Me.tbxRaceAnimal.TabIndex = 29
         '
-        'TextBox13
+        'tbxEspeceAnimal
         '
-        Me.TextBox13.Location = New System.Drawing.Point(233, 126)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox13.TabIndex = 30
+        Me.tbxEspeceAnimal.Location = New System.Drawing.Point(233, 126)
+        Me.tbxEspeceAnimal.Name = "tbxEspeceAnimal"
+        Me.tbxEspeceAnimal.ReadOnly = True
+        Me.tbxEspeceAnimal.Size = New System.Drawing.Size(100, 20)
+        Me.tbxEspeceAnimal.TabIndex = 30
         '
-        'TextBox14
+        'tbxNomAnimal
         '
-        Me.TextBox14.Location = New System.Drawing.Point(69, 173)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox14.TabIndex = 31
+        Me.tbxNomAnimal.Location = New System.Drawing.Point(69, 173)
+        Me.tbxNomAnimal.Name = "tbxNomAnimal"
+        Me.tbxNomAnimal.ReadOnly = True
+        Me.tbxNomAnimal.Size = New System.Drawing.Size(100, 20)
+        Me.tbxNomAnimal.TabIndex = 31
         '
-        'RichTextBox1
+        'rTbxCommentaire
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(123, 252)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(371, 96)
-        Me.RichTextBox1.TabIndex = 32
-        Me.RichTextBox1.Text = ""
+        Me.rTbxCommentaire.Location = New System.Drawing.Point(123, 252)
+        Me.rTbxCommentaire.Name = "rTbxCommentaire"
+        Me.rTbxCommentaire.Size = New System.Drawing.Size(371, 96)
+        Me.rTbxCommentaire.TabIndex = 32
+        Me.rTbxCommentaire.Text = ""
         '
         'DateTimePicker1
         '
@@ -337,21 +346,21 @@ Partial Class EcranConsultation
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 33
         '
-        'ComboBox1
+        'cbxTypeActe
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(388, 418)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 34
+        Me.cbxTypeActe.FormattingEnabled = True
+        Me.cbxTypeActe.Location = New System.Drawing.Point(388, 418)
+        Me.cbxTypeActe.Name = "cbxTypeActe"
+        Me.cbxTypeActe.Size = New System.Drawing.Size(121, 21)
+        Me.cbxTypeActe.TabIndex = 34
         '
-        'ComboBox2
+        'cbxLibelleActe
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(388, 470)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 35
+        Me.cbxLibelleActe.FormattingEnabled = True
+        Me.cbxLibelleActe.Location = New System.Drawing.Point(388, 470)
+        Me.cbxLibelleActe.Name = "cbxLibelleActe"
+        Me.cbxLibelleActe.Size = New System.Drawing.Size(121, 21)
+        Me.cbxLibelleActe.TabIndex = 35
         '
         'Label19
         '
@@ -523,23 +532,23 @@ Partial Class EcranConsultation
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cbxLibelleActe)
+        Me.Controls.Add(Me.cbxTypeActe)
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.RichTextBox1)
-        Me.Controls.Add(Me.TextBox14)
-        Me.Controls.Add(Me.TextBox13)
-        Me.Controls.Add(Me.TextBox12)
-        Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox9)
+        Me.Controls.Add(Me.rTbxCommentaire)
+        Me.Controls.Add(Me.tbxNomAnimal)
+        Me.Controls.Add(Me.tbxEspeceAnimal)
+        Me.Controls.Add(Me.tbxRaceAnimal)
+        Me.Controls.Add(Me.tbxCouleurAnimal)
+        Me.Controls.Add(Me.tbxSexeAnimal)
+        Me.Controls.Add(Me.tbxTatouageAnimal)
         Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.tbxVeterinaire)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.tbxCodeAnimal)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label16)
@@ -586,23 +595,23 @@ Partial Class EcranConsultation
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents tbxCodeAnimal As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents tbxVeterinaire As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents tbxTatouageAnimal As System.Windows.Forms.TextBox
+    Friend WithEvents tbxSexeAnimal As System.Windows.Forms.TextBox
+    Friend WithEvents tbxCouleurAnimal As System.Windows.Forms.TextBox
+    Friend WithEvents tbxRaceAnimal As System.Windows.Forms.TextBox
+    Friend WithEvents tbxEspeceAnimal As System.Windows.Forms.TextBox
+    Friend WithEvents tbxNomAnimal As System.Windows.Forms.TextBox
+    Friend WithEvents rTbxCommentaire As System.Windows.Forms.RichTextBox
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxTypeActe As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxLibelleActe As System.Windows.Forms.ComboBox
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents acteNum As System.Windows.Forms.DataGridViewTextBoxColumn
