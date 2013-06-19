@@ -8,6 +8,7 @@ Public Class EcranConsultation
     End Sub
 
     Private Sub EcranRelances_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'Chargement données de l'animal + vétérinaire
         Dim codeAnimal As Guid = New Guid(EcranAgendas.DataGridViewAgendas.CurrentRow.Cells.Item("codeAnimal").Value.ToString)
         Dim a As Animal = MgtAnimal.getInstance().ObtenirAnimal(codeAnimal)
 
@@ -27,6 +28,9 @@ Public Class EcranConsultation
         Else
             Me.tbxSexeAnimal.Text = "Hermaphrodite - (H)"
         End If
+
+        'Chargement listes déroulantes acte
+        'cbxLibelleActe.DataSource = mgt
 
         Me.Visible = True
         Me.BringToFront()

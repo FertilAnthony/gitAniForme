@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="MgtAgendas.vb" />
     <Compile Include="MgtAnimal.vb" />
+    <Compile Include="MgtBareme.vb" />
     <Compile Include="MgtClient.vb" />
     <Compile Include="MgtVaccin.vb" />
     <Compile Include="MgtVeterinaire.vb" />
