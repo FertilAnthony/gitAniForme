@@ -58,7 +58,7 @@
 #End Region
 
 #Region "Constructeurs"
-    Public Sub New(ByVal nomVaccin As String, ByVal quantite As Integer, ByVal periodeVal As Integer, ByVal archive As Boolean)
+    Public Sub New(ByVal codeVaccin As Guid, ByVal nomVaccin As String, ByVal quantite As Integer, ByVal periodeVal As Integer, ByVal archive As Boolean)
         Me.codeVaccin = New Guid()
         Me.nomVaccin = nomVaccin
         Me.quantite = quantite

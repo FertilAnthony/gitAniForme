@@ -64,8 +64,10 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MgtAgendas.vb" />
     <Compile Include="MgtAnimal.vb" />
     <Compile Include="MgtClient.vb" />
+    <Compile Include="MgtVaccin.vb" />
     <Compile Include="MgtVeterinaire.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
