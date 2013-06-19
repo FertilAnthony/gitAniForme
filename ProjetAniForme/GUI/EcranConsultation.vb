@@ -40,21 +40,6 @@ Public Class EcranConsultation
         Next
         cbxTypeActe.DataSource = typeBareme
 
-
-        'Dim i As Integer = 0
-        'Dim lBareme(MgtBareme.getInstance().bareme.Count) As String
-        'Dim tBareme(MgtBareme.getInstance().bareme.Count) As String
-        'Dim nbBareme As Integer = MgtBareme.getInstance().bareme.Count()
-        'While i < nbBareme
-        'tBareme(i) = MgtBareme.getInstance().bareme.Item(i).typeActe
-        'lBareme(i) = MgtBareme.getInstance().bareme.Item(i).libelle.ToString
-        'i = i + 1
-        'End While
-        'cbxLibelleActe.DataSource = lBareme
-        'cbxLibelleActe.SelectedIndex = 0
-        'cbxTypeActe.DataSource = tBareme
-        'cbxTypeActe.SelectedIndex = 0
-
         Me.Visible = True
         Me.BringToFront()
 

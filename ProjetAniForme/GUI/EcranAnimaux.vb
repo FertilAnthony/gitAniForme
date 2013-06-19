@@ -43,18 +43,29 @@ Public Class EcranAnimaux
         tbxNomAnimal.Text = a.NomAnimal
         tbxCouleurAnimal.Text = a.Couleur
         tbxTatouageAnimal.Text = a.Tatouage
-        Dim i As Integer = 0
-        Dim tRace(MgtAnimal.getInstance().raceAnimaux.Count) As String
-        Dim tEspece(MgtAnimal.getInstance().raceAnimaux.Count) As String
-        While i < MgtAnimal.getInstance().raceAnimaux.Count
-            tRace(i) = MgtAnimal.getInstance().raceAnimaux.Item(i).Race
-            tEspece(i) = MgtAnimal.getInstance().raceAnimaux.Item(i).Espece
-            i = i + 1
-        End While
-        cbxRaceAnimal.DataSource = tRace
-        cbxRaceAnimal.SelectedIndex = 0
-        cbxEspeceAnimal.DataSource = tEspece
-        cbxEspeceAnimal.SelectedIndex = 0
+        'Dim i As Integer = 0
+        'Dim tRace(MgtAnimal.getInstance().raceAnimaux.Count) As String
+        'Dim tEspece(MgtAnimal.getInstance().raceAnimaux.Count) As String
+        'While i < MgtAnimal.getInstance().raceAnimaux.Count
+        'tRace(i) = MgtAnimal.getInstance().raceAnimaux.Item(i).Race
+        'tEspece(i) = MgtAnimal.getInstance().raceAnimaux.Item(i).Espece
+        'i = i + 1
+        'End While
+        'cbxRaceAnimal.DataSource = tRace
+        'cbxRaceAnimal.SelectedIndex = 0
+        'cbxEspeceAnimal.DataSource = tEspece
+        'cbxEspeceAnimal.SelectedIndex = 0
+
+        'Ajout espece dans combobox espece
+        Dim especeAnimal As New List(Of String)
+        For Each r As Race In MgtAnimal.getInstance().raceAnimaux
+            Dim espece As String = r.Espece
+            Dim unique As String = especeAnimal.Find(Function(e As String) e = espece)
+            If unique = Nothing Then
+                especeAnimal.Add(espece)
+            End If
+        Next
+        cbxEspeceAnimal.DataSource = especeAnimal
 
         Select Case a.Sexe
             Case "M".ToCharArray
@@ -70,15 +81,17 @@ Public Class EcranAnimaux
     End Sub
 
     Private Sub cbxEspeceAnimal_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbxEspeceAnimal.SelectedIndexChanged
-        Dim pos As Integer = cbxEspeceAnimal.SelectedIndex()
-        cbxRaceAnimal.SelectedIndex() = pos
-    End Sub
+        Dim raceAnimal As New List(Of Race)
 
-    
-    'Private Sub cbxRaceAnimal_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbxRaceAnimal.SelectedIndexChanged
-    'Dim pos As Integer = cbxRaceAnimal.SelectedIndex()
-    'cbxEspeceAnimal.SelectedIndex() = pos
-    'End Sub
+        For Each es As Race In MgtAnimal.getInstance.raceAnimaux
+            Dim espece As String = cbxEspeceAnimal.Text
+            If es.Espece = espece Then
+                raceAnimal.Add(es)
+            End If
+        Next
+        cbxRaceAnimal.DataSource = raceAnimal
+        cbxRaceAnimal.DisplayMember = "Race" 'affiche le libelle dans la comboBox
+    End Sub
 
     Private Sub btnAjouterAnimal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAjouterAnimal.Click
         DialogAjoutAnimal.Visible = True
