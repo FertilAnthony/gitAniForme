@@ -20,6 +20,7 @@ Public Class EcranAgendas
         voDataTable.Columns.Add("Nom du client")
         voDataTable.Columns.Add("Animal")
         voDataTable.Columns.Add("Race")
+        voDataTable.Columns.Add("codeAnimal")
 
         For Each rdv As Agendas In MgtAgendas.getInstance().lstRdvVeto
             voDataRow = voDataTable.NewRow() 'Création d'une nouvelle ligne
@@ -31,12 +32,14 @@ Public Class EcranAgendas
             Dim c As Client = MgtClient.getInstance().ObtenirClient(codeClient)
 
             voDataRow("Heure") = heure
-            voDataRow("Nom du client") = c.NomClient
+            voDataRow("Nom du client") = c.ToString
             voDataRow("Animal") = a.NomAnimal
             voDataRow("Race") = race
+            voDataRow("codeAnimal") = a.CodeAnimal
             voDataTable.Rows.Add(voDataRow)
         Next
         DataGridViewAgendas.DataSource = voDataTable
+        Me.DataGridViewAgendas.Columns("codeAnimal").Visible = False
 
     End Sub
 
@@ -75,6 +78,7 @@ Public Class EcranAgendas
         voDataTable.Columns.Add("Nom du client")
         voDataTable.Columns.Add("Animal")
         voDataTable.Columns.Add("Race")
+        voDataTable.Columns.Add("codeAnimal")
 
         For Each rdv As Agendas In MgtAgendas.getInstance().lstRdvVeto
             voDataRow = voDataTable.NewRow() 'Création d'une nouvelle ligne
@@ -86,12 +90,14 @@ Public Class EcranAgendas
             Dim c As Client = MgtClient.getInstance().ObtenirClient(codeClient)
 
             voDataRow("Heure") = heure
-            voDataRow("Nom du client") = c.NomClient
+            voDataRow("Nom du client") = c.ToString
             voDataRow("Animal") = a.NomAnimal
             voDataRow("Race") = race
+            voDataRow("codeAnimal") = a.CodeAnimal
             voDataTable.Rows.Add(voDataRow)
         Next
         DataGridViewAgendas.DataSource = voDataTable
+        Me.DataGridViewAgendas.Columns("codeAnimal").Visible = False
 
     End Sub
 
@@ -109,6 +115,7 @@ Public Class EcranAgendas
         voDataTable.Columns.Add("Nom du client")
         voDataTable.Columns.Add("Animal")
         voDataTable.Columns.Add("Race")
+        voDataTable.Columns.Add("codeAnimal")
 
         For Each rdv As Agendas In MgtAgendas.getInstance().lstRdvVeto
             voDataRow = voDataTable.NewRow() 'Création d'une nouvelle ligne
@@ -120,12 +127,18 @@ Public Class EcranAgendas
             Dim c As Client = MgtClient.getInstance().ObtenirClient(codeClient)
 
             voDataRow("Heure") = heure
-            voDataRow("Nom du client") = c.NomClient
+            voDataRow("Nom du client") = c.ToString
             voDataRow("Animal") = a.NomAnimal
             voDataRow("Race") = race
+            voDataRow("codeAnimal") = a.CodeAnimal
             voDataTable.Rows.Add(voDataRow)
         Next
         DataGridViewAgendas.DataSource = voDataTable
+        Me.DataGridViewAgendas.Columns("codeAnimal").Visible = False
         'DataGridViewAgendas.DataSource = MgtAgendas.getInstance().lstRdvVeto
+    End Sub
+
+    Private Sub DataGridViewAgendas_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridViewAgendas.CellContentClick
+
     End Sub
 End Class

@@ -54,8 +54,8 @@ Partial Class EcranConsultation
         Me.tbxNomAnimal = New System.Windows.Forms.TextBox()
         Me.rTbxCommentaire = New System.Windows.Forms.RichTextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cbxTypeActe = New System.Windows.Forms.ComboBox()
+        Me.cbxLibelleActe = New System.Windows.Forms.ComboBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.acteNum = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -235,6 +235,7 @@ Partial Class EcranConsultation
         '
         Me.tbxCodeAnimal.Location = New System.Drawing.Point(69, 126)
         Me.tbxCodeAnimal.Name = "tbxCodeAnimal"
+        Me.tbxCodeAnimal.ReadOnly = True
         Me.tbxCodeAnimal.Size = New System.Drawing.Size(100, 20)
         Me.tbxCodeAnimal.TabIndex = 18
         '
@@ -270,6 +271,7 @@ Partial Class EcranConsultation
         '
         Me.tbxVeterinaire.Location = New System.Drawing.Point(282, 418)
         Me.tbxVeterinaire.Name = "tbxVeterinaire"
+        Me.tbxVeterinaire.ReadOnly = True
         Me.tbxVeterinaire.Size = New System.Drawing.Size(100, 20)
         Me.tbxVeterinaire.TabIndex = 24
         '
@@ -277,6 +279,7 @@ Partial Class EcranConsultation
         '
         Me.TextBox8.Location = New System.Drawing.Point(66, 364)
         Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(27, 20)
         Me.TextBox8.TabIndex = 25
         '
@@ -284,6 +287,7 @@ Partial Class EcranConsultation
         '
         Me.tbxTatouageAnimal.Location = New System.Drawing.Point(233, 212)
         Me.tbxTatouageAnimal.Name = "tbxTatouageAnimal"
+        Me.tbxTatouageAnimal.ReadOnly = True
         Me.tbxTatouageAnimal.Size = New System.Drawing.Size(100, 20)
         Me.tbxTatouageAnimal.TabIndex = 26
         '
@@ -291,6 +295,7 @@ Partial Class EcranConsultation
         '
         Me.tbxSexeAnimal.Location = New System.Drawing.Point(394, 173)
         Me.tbxSexeAnimal.Name = "tbxSexeAnimal"
+        Me.tbxSexeAnimal.ReadOnly = True
         Me.tbxSexeAnimal.Size = New System.Drawing.Size(100, 20)
         Me.tbxSexeAnimal.TabIndex = 27
         '
@@ -298,6 +303,7 @@ Partial Class EcranConsultation
         '
         Me.tbxCouleurAnimal.Location = New System.Drawing.Point(394, 126)
         Me.tbxCouleurAnimal.Name = "tbxCouleurAnimal"
+        Me.tbxCouleurAnimal.ReadOnly = True
         Me.tbxCouleurAnimal.Size = New System.Drawing.Size(100, 20)
         Me.tbxCouleurAnimal.TabIndex = 28
         '
@@ -305,6 +311,7 @@ Partial Class EcranConsultation
         '
         Me.tbxRaceAnimal.Location = New System.Drawing.Point(233, 173)
         Me.tbxRaceAnimal.Name = "tbxRaceAnimal"
+        Me.tbxRaceAnimal.ReadOnly = True
         Me.tbxRaceAnimal.Size = New System.Drawing.Size(100, 20)
         Me.tbxRaceAnimal.TabIndex = 29
         '
@@ -312,6 +319,7 @@ Partial Class EcranConsultation
         '
         Me.tbxEspeceAnimal.Location = New System.Drawing.Point(233, 126)
         Me.tbxEspeceAnimal.Name = "tbxEspeceAnimal"
+        Me.tbxEspeceAnimal.ReadOnly = True
         Me.tbxEspeceAnimal.Size = New System.Drawing.Size(100, 20)
         Me.tbxEspeceAnimal.TabIndex = 30
         '
@@ -319,6 +327,7 @@ Partial Class EcranConsultation
         '
         Me.tbxNomAnimal.Location = New System.Drawing.Point(69, 173)
         Me.tbxNomAnimal.Name = "tbxNomAnimal"
+        Me.tbxNomAnimal.ReadOnly = True
         Me.tbxNomAnimal.Size = New System.Drawing.Size(100, 20)
         Me.tbxNomAnimal.TabIndex = 31
         '
@@ -337,21 +346,21 @@ Partial Class EcranConsultation
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 33
         '
-        'ComboBox1
+        'cbxTypeActe
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(388, 418)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 34
+        Me.cbxTypeActe.FormattingEnabled = True
+        Me.cbxTypeActe.Location = New System.Drawing.Point(388, 418)
+        Me.cbxTypeActe.Name = "cbxTypeActe"
+        Me.cbxTypeActe.Size = New System.Drawing.Size(121, 21)
+        Me.cbxTypeActe.TabIndex = 34
         '
-        'ComboBox2
+        'cbxLibelleActe
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(388, 470)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 35
+        Me.cbxLibelleActe.FormattingEnabled = True
+        Me.cbxLibelleActe.Location = New System.Drawing.Point(388, 470)
+        Me.cbxLibelleActe.Name = "cbxLibelleActe"
+        Me.cbxLibelleActe.Size = New System.Drawing.Size(121, 21)
+        Me.cbxLibelleActe.TabIndex = 35
         '
         'Label19
         '
@@ -523,8 +532,8 @@ Partial Class EcranConsultation
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cbxLibelleActe)
+        Me.Controls.Add(Me.cbxTypeActe)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.rTbxCommentaire)
         Me.Controls.Add(Me.tbxNomAnimal)
@@ -601,8 +610,8 @@ Partial Class EcranConsultation
     Friend WithEvents tbxNomAnimal As System.Windows.Forms.TextBox
     Friend WithEvents rTbxCommentaire As System.Windows.Forms.RichTextBox
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxTypeActe As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxLibelleActe As System.Windows.Forms.ComboBox
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents acteNum As System.Windows.Forms.DataGridViewTextBoxColumn
