@@ -18,7 +18,12 @@ Public Class EcranConsultation
         Me.tbxNomAnimal.Text = a.NomAnimal
         Me.tbxRaceAnimal.Text = a.Race
         Me.tbxTatouageAnimal.Text = a.Tatouage
-        Me.tbxVeterinaire.Text = "veto connecté"
+        If MgtVeterinaire.getInstance().vetoConnect IsNot Nothing Then
+            Me.tbxVeterinaire.Text = MgtVeterinaire.getInstance().vetoConnect.ToString
+        Else
+            Me.tbxVeterinaire.Text = "Visiteur"
+        End If
+
         Dim sexe As Char = a.Sexe
 
         If sexe = "M" Then

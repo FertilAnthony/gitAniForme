@@ -5,7 +5,7 @@ Imports System.ComponentModel
 Public Class MgtVeterinaire
 
     Private _listeVeterinaires As New BindingList(Of Veterinaire)
-
+    Private _vetoConnect As Veterinaire
 
 #Region "Pattern de singleton"
     Private Shared _instance As New MgtVeterinaire()
@@ -22,6 +22,12 @@ Public Class MgtVeterinaire
     ReadOnly Property veterinaires As BindingList(Of Veterinaire)
         Get
             Return _listeVeterinaires
+        End Get
+    End Property
+
+    ReadOnly Property vetoConnect As Veterinaire
+        Get
+            Return _vetoConnect
         End Get
     End Property
 #End Region
@@ -106,6 +112,10 @@ Public Class MgtVeterinaire
         Else
             Throw New ApplicationException("L'instance à modifier n'appartient pas à la liste courante de l'application.")
         End If
+    End Sub
+
+    Sub getVetoConnect(ByVal vetoConnect As Veterinaire)
+        _vetoConnect = vetoConnect
     End Sub
 
 End Class

@@ -172,9 +172,9 @@ Partial Class EcranConsultation
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(279, 402)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(68, 13)
+        Me.Label11.Size = New System.Drawing.Size(63, 13)
         Me.Label11.TabIndex = 10
-        Me.Label11.Text = "Vétérinaires :"
+        Me.Label11.Text = "Vétérinaire :"
         '
         'Label12
         '

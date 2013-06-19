@@ -12,7 +12,9 @@ Public Class EcranVeterinaire
 
     Private Sub BtnConnexion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnConnexion.Click
         Try
-            MgtVeterinaire.getInstance().TestConnexion(CType(lbxVeterinaires.SelectedItem, Veterinaire), tbxMdp.Text)
+            Dim vetoConnect As Veterinaire = CType(lbxVeterinaires.SelectedItem, Veterinaire)
+            MgtVeterinaire.getInstance().TestConnexion(vetoConnect, tbxMdp.Text)
+            MgtVeterinaire.getInstance().getVetoConnect(vetoConnect)
             MessageBox.Show("Connexion réussi", "Bienvenue", MessageBoxButtons.OK)
             Me.Close()
         Catch ex As Exception
@@ -32,11 +34,4 @@ Public Class EcranVeterinaire
         DialogModifVeterinaire.Visible = True
     End Sub
 
-    Private Sub lbxVeterinaires_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbxVeterinaires.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub EcranVeterinaire_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
