@@ -39,10 +39,11 @@ Partial Class EcranClient
         Me.tbxVilleClient = New System.Windows.Forms.TextBox()
         Me.tbxAssuranceClient = New System.Windows.Forms.TextBox()
         Me.tbxEmailClient = New System.Windows.Forms.TextBox()
-        Me.Button11 = New System.Windows.Forms.Button()
         Me.dataGridViewAnimauxClient = New System.Windows.Forms.DataGridView()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtboxTel = New System.Windows.Forms.TextBox()
+        Me.lblTel = New System.Windows.Forms.Label()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -53,8 +54,7 @@ Partial Class EcranClient
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.txtboxTel = New System.Windows.Forms.TextBox()
-        Me.lblTel = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         CType(Me.dataGridViewAnimauxClient, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -187,17 +187,6 @@ Partial Class EcranClient
         Me.tbxEmailClient.Size = New System.Drawing.Size(204, 20)
         Me.tbxEmailClient.TabIndex = 27
         '
-        'Button11
-        '
-        Me.Button11.FlatAppearance.BorderSize = 0
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Image = CType(resources.GetObject("Button11.Image"), System.Drawing.Image)
-        Me.Button11.Location = New System.Drawing.Point(320, 151)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(20, 20)
-        Me.Button11.TabIndex = 28
-        Me.Button11.UseVisualStyleBackColor = True
-        '
         'dataGridViewAnimauxClient
         '
         Me.dataGridViewAnimauxClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -215,15 +204,32 @@ Partial Class EcranClient
         Me.Label9.TabIndex = 30
         Me.Label9.Text = "Liste des annimaux du client :"
         '
-        'Label10
+        'txtboxTel
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(268, 78)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(195, 25)
-        Me.Label10.TabIndex = 31
-        Me.Label10.Text = "Gestion des clients"
+        Me.txtboxTel.Location = New System.Drawing.Point(108, 326)
+        Me.txtboxTel.Name = "txtboxTel"
+        Me.txtboxTel.Size = New System.Drawing.Size(204, 20)
+        Me.txtboxTel.TabIndex = 33
+        '
+        'lblTel
+        '
+        Me.lblTel.AutoSize = True
+        Me.lblTel.Location = New System.Drawing.Point(12, 329)
+        Me.lblTel.Name = "lblTel"
+        Me.lblTel.Size = New System.Drawing.Size(28, 13)
+        Me.lblTel.TabIndex = 32
+        Me.lblTel.Text = "Tél :"
+        '
+        'Button11
+        '
+        Me.Button11.FlatAppearance.BorderSize = 0
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Image = CType(resources.GetObject("Button11.Image"), System.Drawing.Image)
+        Me.Button11.Location = New System.Drawing.Point(320, 151)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(20, 20)
+        Me.Button11.TabIndex = 28
+        Me.Button11.UseVisualStyleBackColor = True
         '
         'Button10
         '
@@ -243,13 +249,13 @@ Partial Class EcranClient
         '
         Me.Button9.FlatAppearance.BorderSize = 0
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Image = Global.GUI.My.Resources.Resources._stop
+        Me.Button9.Image = Global.GUI.My.Resources.Resources.gohome
         Me.Button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button9.Location = New System.Drawing.Point(606, 12)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(67, 51)
         Me.Button9.TabIndex = 10
-        Me.Button9.Text = "Sortir"
+        Me.Button9.Text = "Home"
         Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button9.UseVisualStyleBackColor = True
         '
@@ -313,7 +319,7 @@ Partial Class EcranClient
         '
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Image = Global.GUI.My.Resources.Resources.cancel
+        Me.Button4.Image = Global.GUI.My.Resources.Resources.undo
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button4.Location = New System.Drawing.Point(200, 12)
         Me.Button4.Name = "Button4"
@@ -327,7 +333,7 @@ Partial Class EcranClient
         '
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Image = Global.GUI.My.Resources.Resources.edittrash
+        Me.Button3.Image = Global.GUI.My.Resources.Resources._stop
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button3.Location = New System.Drawing.Point(136, 12)
         Me.Button3.Name = "Button3"
@@ -365,21 +371,15 @@ Partial Class EcranClient
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'txtboxTel
+        'Label10
         '
-        Me.txtboxTel.Location = New System.Drawing.Point(108, 326)
-        Me.txtboxTel.Name = "txtboxTel"
-        Me.txtboxTel.Size = New System.Drawing.Size(204, 20)
-        Me.txtboxTel.TabIndex = 33
-        '
-        'lblTel
-        '
-        Me.lblTel.AutoSize = True
-        Me.lblTel.Location = New System.Drawing.Point(12, 329)
-        Me.lblTel.Name = "lblTel"
-        Me.lblTel.Size = New System.Drawing.Size(28, 13)
-        Me.lblTel.TabIndex = 32
-        Me.lblTel.Text = "Tél :"
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(268, 81)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(176, 25)
+        Me.Label10.TabIndex = 34
+        Me.Label10.Text = "Gestion des clients"
         '
         'EcranClient
         '
@@ -387,9 +387,9 @@ Partial Class EcranClient
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(778, 564)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.txtboxTel)
         Me.Controls.Add(Me.lblTel)
-        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.dataGridViewAnimauxClient)
         Me.Controls.Add(Me.Button11)
@@ -421,7 +421,7 @@ Partial Class EcranClient
         Me.Controls.Add(Me.Button1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "EcranClient"
-        Me.Text = "EcranClient"
+        Me.Text = "Clients"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.dataGridViewAnimauxClient, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -457,7 +457,7 @@ Partial Class EcranClient
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents dataGridViewAnimauxClient As System.Windows.Forms.DataGridView
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtboxTel As System.Windows.Forms.TextBox
     Friend WithEvents lblTel As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class

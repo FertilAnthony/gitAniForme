@@ -18,10 +18,15 @@ Public Class EcranClient
     End Sub
 
     Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
-
         Me.Visible = False
         EcranAnimaux.Visible = True
+
         EcranAnimaux.BringToFront()
+        EcranRdv.Visible = False
+
+        EcranConsultation.Visible = False
+        EcranDosMedical.Visible = False
+        EcranVaccins.Visible = False
     End Sub
 
     Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click

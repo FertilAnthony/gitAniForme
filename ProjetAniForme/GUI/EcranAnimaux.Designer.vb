@@ -22,15 +22,6 @@ Partial Class EcranAnimaux
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnAjouterAnimal = New System.Windows.Forms.Button()
-        Me.btnModif = New System.Windows.Forms.Button()
-        Me.btnSupprimerAnimal = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -39,7 +30,6 @@ Partial Class EcranAnimaux
         Me.tbxPrenomClient = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.tbxTatouageAnimal = New System.Windows.Forms.TextBox()
         Me.tbxCouleurAnimal = New System.Windows.Forms.TextBox()
@@ -57,136 +47,20 @@ Partial Class EcranAnimaux
         Me.cbxSexeAnimal = New System.Windows.Forms.ComboBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnSupprimerAnimal = New System.Windows.Forms.Button()
+        Me.btnModif = New System.Windows.Forms.Button()
+        Me.btnAjouterAnimal = New System.Windows.Forms.Button()
+        Me.Label10 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'btnAjouterAnimal
-        '
-        Me.btnAjouterAnimal.FlatAppearance.BorderSize = 0
-        Me.btnAjouterAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAjouterAnimal.Image = Global.GUI.My.Resources.Resources.add
-        Me.btnAjouterAnimal.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnAjouterAnimal.Location = New System.Drawing.Point(12, 12)
-        Me.btnAjouterAnimal.Name = "btnAjouterAnimal"
-        Me.btnAjouterAnimal.Size = New System.Drawing.Size(67, 51)
-        Me.btnAjouterAnimal.TabIndex = 2
-        Me.btnAjouterAnimal.Text = "Ajouter"
-        Me.btnAjouterAnimal.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnAjouterAnimal.UseVisualStyleBackColor = True
-        '
-        'btnModif
-        '
-        Me.btnModif.FlatAppearance.BorderSize = 0
-        Me.btnModif.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModif.Image = Global.GUI.My.Resources.Resources.filesave
-        Me.btnModif.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnModif.Location = New System.Drawing.Point(74, 12)
-        Me.btnModif.Name = "btnModif"
-        Me.btnModif.Size = New System.Drawing.Size(67, 51)
-        Me.btnModif.TabIndex = 3
-        Me.btnModif.Text = "Enregistrer"
-        Me.btnModif.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnModif.UseVisualStyleBackColor = True
-        '
-        'btnSupprimerAnimal
-        '
-        Me.btnSupprimerAnimal.FlatAppearance.BorderSize = 0
-        Me.btnSupprimerAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSupprimerAnimal.Image = Global.GUI.My.Resources.Resources.edittrash
-        Me.btnSupprimerAnimal.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnSupprimerAnimal.Location = New System.Drawing.Point(136, 12)
-        Me.btnSupprimerAnimal.Name = "btnSupprimerAnimal"
-        Me.btnSupprimerAnimal.Size = New System.Drawing.Size(67, 51)
-        Me.btnSupprimerAnimal.TabIndex = 4
-        Me.btnSupprimerAnimal.Text = "Supprimer"
-        Me.btnSupprimerAnimal.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnSupprimerAnimal.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Image = Global.GUI.My.Resources.Resources.cancel
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button4.Location = New System.Drawing.Point(200, 12)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(67, 51)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Anuler"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Image = Global.GUI.My.Resources.Resources._2leftarrow
-        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button5.Location = New System.Drawing.Point(273, 12)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(67, 51)
-        Me.Button5.TabIndex = 6
-        Me.Button5.Text = "Premier"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Image = Global.GUI.My.Resources.Resources._1leftarrow
-        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button6.Location = New System.Drawing.Point(335, 12)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(67, 51)
-        Me.Button6.TabIndex = 7
-        Me.Button6.Text = "Précédent"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Image = Global.GUI.My.Resources.Resources._1rightarrow
-        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button7.Location = New System.Drawing.Point(397, 12)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(67, 51)
-        Me.Button7.TabIndex = 8
-        Me.Button7.Text = "Suivant"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Image = Global.GUI.My.Resources.Resources._2rightarrow
-        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button8.Location = New System.Drawing.Point(460, 12)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(67, 51)
-        Me.Button8.TabIndex = 9
-        Me.Button8.Text = "Dernier"
-        Me.Button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Image = Global.GUI.My.Resources.Resources._stop
-        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button9.Location = New System.Drawing.Point(606, 12)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(67, 51)
-        Me.Button9.TabIndex = 10
-        Me.Button9.Text = "Sortir"
-        Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button9.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -255,16 +129,6 @@ Partial Class EcranAnimaux
         Me.Label9.Size = New System.Drawing.Size(146, 13)
         Me.Label9.TabIndex = 30
         Me.Label9.Text = "Liste des annimaux du client :"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(268, 78)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(214, 25)
-        Me.Label10.TabIndex = 31
-        Me.Label10.Text = "Gestion des animaux"
         '
         'GroupBox1
         '
@@ -428,6 +292,142 @@ Partial Class EcranAnimaux
         Me.Button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button10.UseVisualStyleBackColor = True
         '
+        'Button9
+        '
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Image = Global.GUI.My.Resources.Resources.gohome
+        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button9.Location = New System.Drawing.Point(606, 12)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(67, 51)
+        Me.Button9.TabIndex = 10
+        Me.Button9.Text = "Home"
+        Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Image = Global.GUI.My.Resources.Resources._2rightarrow
+        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button8.Location = New System.Drawing.Point(460, 12)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(67, 51)
+        Me.Button8.TabIndex = 9
+        Me.Button8.Text = "Dernier"
+        Me.Button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Image = Global.GUI.My.Resources.Resources._1rightarrow
+        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button7.Location = New System.Drawing.Point(397, 12)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(67, 51)
+        Me.Button7.TabIndex = 8
+        Me.Button7.Text = "Suivant"
+        Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Image = Global.GUI.My.Resources.Resources._1leftarrow
+        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button6.Location = New System.Drawing.Point(335, 12)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(67, 51)
+        Me.Button6.TabIndex = 7
+        Me.Button6.Text = "Précédent"
+        Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Image = Global.GUI.My.Resources.Resources._2leftarrow
+        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button5.Location = New System.Drawing.Point(273, 12)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(67, 51)
+        Me.Button5.TabIndex = 6
+        Me.Button5.Text = "Premier"
+        Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Image = Global.GUI.My.Resources.Resources.undo
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button4.Location = New System.Drawing.Point(200, 12)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(67, 51)
+        Me.Button4.TabIndex = 5
+        Me.Button4.Text = "Anuler"
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'btnSupprimerAnimal
+        '
+        Me.btnSupprimerAnimal.FlatAppearance.BorderSize = 0
+        Me.btnSupprimerAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSupprimerAnimal.Image = Global.GUI.My.Resources.Resources._stop
+        Me.btnSupprimerAnimal.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnSupprimerAnimal.Location = New System.Drawing.Point(136, 12)
+        Me.btnSupprimerAnimal.Name = "btnSupprimerAnimal"
+        Me.btnSupprimerAnimal.Size = New System.Drawing.Size(67, 51)
+        Me.btnSupprimerAnimal.TabIndex = 4
+        Me.btnSupprimerAnimal.Text = "Supprimer"
+        Me.btnSupprimerAnimal.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnSupprimerAnimal.UseVisualStyleBackColor = True
+        '
+        'btnModif
+        '
+        Me.btnModif.FlatAppearance.BorderSize = 0
+        Me.btnModif.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModif.Image = Global.GUI.My.Resources.Resources.filesave
+        Me.btnModif.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnModif.Location = New System.Drawing.Point(74, 12)
+        Me.btnModif.Name = "btnModif"
+        Me.btnModif.Size = New System.Drawing.Size(67, 51)
+        Me.btnModif.TabIndex = 3
+        Me.btnModif.Text = "Enregistrer"
+        Me.btnModif.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnModif.UseVisualStyleBackColor = True
+        '
+        'btnAjouterAnimal
+        '
+        Me.btnAjouterAnimal.FlatAppearance.BorderSize = 0
+        Me.btnAjouterAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAjouterAnimal.Image = Global.GUI.My.Resources.Resources.add
+        Me.btnAjouterAnimal.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnAjouterAnimal.Location = New System.Drawing.Point(12, 12)
+        Me.btnAjouterAnimal.Name = "btnAjouterAnimal"
+        Me.btnAjouterAnimal.Size = New System.Drawing.Size(67, 51)
+        Me.btnAjouterAnimal.TabIndex = 2
+        Me.btnAjouterAnimal.Text = "Ajouter"
+        Me.btnAjouterAnimal.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnAjouterAnimal.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(258, 78)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(206, 25)
+        Me.Label10.TabIndex = 49
+        Me.Label10.Text = "Gestion des annimaux"
+        '
         'EcranAnimaux
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -435,6 +435,7 @@ Partial Class EcranAnimaux
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(778, 592)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
@@ -443,7 +444,6 @@ Partial Class EcranAnimaux
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button9)
@@ -459,7 +459,7 @@ Partial Class EcranAnimaux
         Me.Controls.Add(Me.GroupBox2)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "EcranAnimaux"
-        Me.Text = "EcranAnimaux"
+        Me.Text = "Animaux"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
@@ -487,7 +487,6 @@ Partial Class EcranAnimaux
     Friend WithEvents tbxPrenomClient As System.Windows.Forms.TextBox
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents tbxTatouageAnimal As System.Windows.Forms.TextBox
     Friend WithEvents tbxCouleurAnimal As System.Windows.Forms.TextBox
@@ -505,4 +504,5 @@ Partial Class EcranAnimaux
     Friend WithEvents cbxSexeAnimal As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Button10 As System.Windows.Forms.Button
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class

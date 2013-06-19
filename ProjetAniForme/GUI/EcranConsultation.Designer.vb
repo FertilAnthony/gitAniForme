@@ -38,7 +38,6 @@ Partial Class EcranConsultation
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.tbxCodeAnimal = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
@@ -66,12 +65,13 @@ Partial Class EcranConsultation
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Label15 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -220,16 +220,6 @@ Partial Class EcranConsultation
         Me.Label17.Size = New System.Drawing.Size(97, 13)
         Me.Label17.TabIndex = 16
         Me.Label17.Text = "Total consultation :"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(250, 83)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(121, 25)
-        Me.Label18.TabIndex = 17
-        Me.Label18.Text = "Consultation"
         '
         'tbxCodeAnimal
         '
@@ -434,6 +424,20 @@ Partial Class EcranConsultation
         Me.GroupBox4.TabIndex = 0
         Me.GroupBox4.TabStop = False
         '
+        'Button9
+        '
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Image = Global.GUI.My.Resources.Resources.gohome
+        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button9.Location = New System.Drawing.Point(328, 12)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(67, 51)
+        Me.Button9.TabIndex = 45
+        Me.Button9.Text = "Sortir"
+        Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button9.UseVisualStyleBackColor = True
+        '
         'Button5
         '
         Me.Button5.FlatAppearance.BorderSize = 0
@@ -452,7 +456,7 @@ Partial Class EcranConsultation
         '
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Image = Global.GUI.My.Resources.Resources.cancel
+        Me.Button4.Image = Global.GUI.My.Resources.Resources.undo
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button4.Location = New System.Drawing.Point(195, 12)
         Me.Button4.Name = "Button4"
@@ -466,7 +470,7 @@ Partial Class EcranConsultation
         '
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Image = Global.GUI.My.Resources.Resources.edittrash
+        Me.Button3.Image = Global.GUI.My.Resources.Resources._stop
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button3.Location = New System.Drawing.Point(131, 12)
         Me.Button3.Name = "Button3"
@@ -504,19 +508,15 @@ Partial Class EcranConsultation
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button9
+        'Label15
         '
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Image = Global.GUI.My.Resources.Resources._stop
-        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button9.Location = New System.Drawing.Point(328, 12)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(67, 51)
-        Me.Button9.TabIndex = 45
-        Me.Button9.Text = "Sortir"
-        Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(228, 83)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(131, 25)
+        Me.Label15.TabIndex = 46
+        Me.Label15.Text = "Consultations"
         '
         'EcranConsultation
         '
@@ -524,6 +524,7 @@ Partial Class EcranConsultation
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(653, 771)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -549,7 +550,6 @@ Partial Class EcranConsultation
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.tbxCodeAnimal)
-        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label14)
@@ -569,7 +569,7 @@ Partial Class EcranConsultation
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox3)
         Me.Name = "EcranConsultation"
-        Me.Text = "EcranConsultation"
+        Me.Text = "Consultations"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
@@ -594,7 +594,6 @@ Partial Class EcranConsultation
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents tbxCodeAnimal As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
@@ -628,4 +627,5 @@ Partial Class EcranConsultation
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Label15 As System.Windows.Forms.Label
 End Class

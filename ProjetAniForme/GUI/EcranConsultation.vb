@@ -3,7 +3,7 @@ Imports BLL
 
 Public Class EcranConsultation
 
-    Private Sub Label18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label18.Click
+    Private Sub Label18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class EcranModifVaccin
+Partial Class DialogAjoutVaccin
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -82,10 +82,11 @@ Partial Class EcranModifVaccin
         Me.btnSave.Text = "Enregistrer"
         Me.btnSave.UseVisualStyleBackColor = True
         '
-        'EcranModifVaccin
+        'DialogAjoutVaccin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(292, 164)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.nudNewQt)
@@ -93,8 +94,8 @@ Partial Class EcranModifVaccin
         Me.Controls.Add(Me.lblOldQt)
         Me.Controls.Add(Me.tbOldQuantite)
         Me.Controls.Add(Me.lbVaccin)
-        Me.Name = "EcranModifVaccin"
-        Me.Text = "EcranModifVaccin"
+        Me.Name = "DialogAjoutVaccin"
+        Me.Text = "Ajout vaccins"
         CType(Me.nudNewQt, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
