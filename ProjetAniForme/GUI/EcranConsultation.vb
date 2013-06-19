@@ -61,4 +61,22 @@ Public Class EcranConsultation
         cbxLibelleActe.DataSource = libelleBareme
         cbxLibelleActe.DisplayMember = "Libelle" 'affiche le libelle dans la comboBox
     End Sub
+
+    Private Sub cbxLibelleActe_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbxLibelleActe.SelectedIndexChanged
+        Dim selectedBareme As Bareme = CType(cbxLibelleActe.SelectedItem, Bareme)
+
+        tbxPrix.Text = selectedBareme.tarifFixe.ToString
+        tbxPrixMin.Text = selectedBareme.tarifMini.ToString
+        tbxPrixMax.Text = selectedBareme.tarifMaxi.ToString
+
+        If selectedBareme.typeActe = "TATO" And tbxTatouageAnimal.Text = "" Then
+            tbxTatouageAnimal.ReadOnly = False
+        End If
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        cbxTypeActe.Enabled = True
+        cbxLibelleActe.Enabled = True
+        tbxPrix.ReadOnly = False
+    End Sub
 End Class

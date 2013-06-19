@@ -41,9 +41,9 @@ Partial Class EcranConsultation
         Me.Label18 = New System.Windows.Forms.Label()
         Me.tbxCodeAnimal = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.tbxPrixMax = New System.Windows.Forms.TextBox()
+        Me.tbxPrix = New System.Windows.Forms.TextBox()
+        Me.tbxPrixMin = New System.Windows.Forms.TextBox()
         Me.tbxVeterinaire = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.tbxTatouageAnimal = New System.Windows.Forms.TextBox()
@@ -246,26 +246,29 @@ Partial Class EcranConsultation
         Me.TextBox3.Size = New System.Drawing.Size(83, 20)
         Me.TextBox3.TabIndex = 20
         '
-        'TextBox4
+        'tbxPrixMax
         '
-        Me.TextBox4.Location = New System.Drawing.Point(558, 447)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(83, 20)
-        Me.TextBox4.TabIndex = 21
+        Me.tbxPrixMax.Location = New System.Drawing.Point(558, 447)
+        Me.tbxPrixMax.Name = "tbxPrixMax"
+        Me.tbxPrixMax.ReadOnly = True
+        Me.tbxPrixMax.Size = New System.Drawing.Size(83, 20)
+        Me.tbxPrixMax.TabIndex = 21
         '
-        'TextBox5
+        'tbxPrix
         '
-        Me.TextBox5.Location = New System.Drawing.Point(558, 473)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(83, 20)
-        Me.TextBox5.TabIndex = 22
+        Me.tbxPrix.Location = New System.Drawing.Point(558, 473)
+        Me.tbxPrix.Name = "tbxPrix"
+        Me.tbxPrix.ReadOnly = True
+        Me.tbxPrix.Size = New System.Drawing.Size(83, 20)
+        Me.tbxPrix.TabIndex = 22
         '
-        'TextBox6
+        'tbxPrixMin
         '
-        Me.TextBox6.Location = New System.Drawing.Point(558, 414)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(83, 20)
-        Me.TextBox6.TabIndex = 23
+        Me.tbxPrixMin.Location = New System.Drawing.Point(558, 414)
+        Me.tbxPrixMin.Name = "tbxPrixMin"
+        Me.tbxPrixMin.ReadOnly = True
+        Me.tbxPrixMin.Size = New System.Drawing.Size(83, 20)
+        Me.tbxPrixMin.TabIndex = 23
         '
         'tbxVeterinaire
         '
@@ -348,6 +351,7 @@ Partial Class EcranConsultation
         '
         'cbxTypeActe
         '
+        Me.cbxTypeActe.Enabled = False
         Me.cbxTypeActe.FormattingEnabled = True
         Me.cbxTypeActe.Location = New System.Drawing.Point(388, 418)
         Me.cbxTypeActe.Name = "cbxTypeActe"
@@ -356,6 +360,7 @@ Partial Class EcranConsultation
         '
         'cbxLibelleActe
         '
+        Me.cbxLibelleActe.Enabled = False
         Me.cbxLibelleActe.FormattingEnabled = True
         Me.cbxLibelleActe.Location = New System.Drawing.Point(388, 470)
         Me.cbxLibelleActe.Name = "cbxLibelleActe"
@@ -544,9 +549,9 @@ Partial Class EcranConsultation
         Me.Controls.Add(Me.tbxTatouageAnimal)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.tbxVeterinaire)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.tbxPrixMin)
+        Me.Controls.Add(Me.tbxPrix)
+        Me.Controls.Add(Me.tbxPrixMax)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.tbxCodeAnimal)
         Me.Controls.Add(Me.Label18)
@@ -597,9 +602,9 @@ Partial Class EcranConsultation
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents tbxCodeAnimal As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents tbxPrixMax As System.Windows.Forms.TextBox
+    Friend WithEvents tbxPrix As System.Windows.Forms.TextBox
+    Friend WithEvents tbxPrixMin As System.Windows.Forms.TextBox
     Friend WithEvents tbxVeterinaire As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents tbxTatouageAnimal As System.Windows.Forms.TextBox
