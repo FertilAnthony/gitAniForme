@@ -22,6 +22,7 @@ Partial Class EcranVeterinaire
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EcranVeterinaire))
         Me.BtnConnexion = New System.Windows.Forms.Button()
         Me.lbxVeterinaires = New System.Windows.Forms.ListBox()
         Me.gbxVetérinaires = New System.Windows.Forms.GroupBox()
@@ -37,7 +38,7 @@ Partial Class EcranVeterinaire
         'BtnConnexion
         '
         Me.BtnConnexion.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnConnexion.Location = New System.Drawing.Point(507, 273)
+        Me.BtnConnexion.Location = New System.Drawing.Point(373, 273)
         Me.BtnConnexion.Name = "BtnConnexion"
         Me.BtnConnexion.Size = New System.Drawing.Size(88, 23)
         Me.BtnConnexion.TabIndex = 4
@@ -139,10 +140,9 @@ Partial Class EcranVeterinaire
         '
         'EcranVeterinaire
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(607, 308)
+        Me.ClientSize = New System.Drawing.Size(473, 308)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.btnSupprimerVeto)
         Me.Controls.Add(Me.btnModifierVeto)
@@ -151,7 +151,9 @@ Partial Class EcranVeterinaire
         Me.Controls.Add(Me.tbxMdp)
         Me.Controls.Add(Me.gbxVetérinaires)
         Me.Controls.Add(Me.BtnConnexion)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EcranVeterinaire"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Vétérinaires"
         Me.gbxVetérinaires.ResumeLayout(False)
         Me.ResumeLayout(False)

@@ -31,7 +31,7 @@ Public Class EcranPrincipal
         EcranConsultation.MdiParent = Me
         EcranVeterinaire.MdiParent = Me
         EcranVaccins.MdiParent = Me
-
+        EcranVeterinaire.Visible = True
         MgtVeterinaire.getInstance.initialiserDonnees()
         MgtAnimal.getInstance.initialiserDonnees()
         MgtClient.getInstance.initialiserDonnees()
@@ -117,5 +117,55 @@ Public Class EcranPrincipal
         EcranConsultation.Visible = False
         EcranDosMedical.Visible = False
 
+    End Sub
+
+    Private Sub btnQuitter_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnQuitter.Click
+        Me.Close()
+
+    End Sub
+
+    Private Sub PriseDeRendezvousToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PriseDeRendezvousToolStripMenuItem.Click
+        EcranRdv.Visible = True
+        EcranAgendas.Visible = False
+        EcranAnimaux.Visible = False
+        EcranClient.Visible = False
+        EcranConsultation.Visible = False
+        EcranVaccins.Visible = True
+        EcranDosMedical.Visible = False
+        EcranVeterinaire.Visible = False
+
+    End Sub
+
+    Private Sub DossierClientAnimalToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DossierClientAnimalToolStripMenuItem.Click
+        EcranRdv.Visible = False
+        EcranAgendas.Visible = False
+        EcranAnimaux.Visible = False
+        EcranClient.Visible = True
+        EcranConsultation.Visible = False
+        EcranVaccins.Visible = False
+        EcranDosMedical.Visible = False
+        EcranVeterinaire.Visible = False
+    End Sub
+
+    Private Sub AgendaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgendaToolStripMenuItem.Click
+        EcranRdv.Visible = False
+        EcranAgendas.Visible = True
+        EcranAnimaux.Visible = False
+        EcranClient.Visible = False
+        EcranConsultation.Visible = False
+        EcranVaccins.Visible = False
+        EcranDosMedical.Visible = False
+        EcranVeterinaire.Visible = False
+    End Sub
+
+    Private Sub DossiersMédicauxToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DossiersMédicauxToolStripMenuItem.Click
+        EcranRdv.Visible = False
+        EcranAgendas.Visible = False
+        EcranAnimaux.Visible = False
+        EcranClient.Visible = False
+        EcranConsultation.Visible = False
+        EcranVaccins.Visible = False
+        EcranDosMedical.Visible = True
+        EcranVeterinaire.Visible = False
     End Sub
 End Class

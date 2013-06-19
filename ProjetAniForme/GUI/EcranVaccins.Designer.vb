@@ -35,7 +35,7 @@ Partial Class EcranVaccins
         '
         Me.DataGridViewVaccins.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridViewVaccins.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewVaccins.Location = New System.Drawing.Point(9, 100)
+        Me.DataGridViewVaccins.Location = New System.Drawing.Point(276, 131)
         Me.DataGridViewVaccins.Name = "DataGridViewVaccins"
         Me.DataGridViewVaccins.ReadOnly = True
         Me.DataGridViewVaccins.RowHeadersVisible = False
@@ -50,7 +50,7 @@ Partial Class EcranVaccins
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Image = Global.GUI.My.Resources.Resources.gohome
         Me.Button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button9.Location = New System.Drawing.Point(231, 12)
+        Me.Button9.Location = New System.Drawing.Point(580, 14)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(67, 51)
         Me.Button9.TabIndex = 11
@@ -64,7 +64,7 @@ Partial Class EcranVaccins
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Image = Global.GUI.My.Resources.Resources._stop
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.Location = New System.Drawing.Point(158, 12)
+        Me.Button3.Location = New System.Drawing.Point(507, 14)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(67, 51)
         Me.Button3.TabIndex = 5
@@ -78,7 +78,7 @@ Partial Class EcranVaccins
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Image = Global.GUI.My.Resources.Resources.pencil
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.Location = New System.Drawing.Point(85, 12)
+        Me.Button2.Location = New System.Drawing.Point(434, 14)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(67, 51)
         Me.Button2.TabIndex = 4
@@ -92,7 +92,7 @@ Partial Class EcranVaccins
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.GUI.My.Resources.Resources.add
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Location = New System.Drawing.Point(361, 14)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(67, 51)
         Me.Button1.TabIndex = 3
@@ -104,7 +104,7 @@ Partial Class EcranVaccins
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(105, 72)
+        Me.Label1.Location = New System.Drawing.Point(372, 84)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(275, 25)
         Me.Label1.TabIndex = 34
@@ -114,7 +114,7 @@ Partial Class EcranVaccins
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(515, 446)
+        Me.ClientSize = New System.Drawing.Size(871, 604)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridViewVaccins)

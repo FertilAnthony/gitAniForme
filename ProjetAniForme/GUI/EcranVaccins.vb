@@ -4,8 +4,9 @@ Imports BO
 Public Class EcranVaccins
 
     Private Sub EcranVaccins_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+        Me.WindowState = FormWindowState.Maximized
         DataGridViewVaccins.DataSource = MgtVaccin.getInstance.vaccins
+
 
 
     End Sub

@@ -8,6 +8,7 @@ Public Class EcranConsultation
     End Sub
 
     Private Sub EcranRelances_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
         'Chargement données de l'animal + vétérinaire
         Dim codeAnimal As Guid = New Guid(EcranAgendas.DataGridViewAgendas.CurrentRow.Cells.Item("codeAnimal").Value.ToString)
         Dim a As Animal = MgtAnimal.getInstance().ObtenirAnimal(codeAnimal)

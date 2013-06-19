@@ -95,6 +95,7 @@ Partial Class DialogAjoutVaccin
         Me.Controls.Add(Me.tbOldQuantite)
         Me.Controls.Add(Me.lbVaccin)
         Me.Name = "DialogAjoutVaccin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ajout vaccins"
         CType(Me.nudNewQt, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

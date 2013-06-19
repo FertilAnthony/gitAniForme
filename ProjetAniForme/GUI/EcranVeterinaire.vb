@@ -14,7 +14,9 @@ Public Class EcranVeterinaire
         Try
             MgtVeterinaire.getInstance().TestConnexion(CType(lbxVeterinaires.SelectedItem, Veterinaire), tbxMdp.Text)
             MessageBox.Show("Connexion réussi", "Bienvenue", MessageBoxButtons.OK)
+            EcranPrincipal.Show()
             Me.Close()
+
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Connexion impossible", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try

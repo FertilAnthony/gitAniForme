@@ -100,7 +100,7 @@ Partial Class DialogSupprVeterinaire
         Me.MinimizeBox = False
         Me.Name = "DialogSupprVeterinaire"
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Suppression d'un vétérinaire"
         Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
