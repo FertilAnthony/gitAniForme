@@ -34,6 +34,7 @@ Partial Class EcranAgendas
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.DataGridViewAgendas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -83,7 +84,7 @@ Partial Class EcranAgendas
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.DataGridViewAgendas)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 171)
+        Me.GroupBox1.Location = New System.Drawing.Point(72, 191)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(473, 428)
         Me.GroupBox1.TabIndex = 12
@@ -94,7 +95,7 @@ Partial Class EcranAgendas
         '
         Me.GroupBox2.Controls.Add(Me.dtAgendas)
         Me.GroupBox2.Controls.Add(Me.cbVeterinaires)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 97)
+        Me.GroupBox2.Location = New System.Drawing.Point(118, 121)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(383, 52)
         Me.GroupBox2.TabIndex = 13
@@ -105,13 +106,13 @@ Partial Class EcranAgendas
         '
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Image = Global.GUI.My.Resources.Resources._stop
+        Me.Button7.Image = Global.GUI.My.Resources.Resources.gohome
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button7.Location = New System.Drawing.Point(579, 12)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(76, 51)
         Me.Button7.TabIndex = 6
-        Me.Button7.Text = "Sortir"
+        Me.Button7.Text = "Home"
         Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button7.UseVisualStyleBackColor = True
         '
@@ -186,12 +187,23 @@ Partial Class EcranAgendas
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(264, 82)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(91, 25)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Agendas"
+        '
         'EcranAgendas
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(667, 736)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
@@ -207,12 +219,13 @@ Partial Class EcranAgendas
         Me.Name = "EcranAgendas"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
-        Me.Text = "EcranAgendas"
+        Me.Text = "Agendas"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.DataGridViewAgendas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
@@ -227,4 +240,5 @@ Partial Class EcranAgendas
     Friend WithEvents dtAgendas As System.Windows.Forms.DateTimePicker
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

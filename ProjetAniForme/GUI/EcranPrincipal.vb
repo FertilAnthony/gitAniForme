@@ -8,12 +8,21 @@ Public Class EcranPrincipal
 
         EcranAgendas.Visible = True
         EcranAgendas.BringToFront()
+        EcranRdv.Visible = False
+
+
+        EcranAnimaux.Visible = False
+
+        EcranConsultation.Visible = False
+        EcranDosMedical.Visible = False
+        EcranVaccins.Visible = False
 
     End Sub
 
 
     Private Sub EcranPrincipal_load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Visible = True
+        Me.BringToFront()
         EcranAgendas.MdiParent = Me
         EcranRdv.MdiParent = Me
         EcranClient.MdiParent = Me
@@ -21,6 +30,7 @@ Public Class EcranPrincipal
         EcranDosMedical.MdiParent = Me
         EcranConsultation.MdiParent = Me
         EcranVeterinaire.MdiParent = Me
+        EcranVaccins.MdiParent = Me
 
         MgtVeterinaire.getInstance.initialiserDonnees()
         MgtAnimal.getInstance.initialiserDonnees()
@@ -42,7 +52,7 @@ Public Class EcranPrincipal
         EcranClient.Visible = False
         EcranConsultation.Visible = False
         EcranDosMedical.Visible = False
-
+        EcranVaccins.Visible = False
 
     End Sub
 
@@ -50,6 +60,14 @@ Public Class EcranPrincipal
 
         EcranClient.Visible = True
         EcranClient.BringToFront()
+        EcranRdv.Visible = False
+
+        EcranAgendas.Visible = False
+        EcranAnimaux.Visible = False
+
+        EcranConsultation.Visible = False
+        EcranDosMedical.Visible = False
+        EcranVaccins.Visible = False
 
     End Sub
 
@@ -58,6 +76,14 @@ Public Class EcranPrincipal
     Private Sub btnDosMedical_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDosMedical.Click
         EcranDosMedical.Visible = True
         EcranDosMedical.BringToFront()
+        EcranRdv.Visible = False
+
+        EcranAgendas.Visible = False
+        EcranAnimaux.Visible = False
+        EcranClient.Visible = False
+        EcranConsultation.Visible = False
+
+        EcranVaccins.Visible = False
     End Sub
 
     Private Sub ToolStripContainer1_LeftToolStripPanel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LeftToolStripPanel.Click
@@ -70,10 +96,26 @@ Public Class EcranPrincipal
     Private Sub VétérinairesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VétérinairesToolStripMenuItem.Click
         EcranVeterinaire.Visible = True
         EcranVeterinaire.BringToFront()
+        EcranRdv.Visible = False
+        EcranAgendas.Visible = False
+        EcranAnimaux.Visible = False
+        EcranClient.Visible = False
+        EcranConsultation.Visible = False
+        EcranDosMedical.Visible = False
+        EcranVaccins.Visible = False
     End Sub
 
     Private Sub MiseÀJourDuStockDeVaccinsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MiseÀJourDuStockDeVaccinsToolStripMenuItem.Click
         EcranVaccins.Visible = True
         EcranVaccins.BringToFront()
+        EcranVeterinaire.Visible = False
+
+        EcranRdv.Visible = False
+        EcranAgendas.Visible = False
+        EcranAnimaux.Visible = False
+        EcranClient.Visible = False
+        EcranConsultation.Visible = False
+        EcranDosMedical.Visible = False
+
     End Sub
 End Class

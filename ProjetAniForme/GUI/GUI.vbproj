@@ -127,10 +127,10 @@
     <Compile Include="EcranDosMedical.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EcranModifVaccin.Designer.vb">
-      <DependentUpon>EcranModifVaccin.vb</DependentUpon>
+    <Compile Include="DialogAjoutVaccin.Designer.vb">
+      <DependentUpon>DialogAjoutVaccin.vb</DependentUpon>
     </Compile>
-    <Compile Include="EcranModifVaccin.vb">
+    <Compile Include="DialogAjoutVaccin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EcranPrincipal.vb">
@@ -214,8 +214,8 @@
     <EmbeddedResource Include="EcranDosMedical.resx">
       <DependentUpon>EcranDosMedical.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EcranModifVaccin.resx">
-      <DependentUpon>EcranModifVaccin.vb</DependentUpon>
+    <EmbeddedResource Include="DialogAjoutVaccin.resx">
+      <DependentUpon>DialogAjoutVaccin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EcranPrincipal.resx">
       <DependentUpon>EcranPrincipal.vb</DependentUpon>
@@ -357,6 +357,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gohome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

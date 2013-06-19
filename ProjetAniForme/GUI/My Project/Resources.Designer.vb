@@ -179,6 +179,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property gohome() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gohome", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property kontact_contacts() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("kontact_contacts", resourceCulture)
@@ -273,6 +280,13 @@ Namespace My.Resources
         Friend ReadOnly Property strilles() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("strilles", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property undo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("undo", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -2,7 +2,7 @@
 Imports BO
 Imports System.ComponentModel
 
-Public Class EcranModifVaccin
+Public Class DialogAjoutVaccin
 
     Private Sub EcranModifVaccin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         For Each v As Vaccin In MgtVaccin.getInstance.vaccinModif

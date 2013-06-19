@@ -27,9 +27,9 @@ Partial Class EcranVeterinaire
         Me.gbxVetérinaires = New System.Windows.Forms.GroupBox()
         Me.tbxMdp = New System.Windows.Forms.TextBox()
         Me.lblVetérinaires = New System.Windows.Forms.Label()
-        Me.btnModifierVeto = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.btnSupprimerVeto = New System.Windows.Forms.Button()
+        Me.btnModifierVeto = New System.Windows.Forms.Button()
         Me.btnAjouterVeto = New System.Windows.Forms.Button()
         Me.gbxVetérinaires.SuspendLayout()
         Me.SuspendLayout()
@@ -81,46 +81,67 @@ Partial Class EcranVeterinaire
         Me.lblVetérinaires.TabIndex = 9
         Me.lblVetérinaires.Text = "Mot de passe :"
         '
-        'btnModifierVeto
-        '
-        Me.btnModifierVeto.Image = Global.GUI.My.Resources.Resources.kontact_journal
-        Me.btnModifierVeto.Location = New System.Drawing.Point(92, 12)
-        Me.btnModifierVeto.Name = "btnModifierVeto"
-        Me.btnModifierVeto.Size = New System.Drawing.Size(62, 46)
-        Me.btnModifierVeto.TabIndex = 11
-        Me.btnModifierVeto.UseVisualStyleBackColor = True
-        '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(254, 12)
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Image = Global.GUI.My.Resources.Resources.gohome
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button4.Location = New System.Drawing.Point(275, 10)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(62, 46)
+        Me.Button4.Size = New System.Drawing.Size(67, 51)
         Me.Button4.TabIndex = 13
-        Me.Button4.Text = "Button4"
+        Me.Button4.Text = "Home"
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button4.UseVisualStyleBackColor = True
         '
         'btnSupprimerVeto
         '
+        Me.btnSupprimerVeto.FlatAppearance.BorderSize = 0
+        Me.btnSupprimerVeto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSupprimerVeto.Image = Global.GUI.My.Resources.Resources._stop
-        Me.btnSupprimerVeto.Location = New System.Drawing.Point(174, 12)
+        Me.btnSupprimerVeto.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnSupprimerVeto.Location = New System.Drawing.Point(187, 10)
         Me.btnSupprimerVeto.Name = "btnSupprimerVeto"
-        Me.btnSupprimerVeto.Size = New System.Drawing.Size(62, 46)
+        Me.btnSupprimerVeto.Size = New System.Drawing.Size(67, 51)
         Me.btnSupprimerVeto.TabIndex = 12
+        Me.btnSupprimerVeto.Text = "Supprimer"
+        Me.btnSupprimerVeto.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnSupprimerVeto.UseVisualStyleBackColor = True
+        '
+        'btnModifierVeto
+        '
+        Me.btnModifierVeto.FlatAppearance.BorderSize = 0
+        Me.btnModifierVeto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModifierVeto.Image = Global.GUI.My.Resources.Resources.pencil
+        Me.btnModifierVeto.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnModifierVeto.Location = New System.Drawing.Point(97, 10)
+        Me.btnModifierVeto.Name = "btnModifierVeto"
+        Me.btnModifierVeto.Size = New System.Drawing.Size(67, 51)
+        Me.btnModifierVeto.TabIndex = 11
+        Me.btnModifierVeto.Text = "Modifier"
+        Me.btnModifierVeto.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnModifierVeto.UseVisualStyleBackColor = True
         '
         'btnAjouterVeto
         '
+        Me.btnAjouterVeto.FlatAppearance.BorderSize = 0
+        Me.btnAjouterVeto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAjouterVeto.Image = Global.GUI.My.Resources.Resources.add
-        Me.btnAjouterVeto.Location = New System.Drawing.Point(12, 12)
+        Me.btnAjouterVeto.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnAjouterVeto.Location = New System.Drawing.Point(12, 10)
         Me.btnAjouterVeto.Name = "btnAjouterVeto"
-        Me.btnAjouterVeto.Size = New System.Drawing.Size(62, 46)
+        Me.btnAjouterVeto.Size = New System.Drawing.Size(67, 51)
         Me.btnAjouterVeto.TabIndex = 10
+        Me.btnAjouterVeto.Text = "Ajouter"
+        Me.btnAjouterVeto.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnAjouterVeto.UseVisualStyleBackColor = True
         '
         'EcranVeterinaire
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(607, 308)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.btnSupprimerVeto)

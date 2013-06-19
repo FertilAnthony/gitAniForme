@@ -22,26 +22,16 @@ Partial Class EcranDosMedical
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnRadioTous = New System.Windows.Forms.RadioButton()
         Me.radioBtnClient = New System.Windows.Forms.RadioButton()
         Me.cbxClient = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbxAnimaux = New System.Windows.Forms.ListBox()
         Me.btnDossierMed = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
-        Me.lbxAnimaux = New System.Windows.Forms.ListBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(183, 88)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(290, 25)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Rechercher un dossier médicale"
         '
         'btnRadioTous
         '
@@ -82,6 +72,14 @@ Partial Class EcranDosMedical
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
         '
+        'lbxAnimaux
+        '
+        Me.lbxAnimaux.FormattingEnabled = True
+        Me.lbxAnimaux.Location = New System.Drawing.Point(12, 155)
+        Me.lbxAnimaux.Name = "lbxAnimaux"
+        Me.lbxAnimaux.Size = New System.Drawing.Size(282, 251)
+        Me.lbxAnimaux.TabIndex = 25
+        '
         'btnDossierMed
         '
         Me.btnDossierMed.FlatAppearance.BorderSize = 0
@@ -100,23 +98,25 @@ Partial Class EcranDosMedical
         '
         Me.Button9.FlatAppearance.BorderSize = 0
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Image = Global.GUI.My.Resources.Resources._stop
+        Me.Button9.Image = Global.GUI.My.Resources.Resources.gohome
         Me.Button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button9.Location = New System.Drawing.Point(85, 12)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(67, 55)
         Me.Button9.TabIndex = 14
-        Me.Button9.Text = "Sortir"
+        Me.Button9.Text = "Home"
         Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button9.UseVisualStyleBackColor = True
         '
-        'lbxAnimaux
+        'Label1
         '
-        Me.lbxAnimaux.FormattingEnabled = True
-        Me.lbxAnimaux.Location = New System.Drawing.Point(12, 155)
-        Me.lbxAnimaux.Name = "lbxAnimaux"
-        Me.lbxAnimaux.Size = New System.Drawing.Size(282, 251)
-        Me.lbxAnimaux.TabIndex = 25
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(225, 90)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(288, 25)
+        Me.Label1.TabIndex = 26
+        Me.Label1.Text = "Recherche d'un dossier médical"
         '
         'EcranDosMedical
         '
@@ -124,15 +124,15 @@ Partial Class EcranDosMedical
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(697, 574)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbxAnimaux)
         Me.Controls.Add(Me.btnDossierMed)
         Me.Controls.Add(Me.radioBtnClient)
         Me.Controls.Add(Me.btnRadioTous)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "EcranDosMedical"
-        Me.Text = "EcranDosMedical"
+        Me.Text = "Dossier médical"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -140,11 +140,11 @@ Partial Class EcranDosMedical
 
     End Sub
     Friend WithEvents Button9 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnRadioTous As System.Windows.Forms.RadioButton
     Friend WithEvents radioBtnClient As System.Windows.Forms.RadioButton
     Friend WithEvents cbxClient As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents btnDossierMed As System.Windows.Forms.Button
     Friend WithEvents lbxAnimaux As System.Windows.Forms.ListBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

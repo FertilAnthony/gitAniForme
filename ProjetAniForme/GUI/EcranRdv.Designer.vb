@@ -234,13 +234,13 @@ Partial Class EcranRdv
         '
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Image = Global.GUI.My.Resources.Resources._stop
+        Me.Button7.Image = Global.GUI.My.Resources.Resources.gohome
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button7.Location = New System.Drawing.Point(450, 12)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(67, 51)
         Me.Button7.TabIndex = 7
-        Me.Button7.Text = "Sortir"
+        Me.Button7.Text = "Home"
         Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button7.UseVisualStyleBackColor = True
         '
@@ -276,7 +276,7 @@ Partial Class EcranRdv
         '
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Image = Global.GUI.My.Resources.Resources.cancel
+        Me.Button4.Image = Global.GUI.My.Resources.Resources.undo
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button4.Location = New System.Drawing.Point(204, 12)
         Me.Button4.Name = "Button4"
@@ -290,7 +290,7 @@ Partial Class EcranRdv
         '
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Image = Global.GUI.My.Resources.Resources.edittrash
+        Me.Button3.Image = Global.GUI.My.Resources.Resources._stop
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button3.Location = New System.Drawing.Point(140, 12)
         Me.Button3.Name = "Button3"
@@ -359,7 +359,7 @@ Partial Class EcranRdv
         Me.Controls.Add(Me.btnAjouterRdv)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "EcranRdv"
-        Me.Text = "EcranRdv"
+        Me.Text = "Rendez-vous "
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

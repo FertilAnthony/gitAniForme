@@ -25,6 +25,11 @@ Public Class EcranAnimaux
         Me.Visible = False
         EcranClient.Visible = True
         EcranClient.BringToFront()
+        EcranAgendas.Visible = False
+        EcranRdv.Visible = False
+        EcranConsultation.Visible = False
+        EcranDosMedical.Visible = False
+        EcranVaccins.Visible = False
 
     End Sub
 

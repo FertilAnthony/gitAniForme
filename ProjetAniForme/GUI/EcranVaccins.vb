@@ -22,7 +22,12 @@ Public Class EcranVaccins
         MgtVaccin.getInstance().vaccinModifEnCour(codeVaccin.ToString)
 
 
-        EcranModifVaccin.Visible = True
+        DialogAjoutVaccin.Visible = True
+
+    End Sub
+
+    Private Sub Button9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button9.Click
+        Me.Visible = False
 
     End Sub
 End Class
