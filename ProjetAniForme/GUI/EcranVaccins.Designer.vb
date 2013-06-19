@@ -91,7 +91,7 @@ Partial Class EcranVaccins
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(7, 75)
+        Me.Label10.Location = New System.Drawing.Point(90, 72)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(304, 25)
         Me.Label10.TabIndex = 32
@@ -99,17 +99,24 @@ Partial Class EcranVaccins
         '
         'DataGridViewVaccins
         '
+        Me.DataGridViewVaccins.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridViewVaccins.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridViewVaccins.Location = New System.Drawing.Point(9, 100)
         Me.DataGridViewVaccins.Name = "DataGridViewVaccins"
-        Me.DataGridViewVaccins.Size = New System.Drawing.Size(301, 338)
+        Me.DataGridViewVaccins.ReadOnly = True
+        Me.DataGridViewVaccins.RowHeadersVisible = False
+        Me.DataGridViewVaccins.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
+        Me.DataGridViewVaccins.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridViewVaccins.Size = New System.Drawing.Size(494, 338)
         Me.DataGridViewVaccins.TabIndex = 33
         '
         'EcranVaccins
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(320, 446)
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.ClientSize = New System.Drawing.Size(515, 446)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DataGridViewVaccins)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Button9)

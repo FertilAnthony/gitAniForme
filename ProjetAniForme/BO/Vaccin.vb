@@ -12,7 +12,7 @@
 
     Public Property codeVaccin() As Guid
         Get
-            Return codeVaccin
+            Return _CodeVaccin
         End Get
         Private Set(ByVal codeVaccin As Guid)
             _CodeVaccin = codeVaccin
@@ -21,7 +21,7 @@
 
     Public Property nomVaccin() As String
         Get
-            nomVaccin = _nomVaccin
+            Return _nomVaccin
         End Get
         Set(ByVal nomVaccin As String)
             _nomVaccin = nomVaccin
@@ -59,7 +59,7 @@
 
 #Region "Constructeurs"
     Public Sub New(ByVal codeVaccin As Guid, ByVal nomVaccin As String, ByVal quantite As Integer, ByVal periodeVal As Integer, ByVal archive As Boolean)
-        Me.codeVaccin = New Guid()
+        Me.codeVaccin = codeVaccin
         Me.nomVaccin = nomVaccin
         Me.quantite = quantite
         Me.periodeVal = periodeVal
@@ -74,12 +74,6 @@
     End Function
 #End Region
 
-#Region "Méthodes de classe"
-    'Shared Sub verifSalaire(ByVal salaire As Decimal)
-    '    If salaire < 0 Then
-    '        Throw New Exception("Le salaire doit être positif")
-    '    End If
-    'End Sub
-#End Region
+
 
 End Class

@@ -27,6 +27,7 @@ Public Class EcranPrincipal
         MgtClient.getInstance.initialiserDonnees()
         MgtAnimal.getInstance.getAllraceAnimaux()
         MgtAgendas.getInstance.rechercheRdv()
+        MgtVaccin.getInstance.initialiserDonnees()
 
 
     End Sub
