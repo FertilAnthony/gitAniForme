@@ -5,7 +5,7 @@ Imports System.ComponentModel
 Public Class MgtVeterinaire
 
     Private _listeVeterinaires As New BindingList(Of Veterinaire)
-
+    Private _vetoConnect As Veterinaire
 
 #Region "Pattern de singleton"
     Private Shared _instance As New MgtVeterinaire()
@@ -22,6 +22,12 @@ Public Class MgtVeterinaire
     ReadOnly Property veterinaires As BindingList(Of Veterinaire)
         Get
             Return _listeVeterinaires
+        End Get
+    End Property
+
+    ReadOnly Property vetoConnect As Veterinaire
+        Get
+            Return _vetoConnect
         End Get
     End Property
 #End Region
@@ -82,6 +88,22 @@ Public Class MgtVeterinaire
         veterinaires.Add(veto)
     End Sub
 
+    ''' <summary>
+    ''' Ajout veto via procédure stockée
+    ''' </summary>
+    ''' <param name="nomVeto"></param>
+    ''' <param name="mdpVeto"></param>
+    ''' <param name="archive"></param>
+    ''' <remarks></remarks>
+    Sub ajoutProcedure(ByVal nomVeto As String, ByVal mdpVeto As String, ByVal archive As Boolean)
+        ajout(New Veterinaire(Guid.NewGuid(), nomVeto, mdpVeto, archive))
+    End Sub
+
+    Private Sub ajoutProcedure(ByVal veto As Veterinaire)
+        SQLVeterinaire.AjoutVetoProcedure(veto)
+        veterinaires.Add(veto)
+    End Sub
+
     Sub supprimer(ByVal veto As Veterinaire)
         SQLVeterinaire.supprimer(veto)
         veterinaires.Remove(veto)
@@ -106,6 +128,10 @@ Public Class MgtVeterinaire
         Else
             Throw New ApplicationException("L'instance à modifier n'appartient pas à la liste courante de l'application.")
         End If
+    End Sub
+
+    Sub getVetoConnect(ByVal vetoConnect As Veterinaire)
+        _vetoConnect = vetoConnect
     End Sub
 
 End Class

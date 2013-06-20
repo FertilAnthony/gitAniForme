@@ -14,7 +14,7 @@ Public Class DialogAjoutVeterinaire
         ElseIf mdpVeto <> confirmationVeto Then
             MessageBox.Show("Mots de passe différents", "Erreur mots de passe", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Else
-            MgtVeterinaire.getInstance().ajout(nomVeto, mdpVeto)
+            MgtVeterinaire.getInstance().ajoutProcedure(nomVeto, mdpVeto, False)
             Me.Close()
         End If
     End Sub

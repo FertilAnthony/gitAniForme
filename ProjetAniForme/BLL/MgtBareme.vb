@@ -8,7 +8,6 @@ Public Class MgtBareme
 
 
     Private _bareme As New BindingList(Of Bareme)
-    Private _libelleBareme As New BindingList(Of Bareme)
 
 #End Region
 
@@ -28,12 +27,6 @@ Public Class MgtBareme
     ReadOnly Property bareme As BindingList(Of Bareme)
         Get
             Return _bareme
-        End Get
-    End Property
-
-    ReadOnly Property libelleBareme As BindingList(Of Bareme)
-        Get
-            Return _libelleBareme
         End Get
     End Property
 
