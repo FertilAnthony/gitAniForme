@@ -9,6 +9,7 @@ Public Class EcranRdv
     End Sub
 
     Private Sub EcranRdv_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
         cbxVeterinaire.DataSource = MgtVeterinaire.getInstance().veterinaires
         cbxClient.DataSource = MgtClient.getInstance().clients
         Dim client As Client = CType(cbxClient.SelectedItem, Client)

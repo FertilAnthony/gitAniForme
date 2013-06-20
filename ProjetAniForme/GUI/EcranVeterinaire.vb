@@ -16,7 +16,9 @@ Public Class EcranVeterinaire
             MgtVeterinaire.getInstance().TestConnexion(vetoConnect, tbxMdp.Text)
             MgtVeterinaire.getInstance().getVetoConnect(vetoConnect)
             MessageBox.Show("Connexion réussi", "Bienvenue", MessageBoxButtons.OK)
+            EcranPrincipal.Show()
             Me.Close()
+
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Connexion impossible", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try

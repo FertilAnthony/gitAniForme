@@ -99,7 +99,7 @@ Partial Class DialogSupprAnimal
         Me.MinimizeBox = False
         Me.Name = "DialogSupprAnimal"
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Suppression d'un animal"
         Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

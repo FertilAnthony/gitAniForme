@@ -136,7 +136,7 @@ Partial Class DialogAjoutVeterinaire
         Me.MinimizeBox = False
         Me.Name = "DialogAjoutVeterinaire"
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ajout d'un vétérinaire"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)

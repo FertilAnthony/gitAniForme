@@ -44,7 +44,7 @@ Partial Class EcranAgendas
         '
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Location = New System.Drawing.Point(480, 12)
+        Me.Button6.Location = New System.Drawing.Point(686, 12)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(77, 51)
         Me.Button6.TabIndex = 5
@@ -84,7 +84,7 @@ Partial Class EcranAgendas
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.DataGridViewAgendas)
-        Me.GroupBox1.Location = New System.Drawing.Point(72, 191)
+        Me.GroupBox1.Location = New System.Drawing.Point(288, 197)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(473, 428)
         Me.GroupBox1.TabIndex = 12
@@ -95,7 +95,7 @@ Partial Class EcranAgendas
         '
         Me.GroupBox2.Controls.Add(Me.dtAgendas)
         Me.GroupBox2.Controls.Add(Me.cbVeterinaires)
-        Me.GroupBox2.Location = New System.Drawing.Point(118, 121)
+        Me.GroupBox2.Location = New System.Drawing.Point(334, 127)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(383, 52)
         Me.GroupBox2.TabIndex = 13
@@ -108,7 +108,7 @@ Partial Class EcranAgendas
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Image = Global.GUI.My.Resources.Resources.gohome
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button7.Location = New System.Drawing.Point(579, 12)
+        Me.Button7.Location = New System.Drawing.Point(785, 12)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(76, 51)
         Me.Button7.TabIndex = 6
@@ -122,7 +122,7 @@ Partial Class EcranAgendas
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Image = Global.GUI.My.Resources.Resources.kontact_journal
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button5.Location = New System.Drawing.Point(352, 12)
+        Me.Button5.Location = New System.Drawing.Point(558, 12)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(122, 51)
         Me.Button5.TabIndex = 4
@@ -137,7 +137,7 @@ Partial Class EcranAgendas
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Image = Global.GUI.My.Resources.Resources._2rightarrow
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button4.Location = New System.Drawing.Point(269, 12)
+        Me.Button4.Location = New System.Drawing.Point(475, 12)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(73, 51)
         Me.Button4.TabIndex = 3
@@ -151,7 +151,7 @@ Partial Class EcranAgendas
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Image = Global.GUI.My.Resources.Resources._1rightarrow
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.Location = New System.Drawing.Point(177, 12)
+        Me.Button3.Location = New System.Drawing.Point(383, 12)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(74, 51)
         Me.Button3.TabIndex = 2
@@ -165,7 +165,7 @@ Partial Class EcranAgendas
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Image = Global.GUI.My.Resources.Resources._1leftarrow
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.Location = New System.Drawing.Point(100, 12)
+        Me.Button2.Location = New System.Drawing.Point(306, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(71, 51)
         Me.Button2.TabIndex = 1
@@ -179,7 +179,7 @@ Partial Class EcranAgendas
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.GUI.My.Resources.Resources._2leftarrow
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Location = New System.Drawing.Point(218, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(67, 51)
         Me.Button1.TabIndex = 0
@@ -191,7 +191,7 @@ Partial Class EcranAgendas
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(264, 82)
+        Me.Label1.Location = New System.Drawing.Point(480, 88)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 25)
         Me.Label1.TabIndex = 14
@@ -201,7 +201,7 @@ Partial Class EcranAgendas
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(667, 736)
+        Me.ClientSize = New System.Drawing.Size(969, 736)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox2)

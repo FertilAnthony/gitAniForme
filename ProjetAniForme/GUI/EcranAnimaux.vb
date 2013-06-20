@@ -6,6 +6,7 @@ Public Class EcranAnimaux
     Private position As Integer = 0
 
     Private Sub EcranClient_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
         afficherAnimauxClient()
         Me.Visible = True
 

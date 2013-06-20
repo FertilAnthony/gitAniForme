@@ -42,7 +42,6 @@ Partial Class EcranRdv
         Me.animal = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.race = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -51,14 +50,17 @@ Partial Class EcranRdv
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnAjouterRdv = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ShapeContainer2 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(158, 83)
+        Me.Label1.Location = New System.Drawing.Point(383, 83)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(235, 25)
         Me.Label1.TabIndex = 8
@@ -67,7 +69,7 @@ Partial Class EcranRdv
         'cbxVeterinaire
         '
         Me.cbxVeterinaire.FormattingEnabled = True
-        Me.cbxVeterinaire.Location = New System.Drawing.Point(36, 151)
+        Me.cbxVeterinaire.Location = New System.Drawing.Point(29, 33)
         Me.cbxVeterinaire.Name = "cbxVeterinaire"
         Me.cbxVeterinaire.Size = New System.Drawing.Size(121, 21)
         Me.cbxVeterinaire.TabIndex = 9
@@ -75,7 +77,7 @@ Partial Class EcranRdv
         'cbxAnimalClient
         '
         Me.cbxAnimalClient.FormattingEnabled = True
-        Me.cbxAnimalClient.Location = New System.Drawing.Point(410, 229)
+        Me.cbxAnimalClient.Location = New System.Drawing.Point(403, 111)
         Me.cbxAnimalClient.Name = "cbxAnimalClient"
         Me.cbxAnimalClient.Size = New System.Drawing.Size(121, 21)
         Me.cbxAnimalClient.TabIndex = 10
@@ -83,14 +85,14 @@ Partial Class EcranRdv
         'cbxClient
         '
         Me.cbxClient.FormattingEnabled = True
-        Me.cbxClient.Location = New System.Drawing.Point(410, 173)
+        Me.cbxClient.Location = New System.Drawing.Point(403, 55)
         Me.cbxClient.Name = "cbxClient"
         Me.cbxClient.Size = New System.Drawing.Size(121, 21)
         Me.cbxClient.TabIndex = 11
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(176, 151)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(169, 33)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 12
@@ -98,7 +100,7 @@ Partial Class EcranRdv
         'ComboBox4
         '
         Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(176, 207)
+        Me.ComboBox4.Location = New System.Drawing.Point(169, 89)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(48, 21)
         Me.ComboBox4.TabIndex = 13
@@ -106,7 +108,7 @@ Partial Class EcranRdv
         'ComboBox5
         '
         Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(230, 207)
+        Me.ComboBox5.Location = New System.Drawing.Point(223, 89)
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(45, 21)
         Me.ComboBox5.TabIndex = 14
@@ -114,7 +116,7 @@ Partial Class EcranRdv
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(33, 135)
+        Me.Label2.Location = New System.Drawing.Point(26, 17)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 13)
         Me.Label2.TabIndex = 15
@@ -123,7 +125,7 @@ Partial Class EcranRdv
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(173, 135)
+        Me.Label3.Location = New System.Drawing.Point(166, 17)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(106, 13)
         Me.Label3.TabIndex = 16
@@ -131,7 +133,7 @@ Partial Class EcranRdv
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(52, 208)
+        Me.Button8.Location = New System.Drawing.Point(45, 90)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 17
@@ -141,7 +143,7 @@ Partial Class EcranRdv
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(173, 191)
+        Me.Label4.Location = New System.Drawing.Point(166, 73)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(112, 13)
         Me.Label4.TabIndex = 18
@@ -150,7 +152,7 @@ Partial Class EcranRdv
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(419, 127)
+        Me.Label5.Location = New System.Drawing.Point(412, 9)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(112, 13)
         Me.Label5.TabIndex = 19
@@ -159,7 +161,7 @@ Partial Class EcranRdv
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(407, 158)
+        Me.Label6.Location = New System.Drawing.Point(400, 40)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(81, 13)
         Me.Label6.TabIndex = 20
@@ -168,7 +170,7 @@ Partial Class EcranRdv
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(407, 213)
+        Me.Label7.Location = New System.Drawing.Point(400, 95)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(38, 13)
         Me.Label7.TabIndex = 21
@@ -178,7 +180,7 @@ Partial Class EcranRdv
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.heure, Me.nomDuClient, Me.animal, Me.race})
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 278)
+        Me.DataGridView1.Location = New System.Drawing.Point(5, 160)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(452, 294)
         Me.DataGridView1.TabIndex = 22
@@ -206,29 +208,19 @@ Partial Class EcranRdv
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(9, 262)
+        Me.Label8.Location = New System.Drawing.Point(2, 144)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(44, 13)
         Me.Label8.TabIndex = 23
         Me.Label8.Text = "Agenda"
         '
-        'ShapeContainer1
-        '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(631, 573)
-        Me.ShapeContainer1.TabIndex = 24
-        Me.ShapeContainer1.TabStop = False
-        '
         'LineShape1
         '
         Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 392
-        Me.LineShape1.X2 = 392
-        Me.LineShape1.Y1 = 127
-        Me.LineShape1.Y2 = 252
+        Me.LineShape1.X1 = 382
+        Me.LineShape1.X2 = 382
+        Me.LineShape1.Y1 = -2
+        Me.LineShape1.Y2 = 118
         '
         'Button7
         '
@@ -236,7 +228,7 @@ Partial Class EcranRdv
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Image = Global.GUI.My.Resources.Resources.gohome
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button7.Location = New System.Drawing.Point(450, 12)
+        Me.Button7.Location = New System.Drawing.Point(689, 12)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(67, 51)
         Me.Button7.TabIndex = 7
@@ -250,7 +242,7 @@ Partial Class EcranRdv
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Image = Global.GUI.My.Resources.Resources.package_toys
         Me.Button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button6.Location = New System.Drawing.Point(359, 12)
+        Me.Button6.Location = New System.Drawing.Point(598, 12)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(67, 51)
         Me.Button6.TabIndex = 6
@@ -264,7 +256,7 @@ Partial Class EcranRdv
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Image = Global.GUI.My.Resources.Resources.kontact_contacts
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button5.Location = New System.Drawing.Point(295, 12)
+        Me.Button5.Location = New System.Drawing.Point(534, 12)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(67, 51)
         Me.Button5.TabIndex = 5
@@ -278,7 +270,7 @@ Partial Class EcranRdv
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Image = Global.GUI.My.Resources.Resources.undo
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button4.Location = New System.Drawing.Point(204, 12)
+        Me.Button4.Location = New System.Drawing.Point(443, 12)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(67, 51)
         Me.Button4.TabIndex = 4
@@ -292,7 +284,7 @@ Partial Class EcranRdv
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Image = Global.GUI.My.Resources.Resources._stop
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.Location = New System.Drawing.Point(140, 12)
+        Me.Button3.Location = New System.Drawing.Point(379, 12)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(67, 51)
         Me.Button3.TabIndex = 3
@@ -306,7 +298,7 @@ Partial Class EcranRdv
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Image = Global.GUI.My.Resources.Resources.filesave
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.Location = New System.Drawing.Point(76, 12)
+        Me.Button2.Location = New System.Drawing.Point(315, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(67, 51)
         Me.Button2.TabIndex = 2
@@ -320,7 +312,7 @@ Partial Class EcranRdv
         Me.btnAjouterRdv.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAjouterRdv.Image = Global.GUI.My.Resources.Resources.add
         Me.btnAjouterRdv.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnAjouterRdv.Location = New System.Drawing.Point(12, 12)
+        Me.btnAjouterRdv.Location = New System.Drawing.Point(251, 12)
         Me.btnAjouterRdv.Name = "btnAjouterRdv"
         Me.btnAjouterRdv.Size = New System.Drawing.Size(67, 51)
         Me.btnAjouterRdv.TabIndex = 1
@@ -328,27 +320,48 @@ Partial Class EcranRdv
         Me.btnAjouterRdv.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnAjouterRdv.UseVisualStyleBackColor = True
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.DataGridView1)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.Button8)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.ComboBox5)
+        Me.GroupBox1.Controls.Add(Me.ComboBox4)
+        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.cbxClient)
+        Me.GroupBox1.Controls.Add(Me.cbxAnimalClient)
+        Me.GroupBox1.Controls.Add(Me.cbxVeterinaire)
+        Me.GroupBox1.Controls.Add(Me.ShapeContainer2)
+        Me.GroupBox1.Location = New System.Drawing.Point(232, 130)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(560, 470)
+        Me.GroupBox1.TabIndex = 25
+        Me.GroupBox1.TabStop = False
+        '
+        'ShapeContainer2
+        '
+        Me.ShapeContainer2.Location = New System.Drawing.Point(3, 16)
+        Me.ShapeContainer2.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer2.Name = "ShapeContainer2"
+        Me.ShapeContainer2.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
+        Me.ShapeContainer2.Size = New System.Drawing.Size(554, 451)
+        Me.ShapeContainer2.TabIndex = 24
+        Me.ShapeContainer2.TabStop = False
+        '
         'EcranRdv
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
+        Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(631, 573)
+        Me.ClientSize = New System.Drawing.Size(881, 612)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ComboBox5)
-        Me.Controls.Add(Me.ComboBox4)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.cbxClient)
-        Me.Controls.Add(Me.cbxAnimalClient)
-        Me.Controls.Add(Me.cbxVeterinaire)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
@@ -357,11 +370,13 @@ Partial Class EcranRdv
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnAjouterRdv)
-        Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "EcranRdv"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Rendez-vous "
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -393,6 +408,7 @@ Partial Class EcranRdv
     Friend WithEvents animal As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents race As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents ShapeContainer2 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
 End Class

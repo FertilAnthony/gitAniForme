@@ -5,6 +5,7 @@ Imports BO
 Public Class EcranClient
 
     Private Sub EcranClient_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
         Me.Visible = True
 
            

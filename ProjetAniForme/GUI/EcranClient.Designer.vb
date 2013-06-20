@@ -55,13 +55,15 @@ Partial Class EcranClient
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.dataGridViewAnimauxClient, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 129)
+        Me.Label1.Location = New System.Drawing.Point(36, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(38, 13)
         Me.Label1.TabIndex = 12
@@ -70,7 +72,7 @@ Partial Class EcranClient
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 151)
+        Me.Label2.Location = New System.Drawing.Point(36, 45)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(35, 13)
         Me.Label2.TabIndex = 13
@@ -79,7 +81,7 @@ Partial Class EcranClient
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 175)
+        Me.Label3.Location = New System.Drawing.Point(36, 69)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 13)
         Me.Label3.TabIndex = 14
@@ -88,7 +90,7 @@ Partial Class EcranClient
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 220)
+        Me.Label4.Location = New System.Drawing.Point(386, 23)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 13)
         Me.Label4.TabIndex = 15
@@ -97,7 +99,7 @@ Partial Class EcranClient
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 247)
+        Me.Label5.Location = New System.Drawing.Point(386, 50)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(75, 13)
         Me.Label5.TabIndex = 16
@@ -106,7 +108,7 @@ Partial Class EcranClient
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(242, 247)
+        Me.Label6.Location = New System.Drawing.Point(616, 50)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(32, 13)
         Me.Label6.TabIndex = 17
@@ -115,7 +117,7 @@ Partial Class EcranClient
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(12, 274)
+        Me.Label7.Location = New System.Drawing.Point(386, 77)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(63, 13)
         Me.Label7.TabIndex = 18
@@ -124,7 +126,7 @@ Partial Class EcranClient
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(12, 303)
+        Me.Label8.Location = New System.Drawing.Point(36, 98)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(38, 13)
         Me.Label8.TabIndex = 19
@@ -132,7 +134,7 @@ Partial Class EcranClient
         '
         'tbxCodeClient
         '
-        Me.tbxCodeClient.Location = New System.Drawing.Point(108, 129)
+        Me.tbxCodeClient.Location = New System.Drawing.Point(132, 23)
         Me.tbxCodeClient.Name = "tbxCodeClient"
         Me.tbxCodeClient.ReadOnly = True
         Me.tbxCodeClient.Size = New System.Drawing.Size(166, 20)
@@ -140,49 +142,49 @@ Partial Class EcranClient
         '
         'tbxNomClient
         '
-        Me.tbxNomClient.Location = New System.Drawing.Point(108, 151)
+        Me.tbxNomClient.Location = New System.Drawing.Point(132, 45)
         Me.tbxNomClient.Name = "tbxNomClient"
         Me.tbxNomClient.Size = New System.Drawing.Size(204, 20)
         Me.tbxNomClient.TabIndex = 21
         '
         'tbxPrenomClient
         '
-        Me.tbxPrenomClient.Location = New System.Drawing.Point(108, 175)
+        Me.tbxPrenomClient.Location = New System.Drawing.Point(132, 69)
         Me.tbxPrenomClient.Name = "tbxPrenomClient"
         Me.tbxPrenomClient.Size = New System.Drawing.Size(204, 20)
         Me.tbxPrenomClient.TabIndex = 22
         '
         'tbxAdresseClient
         '
-        Me.tbxAdresseClient.Location = New System.Drawing.Point(108, 217)
+        Me.tbxAdresseClient.Location = New System.Drawing.Point(482, 20)
         Me.tbxAdresseClient.Name = "tbxAdresseClient"
         Me.tbxAdresseClient.Size = New System.Drawing.Size(204, 20)
         Me.tbxAdresseClient.TabIndex = 23
         '
         'tbxCpClient
         '
-        Me.tbxCpClient.Location = New System.Drawing.Point(108, 247)
+        Me.tbxCpClient.Location = New System.Drawing.Point(482, 50)
         Me.tbxCpClient.Name = "tbxCpClient"
         Me.tbxCpClient.Size = New System.Drawing.Size(100, 20)
         Me.tbxCpClient.TabIndex = 24
         '
         'tbxVilleClient
         '
-        Me.tbxVilleClient.Location = New System.Drawing.Point(280, 247)
+        Me.tbxVilleClient.Location = New System.Drawing.Point(654, 50)
         Me.tbxVilleClient.Name = "tbxVilleClient"
         Me.tbxVilleClient.Size = New System.Drawing.Size(100, 20)
         Me.tbxVilleClient.TabIndex = 25
         '
         'tbxAssuranceClient
         '
-        Me.tbxAssuranceClient.Location = New System.Drawing.Point(108, 274)
+        Me.tbxAssuranceClient.Location = New System.Drawing.Point(482, 77)
         Me.tbxAssuranceClient.Name = "tbxAssuranceClient"
         Me.tbxAssuranceClient.Size = New System.Drawing.Size(204, 20)
         Me.tbxAssuranceClient.TabIndex = 26
         '
         'tbxEmailClient
         '
-        Me.tbxEmailClient.Location = New System.Drawing.Point(108, 300)
+        Me.tbxEmailClient.Location = New System.Drawing.Point(132, 95)
         Me.tbxEmailClient.Name = "tbxEmailClient"
         Me.tbxEmailClient.Size = New System.Drawing.Size(204, 20)
         Me.tbxEmailClient.TabIndex = 27
@@ -190,7 +192,7 @@ Partial Class EcranClient
         'dataGridViewAnimauxClient
         '
         Me.dataGridViewAnimauxClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dataGridViewAnimauxClient.Location = New System.Drawing.Point(12, 371)
+        Me.dataGridViewAnimauxClient.Location = New System.Drawing.Point(22, 169)
         Me.dataGridViewAnimauxClient.Name = "dataGridViewAnimauxClient"
         Me.dataGridViewAnimauxClient.Size = New System.Drawing.Size(750, 150)
         Me.dataGridViewAnimauxClient.TabIndex = 29
@@ -198,7 +200,7 @@ Partial Class EcranClient
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(12, 355)
+        Me.Label9.Location = New System.Drawing.Point(22, 153)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(146, 13)
         Me.Label9.TabIndex = 30
@@ -206,7 +208,7 @@ Partial Class EcranClient
         '
         'txtboxTel
         '
-        Me.txtboxTel.Location = New System.Drawing.Point(108, 326)
+        Me.txtboxTel.Location = New System.Drawing.Point(482, 103)
         Me.txtboxTel.Name = "txtboxTel"
         Me.txtboxTel.Size = New System.Drawing.Size(204, 20)
         Me.txtboxTel.TabIndex = 33
@@ -214,7 +216,7 @@ Partial Class EcranClient
         'lblTel
         '
         Me.lblTel.AutoSize = True
-        Me.lblTel.Location = New System.Drawing.Point(12, 329)
+        Me.lblTel.Location = New System.Drawing.Point(386, 106)
         Me.lblTel.Name = "lblTel"
         Me.lblTel.Size = New System.Drawing.Size(28, 13)
         Me.lblTel.TabIndex = 32
@@ -225,7 +227,7 @@ Partial Class EcranClient
         Me.Button11.FlatAppearance.BorderSize = 0
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button11.Image = CType(resources.GetObject("Button11.Image"), System.Drawing.Image)
-        Me.Button11.Location = New System.Drawing.Point(320, 151)
+        Me.Button11.Location = New System.Drawing.Point(344, 45)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(20, 20)
         Me.Button11.TabIndex = 28
@@ -237,7 +239,7 @@ Partial Class EcranClient
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.Image = Global.GUI.My.Resources.Resources.package_toys
         Me.Button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button10.Location = New System.Drawing.Point(533, 12)
+        Me.Button10.Location = New System.Drawing.Point(714, 12)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(67, 51)
         Me.Button10.TabIndex = 11
@@ -251,7 +253,7 @@ Partial Class EcranClient
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Image = Global.GUI.My.Resources.Resources.gohome
         Me.Button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button9.Location = New System.Drawing.Point(606, 12)
+        Me.Button9.Location = New System.Drawing.Point(787, 12)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(67, 51)
         Me.Button9.TabIndex = 10
@@ -265,7 +267,7 @@ Partial Class EcranClient
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Image = Global.GUI.My.Resources.Resources._2rightarrow
         Me.Button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button8.Location = New System.Drawing.Point(460, 12)
+        Me.Button8.Location = New System.Drawing.Point(641, 12)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(67, 51)
         Me.Button8.TabIndex = 9
@@ -279,7 +281,7 @@ Partial Class EcranClient
         Me.btnSuivant.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSuivant.Image = Global.GUI.My.Resources.Resources._1rightarrow
         Me.btnSuivant.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnSuivant.Location = New System.Drawing.Point(397, 12)
+        Me.btnSuivant.Location = New System.Drawing.Point(578, 12)
         Me.btnSuivant.Name = "btnSuivant"
         Me.btnSuivant.Size = New System.Drawing.Size(67, 51)
         Me.btnSuivant.TabIndex = 8
@@ -293,7 +295,7 @@ Partial Class EcranClient
         Me.btnPrecedent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPrecedent.Image = Global.GUI.My.Resources.Resources._1leftarrow
         Me.btnPrecedent.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnPrecedent.Location = New System.Drawing.Point(335, 12)
+        Me.btnPrecedent.Location = New System.Drawing.Point(516, 12)
         Me.btnPrecedent.Name = "btnPrecedent"
         Me.btnPrecedent.Size = New System.Drawing.Size(67, 51)
         Me.btnPrecedent.TabIndex = 7
@@ -307,7 +309,7 @@ Partial Class EcranClient
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Image = Global.GUI.My.Resources.Resources._2leftarrow
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button5.Location = New System.Drawing.Point(273, 12)
+        Me.Button5.Location = New System.Drawing.Point(454, 12)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(67, 51)
         Me.Button5.TabIndex = 6
@@ -321,7 +323,7 @@ Partial Class EcranClient
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Image = Global.GUI.My.Resources.Resources.undo
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button4.Location = New System.Drawing.Point(200, 12)
+        Me.Button4.Location = New System.Drawing.Point(381, 12)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(67, 51)
         Me.Button4.TabIndex = 5
@@ -335,7 +337,7 @@ Partial Class EcranClient
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Image = Global.GUI.My.Resources.Resources._stop
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.Location = New System.Drawing.Point(136, 12)
+        Me.Button3.Location = New System.Drawing.Point(317, 12)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(67, 51)
         Me.Button3.TabIndex = 4
@@ -349,7 +351,7 @@ Partial Class EcranClient
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Image = Global.GUI.My.Resources.Resources.filesave
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.Location = New System.Drawing.Point(74, 12)
+        Me.Button2.Location = New System.Drawing.Point(255, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(67, 51)
         Me.Button2.TabIndex = 3
@@ -363,7 +365,7 @@ Partial Class EcranClient
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.GUI.My.Resources.Resources.add
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Location = New System.Drawing.Point(193, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(67, 51)
         Me.Button1.TabIndex = 2
@@ -375,40 +377,49 @@ Partial Class EcranClient
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(268, 81)
+        Me.Label10.Location = New System.Drawing.Point(406, 94)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(176, 25)
         Me.Label10.TabIndex = 34
         Me.Label10.Text = "Gestion des clients"
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.txtboxTel)
+        Me.GroupBox1.Controls.Add(Me.lblTel)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.dataGridViewAnimauxClient)
+        Me.GroupBox1.Controls.Add(Me.Button11)
+        Me.GroupBox1.Controls.Add(Me.tbxEmailClient)
+        Me.GroupBox1.Controls.Add(Me.tbxAssuranceClient)
+        Me.GroupBox1.Controls.Add(Me.tbxVilleClient)
+        Me.GroupBox1.Controls.Add(Me.tbxCpClient)
+        Me.GroupBox1.Controls.Add(Me.tbxAdresseClient)
+        Me.GroupBox1.Controls.Add(Me.tbxPrenomClient)
+        Me.GroupBox1.Controls.Add(Me.tbxNomClient)
+        Me.GroupBox1.Controls.Add(Me.tbxCodeClient)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Location = New System.Drawing.Point(112, 133)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(813, 349)
+        Me.GroupBox1.TabIndex = 35
+        Me.GroupBox1.TabStop = False
+        '
         'EcranClient
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(778, 564)
+        Me.ClientSize = New System.Drawing.Size(1096, 564)
         Me.ControlBox = False
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.txtboxTel)
-        Me.Controls.Add(Me.lblTel)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.dataGridViewAnimauxClient)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.tbxEmailClient)
-        Me.Controls.Add(Me.tbxAssuranceClient)
-        Me.Controls.Add(Me.tbxVilleClient)
-        Me.Controls.Add(Me.tbxCpClient)
-        Me.Controls.Add(Me.tbxAdresseClient)
-        Me.Controls.Add(Me.tbxPrenomClient)
-        Me.Controls.Add(Me.tbxNomClient)
-        Me.Controls.Add(Me.tbxCodeClient)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
@@ -424,6 +435,8 @@ Partial Class EcranClient
         Me.Text = "Clients"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.dataGridViewAnimauxClient, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -460,4 +473,5 @@ Partial Class EcranClient
     Friend WithEvents txtboxTel As System.Windows.Forms.TextBox
     Friend WithEvents lblTel As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 End Class

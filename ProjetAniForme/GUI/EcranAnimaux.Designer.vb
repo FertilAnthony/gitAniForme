@@ -116,7 +116,7 @@ Partial Class EcranAnimaux
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 400)
+        Me.DataGridView1.Location = New System.Drawing.Point(154, 411)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(750, 150)
         Me.DataGridView1.TabIndex = 29
@@ -124,11 +124,11 @@ Partial Class EcranAnimaux
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(12, 384)
+        Me.Label9.Location = New System.Drawing.Point(444, 395)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(146, 13)
+        Me.Label9.Size = New System.Drawing.Size(140, 13)
         Me.Label9.TabIndex = 30
-        Me.Label9.Text = "Liste des annimaux du client :"
+        Me.Label9.Text = "Liste des annimaux du client"
         '
         'GroupBox1
         '
@@ -138,7 +138,7 @@ Partial Class EcranAnimaux
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.tbxNomClient)
         Me.GroupBox1.Controls.Add(Me.tbxPrenomClient)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 106)
+        Me.GroupBox1.Location = New System.Drawing.Point(196, 117)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(661, 100)
         Me.GroupBox1.TabIndex = 32
@@ -177,7 +177,7 @@ Partial Class EcranAnimaux
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(25, 259)
+        Me.Label4.Location = New System.Drawing.Point(209, 270)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(35, 13)
         Me.Label4.TabIndex = 37
@@ -186,7 +186,7 @@ Partial Class EcranAnimaux
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(25, 339)
+        Me.Label5.Location = New System.Drawing.Point(209, 350)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(59, 13)
         Me.Label5.TabIndex = 38
@@ -195,7 +195,7 @@ Partial Class EcranAnimaux
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(302, 311)
+        Me.Label6.Location = New System.Drawing.Point(486, 322)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(39, 13)
         Me.Label6.TabIndex = 39
@@ -204,7 +204,7 @@ Partial Class EcranAnimaux
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(302, 259)
+        Me.Label7.Location = New System.Drawing.Point(486, 270)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(37, 13)
         Me.Label7.TabIndex = 40
@@ -213,7 +213,7 @@ Partial Class EcranAnimaux
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(25, 311)
+        Me.Label8.Location = New System.Drawing.Point(209, 322)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(49, 13)
         Me.Label8.TabIndex = 41
@@ -222,7 +222,7 @@ Partial Class EcranAnimaux
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(25, 284)
+        Me.Label11.Location = New System.Drawing.Point(209, 295)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(49, 13)
         Me.Label11.TabIndex = 42
@@ -231,7 +231,7 @@ Partial Class EcranAnimaux
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(25, 232)
+        Me.Label12.Location = New System.Drawing.Point(209, 243)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(38, 13)
         Me.Label12.TabIndex = 43
@@ -271,7 +271,7 @@ Partial Class EcranAnimaux
         Me.GroupBox2.Controls.Add(Me.cbxEspeceAnimal)
         Me.GroupBox2.Controls.Add(Me.tbxCouleurAnimal)
         Me.GroupBox2.Controls.Add(Me.tbxTatouageAnimal)
-        Me.GroupBox2.Location = New System.Drawing.Point(11, 212)
+        Me.GroupBox2.Location = New System.Drawing.Point(195, 223)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(661, 169)
         Me.GroupBox2.TabIndex = 47
@@ -284,7 +284,7 @@ Partial Class EcranAnimaux
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.Image = Global.GUI.My.Resources.Resources.kontact_contacts
         Me.Button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button10.Location = New System.Drawing.Point(533, 12)
+        Me.Button10.Location = New System.Drawing.Point(713, 12)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(67, 51)
         Me.Button10.TabIndex = 48
@@ -298,7 +298,7 @@ Partial Class EcranAnimaux
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Image = Global.GUI.My.Resources.Resources.gohome
         Me.Button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button9.Location = New System.Drawing.Point(606, 12)
+        Me.Button9.Location = New System.Drawing.Point(786, 12)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(67, 51)
         Me.Button9.TabIndex = 10
@@ -312,7 +312,7 @@ Partial Class EcranAnimaux
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Image = Global.GUI.My.Resources.Resources._2rightarrow
         Me.Button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button8.Location = New System.Drawing.Point(460, 12)
+        Me.Button8.Location = New System.Drawing.Point(640, 12)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(67, 51)
         Me.Button8.TabIndex = 9
@@ -326,7 +326,7 @@ Partial Class EcranAnimaux
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Image = Global.GUI.My.Resources.Resources._1rightarrow
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button7.Location = New System.Drawing.Point(397, 12)
+        Me.Button7.Location = New System.Drawing.Point(577, 12)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(67, 51)
         Me.Button7.TabIndex = 8
@@ -340,7 +340,7 @@ Partial Class EcranAnimaux
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Image = Global.GUI.My.Resources.Resources._1leftarrow
         Me.Button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button6.Location = New System.Drawing.Point(335, 12)
+        Me.Button6.Location = New System.Drawing.Point(515, 12)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(67, 51)
         Me.Button6.TabIndex = 7
@@ -354,7 +354,7 @@ Partial Class EcranAnimaux
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Image = Global.GUI.My.Resources.Resources._2leftarrow
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button5.Location = New System.Drawing.Point(273, 12)
+        Me.Button5.Location = New System.Drawing.Point(453, 12)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(67, 51)
         Me.Button5.TabIndex = 6
@@ -368,7 +368,7 @@ Partial Class EcranAnimaux
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Image = Global.GUI.My.Resources.Resources.undo
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button4.Location = New System.Drawing.Point(200, 12)
+        Me.Button4.Location = New System.Drawing.Point(380, 12)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(67, 51)
         Me.Button4.TabIndex = 5
@@ -382,7 +382,7 @@ Partial Class EcranAnimaux
         Me.btnSupprimerAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSupprimerAnimal.Image = Global.GUI.My.Resources.Resources._stop
         Me.btnSupprimerAnimal.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnSupprimerAnimal.Location = New System.Drawing.Point(136, 12)
+        Me.btnSupprimerAnimal.Location = New System.Drawing.Point(316, 12)
         Me.btnSupprimerAnimal.Name = "btnSupprimerAnimal"
         Me.btnSupprimerAnimal.Size = New System.Drawing.Size(67, 51)
         Me.btnSupprimerAnimal.TabIndex = 4
@@ -396,7 +396,7 @@ Partial Class EcranAnimaux
         Me.btnModif.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModif.Image = Global.GUI.My.Resources.Resources.filesave
         Me.btnModif.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnModif.Location = New System.Drawing.Point(74, 12)
+        Me.btnModif.Location = New System.Drawing.Point(254, 12)
         Me.btnModif.Name = "btnModif"
         Me.btnModif.Size = New System.Drawing.Size(67, 51)
         Me.btnModif.TabIndex = 3
@@ -410,7 +410,7 @@ Partial Class EcranAnimaux
         Me.btnAjouterAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAjouterAnimal.Image = Global.GUI.My.Resources.Resources.add
         Me.btnAjouterAnimal.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnAjouterAnimal.Location = New System.Drawing.Point(12, 12)
+        Me.btnAjouterAnimal.Location = New System.Drawing.Point(192, 12)
         Me.btnAjouterAnimal.Name = "btnAjouterAnimal"
         Me.btnAjouterAnimal.Size = New System.Drawing.Size(67, 51)
         Me.btnAjouterAnimal.TabIndex = 2
@@ -422,7 +422,7 @@ Partial Class EcranAnimaux
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(258, 78)
+        Me.Label10.Location = New System.Drawing.Point(448, 89)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(206, 25)
         Me.Label10.TabIndex = 49
@@ -430,10 +430,9 @@ Partial Class EcranAnimaux
         '
         'EcranAnimaux
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(778, 592)
+        Me.ClientSize = New System.Drawing.Size(1235, 592)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Button10)
@@ -459,6 +458,7 @@ Partial Class EcranAnimaux
         Me.Controls.Add(Me.GroupBox2)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "EcranAnimaux"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Animaux"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

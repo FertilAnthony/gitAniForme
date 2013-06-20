@@ -15,6 +15,7 @@ Public Class EcranDosMedical
     End Sub
 
     Private Sub EcranDosMedical_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
         Me.Visible = True
         Me.BringToFront()
 

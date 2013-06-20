@@ -4,6 +4,7 @@ Imports BO
 Public Class EcranAgendas
 
     Private Sub EcranAgendas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
         cbVeterinaires.DataSource = MgtVeterinaire.getInstance().veterinaires
         Me.Visible = True
         Me.BringToFront()

@@ -200,7 +200,7 @@ Partial Class DialogAjoutAnimal
         Me.MinimizeBox = False
         Me.Name = "DialogAjoutAnimal"
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ajout animal"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
