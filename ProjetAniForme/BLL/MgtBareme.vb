@@ -68,7 +68,7 @@ Public Class MgtBareme
     Sub exporterBaremes(ByVal fichier As String)
         Dim extension As String = Path.GetExtension(fichier)
         If (extension = ".xml") Then
-            Export.exporterBaremes(Me.baremeType, fichier)
+            Export.exporterBaremes(Me.baremeType.ToList(), fichier)
         Else
             Dim serialiseur As Serialiseur = FabriqueSerialiseur.getSerialiseur(fichier)
             serialiseur.serialiser(Me.baremeType.ToArray(), fichier)
