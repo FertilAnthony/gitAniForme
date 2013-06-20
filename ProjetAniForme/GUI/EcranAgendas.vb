@@ -12,33 +12,7 @@ Public Class EcranAgendas
 
         MgtAgendas.getInstance().rechercheRdvVeto(v.CodeVeto, dtAgendas.Value)
 
-        Dim voDataTable As New DataTable
-        Dim voDataRow As DataRow
-
-        'Création des champs 
-        voDataTable.Columns.Add("Heure")
-        voDataTable.Columns.Add("Nom du client")
-        voDataTable.Columns.Add("Animal")
-        voDataTable.Columns.Add("Race")
-        voDataTable.Columns.Add("codeAnimal")
-
-        For Each rdv As Agendas In MgtAgendas.getInstance().lstRdvVeto
-            voDataRow = voDataTable.NewRow() 'Création d'une nouvelle ligne
-
-            Dim heure As String = rdv.DateRdv.ToString
-            Dim a As Animal = MgtAnimal.getInstance().ObtenirAnimal(rdv.CodeAnimal)
-            Dim race As String = a.Race & " - " & a.Espece
-            Dim codeClient As Guid = a.CodeClient
-            Dim c As Client = MgtClient.getInstance().ObtenirClient(codeClient)
-
-            voDataRow("Heure") = heure
-            voDataRow("Nom du client") = c.ToString
-            voDataRow("Animal") = a.NomAnimal
-            voDataRow("Race") = race
-            voDataRow("codeAnimal") = a.CodeAnimal
-            voDataTable.Rows.Add(voDataRow)
-        Next
-        DataGridViewAgendas.DataSource = voDataTable
+        DataGridViewAgendas.DataSource = majAgenda()
         Me.DataGridViewAgendas.Columns("codeAnimal").Visible = False
 
     End Sub
@@ -70,33 +44,7 @@ Public Class EcranAgendas
 
         MgtAgendas.getInstance().rechercheRdvVeto(v.CodeVeto, dtAgendas.Value)
 
-        Dim voDataTable As New DataTable
-        Dim voDataRow As DataRow
-
-        'Création des champs 
-        voDataTable.Columns.Add("Heure")
-        voDataTable.Columns.Add("Nom du client")
-        voDataTable.Columns.Add("Animal")
-        voDataTable.Columns.Add("Race")
-        voDataTable.Columns.Add("codeAnimal")
-
-        For Each rdv As Agendas In MgtAgendas.getInstance().lstRdvVeto
-            voDataRow = voDataTable.NewRow() 'Création d'une nouvelle ligne
-
-            Dim heure As String = rdv.DateRdv.ToString
-            Dim a As Animal = MgtAnimal.getInstance().ObtenirAnimal(rdv.CodeAnimal)
-            Dim race As String = a.Race & " - " & a.Espece
-            Dim codeClient As Guid = a.CodeClient
-            Dim c As Client = MgtClient.getInstance().ObtenirClient(codeClient)
-
-            voDataRow("Heure") = heure
-            voDataRow("Nom du client") = c.ToString
-            voDataRow("Animal") = a.NomAnimal
-            voDataRow("Race") = race
-            voDataRow("codeAnimal") = a.CodeAnimal
-            voDataTable.Rows.Add(voDataRow)
-        Next
-        DataGridViewAgendas.DataSource = voDataTable
+        DataGridViewAgendas.DataSource = majAgenda()
         Me.DataGridViewAgendas.Columns("codeAnimal").Visible = False
 
     End Sub
@@ -107,6 +55,11 @@ Public Class EcranAgendas
 
         MgtAgendas.getInstance().rechercheRdvVeto(v.CodeVeto, dtAgendas.Value)
 
+        DataGridViewAgendas.DataSource = majAgenda()
+        Me.DataGridViewAgendas.Columns("codeAnimal").Visible = False
+    End Sub
+
+    Private Function majAgenda() As DataTable
         Dim voDataTable As New DataTable
         Dim voDataRow As DataRow
 
@@ -133,12 +86,7 @@ Public Class EcranAgendas
             voDataRow("codeAnimal") = a.CodeAnimal
             voDataTable.Rows.Add(voDataRow)
         Next
-        DataGridViewAgendas.DataSource = voDataTable
-        Me.DataGridViewAgendas.Columns("codeAnimal").Visible = False
-        'DataGridViewAgendas.DataSource = MgtAgendas.getInstance().lstRdvVeto
-    End Sub
+        Return voDataTable
 
-    Private Sub DataGridViewAgendas_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridViewAgendas.CellContentClick
-
-    End Sub
+    End Function
 End Class

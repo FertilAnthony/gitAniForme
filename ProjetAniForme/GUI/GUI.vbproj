@@ -115,6 +115,12 @@
     <Compile Include="EcranAgendas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EcranBareme.Designer.vb">
+      <DependentUpon>EcranBareme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EcranBareme.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EcranClient.Designer.vb">
       <DependentUpon>EcranClient.vb</DependentUpon>
     </Compile>
@@ -170,6 +176,7 @@
     <Compile Include="EcranDossierMedical.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ImportExport.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -207,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EcranAgendas.resx">
       <DependentUpon>EcranAgendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EcranBareme.resx">
+      <DependentUpon>EcranBareme.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EcranClient.resx">
       <DependentUpon>EcranClient.vb</DependentUpon>

@@ -118,4 +118,8 @@ Public Class EcranPrincipal
         EcranDosMedical.Visible = False
 
     End Sub
+
+    Private Sub MiseÀJourDuBarèmeDeTarificationToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MiseÀJourDuBarèmeDeTarificationToolStripMenuItem.Click
+        EcranBareme.Visible = True
+    End Sub
 End Class

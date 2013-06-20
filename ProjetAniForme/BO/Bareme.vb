@@ -1,4 +1,5 @@
-﻿Public Class Bareme
+﻿<Serializable()>
+Public Class Bareme
 #Region "Attributs"
     Private _codeGrp As String
     Private _dateVigueur As Date
@@ -87,10 +88,10 @@
 
     Public Property Archive() As Boolean
         Get
-            Return _Archive
+            Return _archive
         End Get
         Set(ByVal value As Boolean)
-            _Archive = value
+            _archive = value
         End Set
     End Property
 

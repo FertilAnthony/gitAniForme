@@ -1,4 +1,5 @@
-﻿Public Class Vaccin
+﻿<Serializable()>
+Public Class Vaccin
 
 #Region "Attributs"
     Private _CodeVaccin As Guid

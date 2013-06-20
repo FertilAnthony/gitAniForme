@@ -62,5 +62,11 @@ Public Class MgtVaccin
     End Sub
 
 
+    Public Function ObtenirVaccin(ByVal codeVaccin As Guid) As Vaccin
+        Dim retourVaccin As Vaccin = Nothing
+            retourVaccin = _listeVaccins.ToList.Find(Function(v As Vaccin) v.codeVaccin.Equals(codeVaccin))
+
+            Return retourVaccin
+    End Function
 
 End Class

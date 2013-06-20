@@ -49,6 +49,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,6 +66,8 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ImportExport\Export.vb" />
+    <Compile Include="ImportExport\Import.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -80,6 +83,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Serialisation\FabriqueSerialiseur.vb" />
+    <Compile Include="Serialisation\Serialiseur.vb" />
+    <Compile Include="Serialisation\SerialiseurBinaire.vb" />
+    <Compile Include="Serialisation\SerialiseurSoap.vb" />
     <Compile Include="SQLAccess.vb" />
     <Compile Include="SQLAgendas.vb" />
     <Compile Include="SQLAnimal.vb" />
