@@ -76,6 +76,8 @@ Public Class EcranConsultation
 
         If selectedBareme.typeActe = "TATO" And tbxTatouageAnimal.Text = "" Then
             tbxTatouageAnimal.ReadOnly = False
+        Else
+            tbxTatouageAnimal.ReadOnly = True
         End If
     End Sub
 

@@ -104,4 +104,25 @@ Public Class SQLVeterinaire
         End Try
     End Sub
 
+    Shared Sub AjoutVetoProcedure(ByVal veto As Veterinaire)
+        Try
+            Dim cmd As IDbCommand = SQLAccess.creerCommande("ajout_veterinaire", CommandType.StoredProcedure)
+            SQLAccess.initialiserParametre(cmd, "@codeVeto", veto.CodeVeto)
+            SQLAccess.initialiserParametre(cmd, "@NomVeto", veto.NomVeto)
+            SQLAccess.initialiserParametre(cmd, "@MotPasse", veto.MotPasse)
+            SQLAccess.initialiserParametre(cmd, "@Archive", veto.Archive)
+
+            Dim nbModif As Integer = cmd.ExecuteNonQuery()
+
+            If nbModif < 1 Then
+                Throw New ApplicationException("Aucune ligne n'a été modifiée")
+            ElseIf nbModif > 1 Then
+                Throw New ApplicationException(String.Format("Erreur lors de l'ajout des données : {0} lignes ont été modifiées.", nbModif))
+            End If
+        Catch ex As System.InvalidOperationException
+            Throw New ApplicationException("Une erreur est survenue lors de l'accès à la base")
+
+        End Try
+    End Sub
+
 End Class
