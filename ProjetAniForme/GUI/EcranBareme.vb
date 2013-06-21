@@ -59,7 +59,7 @@ Public Class EcranBareme
             Dim tarifMax As Decimal = b.tarifMaxi
             Dim vaccin As String = Nothing
             If b.typeActe = "VACC" Then
-                vaccin = b.codeVaccin.ToString()
+                vaccin = b.vaccin.ToString()
             End If
 
             Dim archive As Boolean = b.Archive
