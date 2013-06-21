@@ -81,7 +81,7 @@ Public Class MgtBareme
         Dim extension As String = Path.GetExtension(fichier)
         Dim tableauBaremes As Bareme()
         If (extension = ".xml") Then
-            tableauBaremes = Import.importerServices(fichier)
+            tableauBaremes = Import.importerBaremes(fichier)
         Else
             Dim serialiseur As Serialiseur = FabriqueSerialiseur.getSerialiseur(fichier)
             tableauBaremes = CType(serialiseur.deserialiser(fichier), Bareme())
