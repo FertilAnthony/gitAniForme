@@ -8,7 +8,7 @@ Public Class Bareme
     Private _tarifFixe As Decimal
     Private _tarifMini As Decimal
     Private _tarifMaxi As Decimal
-    Private _codeVaccin As Vaccin
+    Private _vaccin As Vaccin
     Private _archive As Boolean
 #End Region
 
@@ -77,12 +77,12 @@ Public Class Bareme
         End Set
     End Property
 
-    Public Property codeVaccin() As Vaccin
+    Public Property vaccin() As Vaccin
         Get
-            Return _codeVaccin
+            Return _vaccin
         End Get
         Set(ByVal value As Vaccin)
-            _codeVaccin = value
+            _vaccin = value
         End Set
     End Property
 
@@ -100,12 +100,11 @@ Public Class Bareme
 #Region "Constructeurs"
 
     Sub New()
-
     End Sub
 
     Sub New(ByVal codeGrp As String, ByVal dateVigueur As Date, ByVal typeActe As String,
             ByVal libelle As String, ByVal tarifFixe As Decimal, ByVal tarifMini As Decimal,
-            ByVal tarifMaxi As Decimal, ByVal codeVaccin As Vaccin, ByVal archive As Boolean)
+            ByVal tarifMaxi As Decimal, ByVal vaccin As Vaccin, ByVal archive As Boolean)
 
         Me.codeGrp = codeGrp
         Me.dateVigueur = dateVigueur
@@ -114,7 +113,7 @@ Public Class Bareme
         Me.tarifFixe = tarifFixe
         Me.tarifMini = tarifMini
         Me.tarifMaxi = tarifMaxi
-        Me.codeVaccin = codeVaccin
+        Me.vaccin = vaccin
         Me.Archive = archive
     End Sub
 

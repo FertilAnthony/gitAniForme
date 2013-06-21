@@ -2,7 +2,7 @@
 Public Class Vaccin
 
 #Region "Attributs"
-    Private _CodeVaccin As Guid
+    Private _codeVaccin As Guid
     Private _nomVaccin As String
     Private _quantite As Integer
     Private _periodeVal As Integer
@@ -13,10 +13,10 @@ Public Class Vaccin
 
     Public Property codeVaccin() As Guid
         Get
-            Return _CodeVaccin
+            Return _codeVaccin
         End Get
-        Private Set(ByVal codeVaccin As Guid)
-            _CodeVaccin = codeVaccin
+        Set(ByVal codeVaccin As Guid)
+            _codeVaccin = codeVaccin
         End Set
     End Property
 
@@ -65,6 +65,9 @@ Public Class Vaccin
         Me.quantite = quantite
         Me.periodeVal = periodeVal
         Me.archive = archive
+    End Sub
+
+    Public Sub New()
     End Sub
 
 #End Region
